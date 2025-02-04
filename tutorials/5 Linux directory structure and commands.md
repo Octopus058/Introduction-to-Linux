@@ -28,28 +28,35 @@ Isn't it very simple? For beginners, it's easy to make mistakes. Make sure to me
 ### Special path symbols
 Linux provides 3 `Special path symbols` for users to write file path easier. I list them in a form.
 
-| symbol |         meaning          |     |
-| :----: | :----------------------: | --- |
-|  `.`   |    Current directory     |     |
-|  `..`  | Previous level directory |     |
-|  `~`   |         `/home`          |     |
+| symbol |         meaning          |
+| :----: | :----------------------: |
+|  `.`   |    Current directory     |
+|  `..`  | Previous level directory |
+|  `~`   |         `/home`          |
 
 I will explain them in more detail in the following text.
 
 ## Directory Commands
 ### ls
 `ls` list files in current directory. Here's its grammar: `ls [-a -h -l] [path]`.
+
 If you choose no parameter, `ls` represents displaying files in a flat layout.
+
 ![](/assets/Linux/5%20Linux%20directory%20structure%20and%20command/1.png)
+
 `-a` means show all files include those are hidden. It's easy to hide files on Linux, just add a `.` before its name such as `.bashrc`.
+
 ![](/assets/Linux/5%20Linux%20directory%20structure%20and%20command/2.png)
+
 >[!TIP] 
 >Files and folders are distinguished by color in WSL, those blue names are folders.
 
 `-l` means show files in a column with more infomation like "detailed information" on Windows.
 
 `-h` changes `file size` in `-l` to clearer style (represent by `k`, `m`, `g`) and **must use with -l**
+
 ![](/assets/Linux/5%20Linux%20directory%20structure%20and%20command/3.png)
+
 >[!TIP] 
 >parameters above can be put together like `-alh`.
 
@@ -61,18 +68,23 @@ As the same as `cd` on Windows Terminal, its function is **c**hange **d**irector
 There's not much to say, just pay attention to one thing that `cd` default path is `/home`. That means `cd` equals  `cd ~`  and if there's a `/home/test.cpp`, you just need to  `cd test.cpp`.
 
 Now we finished `cd`, it's time to talk about details that weren't clear in the previous text. 
+
 As for me, `..` is often used in `cd`. See the figure below, `cd` deafult path is `/home/oct0pu5`. I input `cd ..` twice and return `/`, then`cd etc` and `ls`, it shows all file in `/etc`. The above is the classic directory operation.
+
 ![](/assets/Linux/5%20Linux%20directory%20structure%20and%20command/4.png)
 
 ### pwd
 **P**rint current **w**ork **d**irectory. Often used to check whether you are in right directory, or copy the directory for any purpose.
+
 ![](/assets/Linux/5%20Linux%20directory%20structure%20and%20command/5.png)
 
 ### mkdir
 **M**a**k**e **dir**ectory. Grammar here: `mkdir [-p] <path>`.
 
 If you just want to create one level folder, ignore `-p`. If more than one level is needed, `mkdir` must attach `-p`, otherwise it will throw error.
+
 ![](/assets/Linux/5%20Linux%20directory%20structure%20and%20command/6.png)
+
  >[!IMPORTANT]
  >`mkdir` can only take effect in `/home` by default. We can solve this problem in **7 Linux user and permission commands**.
  
