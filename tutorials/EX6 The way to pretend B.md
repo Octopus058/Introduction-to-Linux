@@ -4,8 +4,11 @@
 ## fastfetch
 ### Why `fastfetch` rather than `neofetch`
 If I say `neofetch`, most of you must know it's a tool which fetches system information and prints it prettily. 
+
 ![](/assets/Linux/EX6%20The%20way%20to%20pretend%20B/1.png)
+
 However, the last release of `neofetch` is in 2020, and its repository have been archived since Apr 26, 2024. I understand that it won't make many mistakes in at least 10 years but there are still reasons to choose `fastfetch` instead. Here I quote the statement in its README.
+
 >Q: Neofetch is good enough. Why do I need fastfetch?
 >1. Fastfetch is actively maintained.
 >2. Fastfetch is faster. As the name suggests.
@@ -14,24 +17,32 @@ However, the last release of `neofetch` is in 2020, and its repository have been
 >5. Fastfetch is more polished. For example, neofetch prints `555 MiB` in the Memory module and `23 G` in the Disk module, whereas fastfetch prints `555.00 MiB` and `22.97 GiB` respectively.
 >6. Fastfetch is more accurate. For example, [neofetch never actually supports the Wayland protocol](https://github.com/dylanaraps/neofetch/pull/2395).
 
-
 ### Installation
 As the same as `pay-respects`, just download `fastfetch-linux-amd64.deb` from GitHub releases page and put into your Ubuntu by MobaXterm. Then run `sudo dpkg -i fastfetch-linux-amd64.deb` and all done.
 
 ### Usage
 Input `fastfetch` and you will obtain all you want.
+
 ![](/assets/Linux/EX6%20The%20way%20to%20pretend%20B/2.png)
+
 Someone careful may ask, Does `fastfetch` safe because it seems to leak IP address. Here we must clarify that IP begins with `10`, `172` or `192.168` is a local address and nothing to do with user privacy. If you insist on it, then you have to `fastfetch --gen-config` and disable  `Local IP` in `~/.config/fastfetch/config.jsonc`. You can also see this part in GitHub README.
 
 ## btop
 I think `btop` is the coolest `top` to monitor OS resource. It's in `apt` source.
+
 ![](/assets/Linux/EX6%20The%20way%20to%20pretend%20B/3.png)
+
 There is only 1 more thing you need to know that if you experience screen flickering during `ssh` connection, press `o` and turn `Truecolor` to false.
+
 ![](/assets/Linux/EX6%20The%20way%20to%20pretend%20B/4.png)
 
 ## fzf
 `fzf` is Fuzzy Fliter, an extraordinary tool to replace `find`. And it's already in the `apt` source.
+
 ![](/assets/Linux/EX6%20The%20way%20to%20pretend%20B/5.png)
+
 What's more, it supports previewing file contents. Inputting something like `fzf --preview='cat {}'` must amaze you.
+
 ![](/assets/Linux/EX6%20The%20way%20to%20pretend%20B/6.png)
+
 If you think it's over, you're completely wrong. Remember what's the meaning of `$`? Try `vim $(fzf --preview='cat {}')`, select a file and press `Enter`, don't forget to take a picture of your surprised big mouth.
