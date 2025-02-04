@@ -20,7 +20,7 @@ sudo apt update
 sudo apt install python3
 sudo apt install python3-pip
 ```
-Remember, there are differences between Windows  and Linux. You need to input `python`, `pip3` instead of `python`, `pip`.
+Remember, there are differences between Windows  and Linux. You need to input `python3`, `pip3` instead of `python`, `pip`.
 
 
 
