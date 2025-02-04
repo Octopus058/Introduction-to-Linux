@@ -11,11 +11,11 @@ Next, I will take Ubuntu as an example because CentOS has stopped maintenance an
 `apt(-get) [install | remove | search] <name>` helps install or uninstall softwares. Also it needs `root` permission so we  add `sudo` .
 
 Some software dependency libraries have been updated, but the software dependency list has not been updated. Then you need to download a single package. Use `wget url`. I will provide a more detailed explanation in **10 Network commands on Linux**.
-![[assets/Linux/9 Some trivial contents on Linux/1.png]]
+![](/assets/Linux/9%20Some%20trivial%20contents%20on%20Linux/1.png)
 
 ## Soft link
 A soft link on Linux is like a shortcut on Windows.  Grammar here: `ln -s src dest`.
-![[assets/Linux/9 Some trivial contents on Linux/2.png]]
+![](/assets/Linux/9%20Some%20trivial%20contents%20on%20Linux/2.png)
 
 ## date
 `date` views system time. Grammar here: `date [-d]  [+format]`.
@@ -31,5 +31,5 @@ Remember `+format` needs quotation marks when there is a space. Here's a form in
 |   %H   |              hour              |
 |   %M   |             minute             |
 |   %S   |             second             |
-![[assets/Linux/9 Some trivial contents on Linux/3.png]]
+![](/assets/Linux/9%20Some%20trivial%20contents%20on%20Linux/3.png)
 

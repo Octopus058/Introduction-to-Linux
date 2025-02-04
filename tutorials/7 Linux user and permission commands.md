@@ -23,7 +23,7 @@ To return to the user before switching, you can enter `exit`.
 
 ### sudo
 We **STRONGLY** recommend everyone to use `sudo` rather than `su -` in most situations. And it's easy, just add `sudo` before commands that require permission, and it requires password for the first time.
-![[assets/Linux/7 Linux user and permission commands/1.png]]
+![](/assets/Linux/7%20Linux%20user%20and%20permission%20commands/1.png)
 Linux is interesting. It won't display when typing password. So recite your password, type it and press `Enter`.
 
 ## user and user group
@@ -46,7 +46,7 @@ If no `username` then views the user itself who input this command.
 `usermod -aG <groupname> <username>` adds the user to the user group.
 
 `getent passwd` views what the current users are. You can see me in the end of the output.
-![[assets/Linux/7 Linux user and permission commands/2.png]]
+![](/assets/Linux/7%20Linux%20user%20and%20permission%20commands/2.png)
 `getent group` views what the current groups are.
 
 ## chmod
