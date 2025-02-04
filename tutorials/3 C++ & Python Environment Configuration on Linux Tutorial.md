@@ -14,7 +14,7 @@ g++ hello.cpp -o hello
 >If you have problems when downloading dependencies of g++, check **10 Linux network commands** first then contact me.
 ## Python
 >[!CAUTION]
->Don't use Python2, it has outdated
+>Don't use Python2, it has outdated!
 ```
 sudo apt update
 sudo apt install python3
