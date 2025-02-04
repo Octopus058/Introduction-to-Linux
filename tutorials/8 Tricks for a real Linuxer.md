@@ -1,5 +1,6 @@
 ## clear
 Sometimes the terminal looks really messy and you cannot find the information you need at a glance. Now we have `clear` to bring a clean screen back. It proves effective every time!
+
 ![](/assets/Linux/8%20Tricks%20for%20a%20real%20Linuxer/1.png)
 
 >[!TIP] 
@@ -7,19 +8,24 @@ Sometimes the terminal looks really messy and you cannot find the information yo
 
 ##  `tab`
 ![](/assets/Linux/8%20Tricks%20for%20a%20real%20Linuxer/2.png)
-I should input `test1.cpp` normally but if I press `tab` ternimal will 
-help me complete it automatically. `tab` do save plenty of time when you have to input some long commands.
+
+I should input `test1.cpp` normally but if I press `tab` ternimal will help me complete it automatically. `tab` do save plenty of time when you have to input some long commands.
+
 ## Search for commands with `↑` and `↓`
 ![](/assets/Linux/8%20Tricks%20for%20a%20real%20Linuxer/3.png)
+
 I `vim test1.cpp`, what if I find a mistake? I have to type this command again, too troublesome. But if I press `↑`, it will appear directly. `↑` and `↓` is a quick way to search history. I will introduce more in the following section **history**.
 
 ## history
 Want to view previous commands? Feel slow for `↑` and `↓`? `history` is capable of this task. In most situtaion we only need `history num` and `num` is the number of commands you want to view.
+
 ![](/assets/Linux/8%20Tricks%20for%20a%20real%20Linuxer/4.png)
 
 ## ll
 Do you feel inconvenient when inputting  `ls -l`?  Linux gives us an upgrade plan `ll`. `ll` equals to `ls -l` and it's shorter to type.
+
 Also you can try `ll -h` which is the same as `ls -lh`.
+
 ![](/assets/Linux/8%20Tricks%20for%20a%20real%20Linuxer/5.png)
 
 ## `Ctrl` combination keys
@@ -30,12 +36,17 @@ A simple example is, when you want to delete the database and resgin you need `s
 
 ### `Ctrl+Z`
 Many confuse `Ctrl+Z` and `Ctrl+C`, regard them as the same but actually not. `Ctrl+Z` freezes, or suspends the process. That is to say you can restore this process, using `fg`.
+
 ![](/assets/Linux/8%20Tricks%20for%20a%20real%20Linuxer/6.png)
+
 In the figure above, we suspend  `python3` with `Ctrl+Z` then restore it with `fg`. If it is `Ctrl+C` `python3` will be killed.
+
 
 ### `Ctrl+D`
 `Ctrl+D` exits some status. We often use it to exit `root` user or compilers.
+
 ![](/assets/Linux/8%20Tricks%20for%20a%20real%20Linuxer/7.png)
+
 I input `Ctrl+D` after `su -` and `python3`. Quite convenient.
 
 ### `Ctrl+A` / `Ctrl+E`
