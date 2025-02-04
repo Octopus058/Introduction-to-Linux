@@ -27,20 +27,20 @@ You have not rebooted after updating a package which requires a reboot. Please r
 Just `sudo reboot` and type `sudo do-release-upgrade` again.
 >[!TIP]
 >Some WSLs will show messages below:
->![[Pasted image 20250118233637.png]]
+>![[assets/Linux/EX3 I upgraded alone/1.png]]
 >You need to change `Prompt=never` to `Prompt=lts` in `/etc/update-manager/release-upgrades`. Here's the meaning of `lts`:
->![[Pasted image 20250118233848.png]]
+>![[assets/Linux/EX3 I upgraded alone/2.png]]
 
 How long will it take!
-![[Pasted image 20250118234143.png]]
+![[assets/Linux/EX3 I upgraded alone/3.png]]
 Thanks to TsingHua source, it just spent less than half an hour. After rebooting input `cat /etc/os-release` and it should be like this:
-![[Pasted image 20250119000002.png]]
+![[assets/Linux/EX3 I upgraded alone/4.png]]
 If you see errors below, input `sudo vim /etc/wsl.conf` and paste these codes:
 ```
 [interop]
 appendWindowsPath=false
 ```
-![[Pasted image 20250119000312.png]]
+![[assets/Linux/EX3 I upgraded alone/5.png]]
 
 ## Examine `apt`
 Input `sudo vim /etc/apt/sources.list` and ensure the content is:
@@ -66,8 +66,6 @@ Then run `sudo apt update`.
 ## To the end
 Do as the same as before, upgrade Ubuntu to 22.04 LTS. I only spent about 20 minutes. Rebooting is required but you actually don't need to do it. Input `yN` and WSL will reboot in background for 5 seconds then you can use the terminal as usual.
 
-Input `cat /etc/os-release` again and it should be like this:
-![[Pasted image 20250119115315.png]]
 All looks fine except one thing, your Powershell. Run `wsl -l -v`, Powershell still regard your WSL as Ubuntu 18.04. It won't cause much problems but we can solve it quickly. Do as the following steps.
 ```
 wsl --export Ubuntu-18.04 ubuntu22.04.tar
@@ -78,4 +76,4 @@ wsl --set-default Ubuntu-22.04
 Then `wsl -l -v`, it will be `Ubuntu-22.04`. You can delete the `.tar` now.
 
 We do all these work just to avoid downloading Ubuntu 22.04 from the Microsoft Store again. That WILL be as fast as a turtle compared to upgrading with the terminal. Also, you can experience the beauty of terminal jumping line by line that is difficult to Windows GUI.
-![[Pasted image 20250119003837.png]]
+![[assets/Linux/EX3 I upgraded alone/6.png]]

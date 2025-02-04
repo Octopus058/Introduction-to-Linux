@@ -6,7 +6,7 @@
 ## Logs, temporary files and cache
 ### Logs
 Debian log files are in `/var/log`. Sometimes a huge amount of log files can be generated and they are useless. So you need to manually clear them to free up disk space.
-![[Pasted image 20250121100219.png]]
+![[assets/Linux/EX4 No, the C drive is almost full!/1.png]]
 You should clean `syslog` and `journal/` in the picture above.
 
 > [!CAUTION]
@@ -30,7 +30,7 @@ After above work. You have saved tons of space successfully but WSL still occupi
 Take Ubuntu 22.04 as an example. Run `wsl --shutdown` in Powershell first. Then `wsl --export Ubuntu-22.04 D:\Ubuntu-22.04.tar`. That export your WSL as a `.tar` file to D drive.
 > [!TIP]
 > The name is up to your WSL name. You can input `wsl -l -v` to check it.
-> ![[Pasted image 20250121103803.png]]
+> ![[assets/Linux/EX4 No, the C drive is almost full!/2.png]]
 
 Then `wsl --unregister Ubuntu-22.04` and import the transferred one. `wsl --import Ubuntu-22.04 D:\WSL D:\Ubuntu 22.04.tar`. The `.tar` file can be a backup for your WSL or you can also delete it.
 

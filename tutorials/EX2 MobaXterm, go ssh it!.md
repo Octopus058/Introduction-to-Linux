@@ -28,24 +28,23 @@ It will not only solve problems such as *WSL in NAT mode doesn't support `localh
 For more information, check this blog: https://blog.csdn.net/2301_81697902/article/details/137481359.
 ## Downloading and cracking
 This is the official website: https://mobaxterm.mobatek.net/ and the Chinese version: https://github.com/RipplePiam/MobaXterm-Chinese-Simplified. I take the original version as an example. 
-![[Pasted image 20250117180237.png]]
+![[assets/Linux/EX2 MobaXterm, go ssh it!/1.png]]
 Next, we will start to generate a key to crack it. Check this repository: https://github.com/flygon2018/MobaXterm-keygen.
 
 Open it with your VSCode  (If you don't have VSCode, Pycharm is also ok). Create a new terminal in current path. Input `Python MobaXterm-Keygen.py <username> <version>` then It will generate a `Custom.mxtpro`. move it into MobaXterm folder and it's done.
 
 `username` can be named arbitrarily and `version` is up to your MobaXterm version. 
-![[Pasted image 20250117181448.png]]
+![[assets/Linux/EX2 MobaXterm, go ssh it!/2.png]]
 And you can open MobaXterm and click `About` to check it.
-![[Pasted image 20250117181645.png]]
+![[assets/Linux/EX2 MobaXterm, go ssh it!/3.png]]
 
 ## Usage
 Open  `Session` and choose  `WSL`. Change `Distribution` to `Debian`. Then you can connect to WSL by MobaXterm.
-![[Pasted image 20250117190930.png]]
+![[assets/Linux/EX2 MobaXterm, go ssh it!/4.png]]
 Left side is a `SFTP` window and right side is the terminal. Now you can download files from WSL to Windows or toggle files from Windows to WSL. If you have used WinSCP or Filezilla, this feeling is very familiar.
 
 Next, you can adjust the settings freely. I highly recommend you to enable  'Paste using right-click'. MobaXterm does not enable this option by default, which makes copying terminal information more inconvenient.
-![[Pasted image 20250117191542.png]]
+![[assets/Linux/EX2 MobaXterm, go ssh it!/5.png]]
 More than that, you can also press 'Remote monitoring' and the bottom of the main window. It monitors hardware information of WSL.
 
 Last but not least, you can split your screen into 2 or even 4 terminals. Just hit the `Split` button.
-![[Pasted image 20250117193536.png]]

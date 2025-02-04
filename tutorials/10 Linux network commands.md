@@ -2,16 +2,16 @@
 IP is your network address if you are connected to the internet. It's divided into IPv4 and IPv6. Our country use IPv4 more often from a data perspective. Hostname is the OS name. Others on the internet find you by your IP and hostname.
 
 Input `ifconfig` and the terminal shows lots of information. Pay attention to `eth0`, you will find `inet`, the following is IP.
-![[Pasted image 20250114142022.png]]
+![[assets/Linux/10 Linux network commands/1.png]]
 Input `hostname` to check your hostname. Or there's an easier way, your hostname is behind "@" on the terminal.
 
 If you aren't satisfied with this name. *When did I come up with such a reckless name!* Don't worry, you can certainly change it. `hostnamectl set-hostname <name>` saves your young soul. Like this:
-![[Pasted image 20250114142900.png]]
+![[assets/Linux/10 Linux network commands/2.png]]
 ## ping
 
 `ping` checks whether the server is connectable. Grammar here: `ping [-c num] <ip/hostname>`.
 `-c num` decides how many times you `ping`. If no then infinite.
-![[Pasted image 20250114154645.png]]
+![[assets/Linux/10 Linux network commands/3.png]]
 `ping` can not only determine if the server is functioning properly, but also you are connected to the internet. Abviously you won't `ping` anything when offline.
 
 ## wget
@@ -24,7 +24,7 @@ If you aren't satisfied with this name. *When did I come up with such a reckless
 When the file is very large, it spends a long time. Also, Linux maybe throw errors during transmission. We can add `-b` to download in the background and `-c` to achieve file breakpoint resume. Now I will explain both separately.
 
 `wget -b url` are used together with `tail -F` generally. `wget-log` shows the progress. In this example `index.html` is downloaded in the blink of a eye so `wget-log` is empty.
-![[Pasted image 20250114161503.png]]
+![[assets/Linux/10 Linux network commands/4.png]]
 `wget -c [-t num] [-T num] url` avoids the issue of file download interruption. `-t num` is the times of retry. If no then infinite. `-T num` is timeout waiting time. `wget` will retry if timeout waiting time is exceeded.
 
 ## curl
@@ -46,5 +46,5 @@ Port is the interface for computer interaction. Our familiar USB, VGA are all ph
 | 49152-65535 | Used for temporary network connection calls |
 ### netstat
 `netstat` can check the port occupancy status. use `netstat -tunpl` to show all information you need. Prototype, local address, ports, states and PID, everything is in sight.
-![[Pasted image 20250115000031.png]]
+![[assets/Linux/10 Linux network commands/5.png]]
 

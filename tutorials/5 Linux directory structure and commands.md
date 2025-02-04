@@ -40,16 +40,16 @@ I will explain them in more detail in the following text.
 ### ls
 `ls` list files in current directory. Here's its grammar: `ls [-a -h -l] [path]`.
 If you choose no parameter, `ls` represents displaying files in a flat layout.
-![[Pasted image 20250110121140.png]]
+![[assets/Linux/5 Linux directory structure and command/1.png]]
 `-a` means show all files include those are hidden. It's easy to hide files on Linux, just add a `.` before its name such as `.bashrc`.
-![[Pasted image 20250110121747.png]]
+![[assets/Linux/5 Linux directory structure and command/2.png]]
 >[!TIP] 
 >Files and folders are distinguished by color in WSL, those blue names are folders.
 
 `-l` means show files in a column with more infomation like "detailed information" on Windows.
 
 `-h` changes `file size` in `-l` to clearer style (represent by `k`, `m`, `g`) and **must use with -l**
-![[Pasted image 20250110122905.png]]
+![[assets/Linux/5 Linux directory structure and command/3.png]]
 >[!TIP] 
 >parameters above can be put together like `-alh`.
 
@@ -62,17 +62,18 @@ There's not much to say, just pay attention to one thing that `cd` default path 
 
 Now we finished `cd`, it's time to talk about details that weren't clear in the previous text. 
 As for me, `..` is often used in `cd`. See the figure below, `cd` deafult path is `/home/oct0pu5`. I input `cd ..` twice and return `/`, then`cd etc` and `ls`, it shows all file in `/etc`. The above is the classic directory operation.
-![[Pasted image 20250110132240.png]]
+![[assets/Linux/5 Linux directory structure and command/4.png]]
 
 ### pwd
 **P**rint current **w**ork **d**irectory. Often used to check whether you are in right directory, or copy the directory for any purpose.
-![[Pasted image 20250110133128.png]]
+![[assets/Linux/5 Linux directory structure and command/5.png]]
 
 ### mkdir
 **M**a**k**e **dir**ectory. Grammar here: `mkdir [-p] <path>`.
 
 If you just want to create one level folder, ignore `-p`. If more than one level is needed, `mkdir` must attach `-p`, otherwise it will throw error.
-![[Pasted image 20250110133851.png]]
+![[assets/Linux/5 Linux directory structure and command/6.png]]
  >[!IMPORTANT]
  >`mkdir` can only take effect in `/home` by default. We can solve this problem in **7 Linux user and permission commands**.
-![[Pasted image 20250110134306.png]]
+ 
+![[assets/Linux/5 Linux directory structure and command/7.png]]
