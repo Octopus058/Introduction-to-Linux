@@ -1,0 +1,35 @@
+## Installing softwares
+>[!IMPORTANT]
+>It has differences between Debian and CentOS in this section!
+
+Why Linux is hard to a newbie? I think it has a lot to do with the hassle of installing softwares. On Windows, users open Microsoft Store or Google Chroom, click "Download"  button and run the `.exe` at most. But it seems quite troublesome on Linux. Though many softwares provide `.deb` or other forms of installing packages on their website, most people ignore them. That's a pity.
+
+But don't worry, we can still install using our terminal.
+
+Next, I will take Ubuntu as an example because CentOS has stopped maintenance and there may be unforseen problems.
+
+`apt(-get) [install | remove | search] <name>` helps install or uninstall softwares. Also it needs `root` permission so we  add `sudo` .
+
+Some software dependency libraries have been updated, but the software dependency list has not been updated. Then you need to download a single package. Use `wget url`. I will provide a more detailed explanation in **10 Network commands on Linux**.
+![[Pasted image 20250113165302.png]]
+
+## Soft link
+A soft link on Linux is like a shortcut on Windows.  Grammar here: `ln -s src dest`.
+![[Pasted image 20250113170210.png]]
+
+## date
+`date` views system time. Grammar here: `date [-d]  [+format]`.
+`-d` is used to calculate time, not very useful in my opinion.
+Remember `+format` needs quotation marks when there is a space. Here's a form including all time formats:
+
+| format |            meaning             |
+| :----: | :----------------------------: |
+|   %Y   |              year              |
+|   %y   | the last 2 numbers of the year |
+|   %m   |             month              |
+|   %d   |              day               |
+|   %H   |              hour              |
+|   %M   |             minute             |
+|   %S   |             second             |
+![[Pasted image 20250114132641.png]]
+
