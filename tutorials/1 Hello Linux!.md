@@ -20,6 +20,7 @@ Quoted from https://www.linux.org/threads/what-is-linux.4106/
 >Linux is an operating system that evolved from a kernel created by *Linus Torvalds* when he was a student at the University of Helsinki. It is an operating system means that it's meant to be used as an alternative to other operating systems, Windows, Mac OS, MS-DOS, Solaris and others.
 >
 >Today, Linux is enjoying a favorable press for the most part. This comes from the fact that Linux has proven to be a tremendously stable and versatile operating system, particularly as a network server. When Linux is deployed as a web server or in corporate networks, its down-time is almost negligible. There have been cases when Linux servers have been running for more than a year without re-booting and then only taken down for a brief period for routine maintenance. Its cost effectiveness has sold it more than anything else. Linux can be installed on a home PC as well as a network server for a fraction of the cost of other companies' software packages. More reliability and less cost - it's ideal.
+
 ![](/assets/Linux/1%20Hello%20Linux!/2.png)
 
 ## Why Linux
