@@ -27,4 +27,5 @@ This repository stores Linux (Debian 12) tutorials.
 | [2.7 I'd rather be a bookworm](/tutorials/2.7%20I'd%20rather%20be%20a%20bookworm.md) |
 | [2.8 Return to Paradise](/tutorials/2.8%20Return%20to%20Paradise.md) |
 | **Advanced Part 2** |
-| [3.1 Seek Common Ground While Reserving Differences](/tutorials/3.1%20Seek%20Common%20Ground%20While%20Reserving%20Differences.md) |
+| [3.1 Seek common ground while reserving differences](/tutorials/3.1%20Seek%20Common%20Ground%20While%20Reserving%20Differences.md) |
+| [3.2 Decorate your own garden](/tutorials/3.2%20Decorate%20your%20own%20garden.md) |
