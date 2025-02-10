@@ -1,18 +1,20 @@
 ## First of all
 **Before the beginning of this tutorial, you must see things below.**
 
-☞ This tutorial took over 3 weeks to complete and has 10 thousand words. Don't study with a mentality of not seeking deep understanding.
+☞ This tutorial took over a month to complete and has more than 10 thousand words. Don't study with a mentality of not seeking deep understanding.
 
-☞ This tutorial takes `Debian 12` as most examples. Maybe there are examples of Ubuntu mixed in, because I have an existing Ubuntu virtual machine and I'm too lazy to install Debian anymore. They are the same in most cases.
+☞ This tutorial takes `Debian 12` as most examples. Maybe there are examples of Ubuntu mixed in, because I have an existing Ubuntu virtual machine and I'm too lazy to install a Debian virtual machine. They are the same in most cases.
 
-☞ For the universality of the tutorial, the entire text is in English. Also, It WILL help your CET6.
+☞ For the universality of the tutorial, the entire text is in English. Also, It **WILL** help your CET6.
 
 ☞ Learn to use search engines. You can learn on CSDN: https://www.csdn.net/, the biggest Linux forum: https://www.linux.org/ or any website you want.
-☞ No one is a god. There must be many mistakes in the tutorial, tell me if you find them.
+
+☞ No one is a god. There must be mistakes in the tutorial, tell me if you find them.
 
 ☞ Abandon Windows inertia thinking. Don't be afraid of terminal, GUI is not a must. 
 
-☞ To follow Teacher Chen's advice, this tutorial starts from the basics, and doesn't involve any third-party software. It means what we only have is terminal (However I still state an ssh software in the extra sections).
+☞ To follow Teacher Chen's advice, this tutorial starts from the basics, and doesn't involve any third-party software. It means what we only have is terminal (However I still state an ssh software and even a desktop OS in the advanced part).
+
 ![](/assets/Linux/Hello%20Linux!/1.png)
 
 ## What is Linux
@@ -32,7 +34,7 @@ Moreover, I know some of you will take part in competitions about robots, All of
 ![](/assets/Linux/Hello%20Linux!/3.png)
 There are always people debating which Linux distribution is better. Actually in my opinion most of them are similar, and the kernal commands are all the same.
 
-For we newbies, I suggest Debian. `GNOME` desktop is beautiful and familiar to Windows users. And you can find tutorials easier than archlinux or RHEL when you get troubles.
+For we newbies, I suggest Debian. `KDE` desktop is beautiful and highly customizable. The whole OS is stable enough to be used until death. And the most important is that you can find tutorials easier than Archlinux or Redhat when getting troubles.
 >[!NOTE]
 >Why not Ubuntu? Check **2.7 I'd rather be a bookworm**!
 
