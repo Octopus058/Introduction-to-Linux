@@ -34,7 +34,7 @@ There are always people debating which Linux distribution is better. Actually in
 
 For we newbies, I suggest Debian. `GNOME` desktop is beautiful and familiar to Windows users. And you can find tutorials easier than archlinux or RHEL when you get troubles.
 >[!NOTE]
->Why not Ubuntu? Check **EX7 I'd rather be a bookworm**!
+>Why not Ubuntu? Check **2.7 I'd rather be a bookworm**!
 
 ## At last
 Rome is not built in a day, and Linux can't be learnt at once. It's like your school courses which needs to review and improve constantly. Maybe it's not useful at the moment, like calculus cannot be used to buy groceries either. It WILL make a huge impact one day. Now let's say the famous saying. *Talk is cheap, show me the code!*
