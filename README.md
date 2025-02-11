@@ -4,7 +4,7 @@ This repository stores Linux (Debian 12) tutorials.
 | --- |
 | **Preface** |
 | [Hello Linux!](/tutorials/Hello%20Linux!.md) |
-| **Basic Part** |
+| **Basic Commands** |
 | [1.1 How to install Debian on Windows](/tutorials/1.1%20How%20to%20install%20Debian%20on%20Windows.md) |
 | [1.2 C++ & Python Environment Configuration on Linux Tutorial](/tutorials/1.2%20C++%20&%20Python%20Environment%20Configuration%20on%20Linux%20Tutorial.md) |
 | [1.3 How to edit files on Linux](/tutorials/1.3%20How%20to%20edit%20files%20on%20Linux.md) |
@@ -17,7 +17,7 @@ This repository stores Linux (Debian 12) tutorials.
 | [1.10 Linux process commands](/tutorials/1.10%20Linux%20process%20commands.md) |
 | [1.11 Linux environment variables](/tutorials/1.11%20Linux%20environment%20variables.md) |
 | [1.12 Linux compression commands](/tutorials/1.12%20Linux%20compression%20commands.md) |
-| **Advanced Part 1** |
+| **Advanced Usage** |
 | [2.1 SHIT, I forgot my password again!](/tutorials/2.1%20SHIT,%20I%20forgot%20my%20password%20again!.md) |
 | [2.2 MobaXterm, go ssh it!](/tutorials/2.2%20MobaXterm,%20go%20ssh%20it!.md) |
 | [2.3 I upgraded alone](/tutorials/2.3%20I%20upgraded%20alone.md) |
@@ -26,6 +26,6 @@ This repository stores Linux (Debian 12) tutorials.
 | [2.6 The way to pretend B](/tutorials/2.6%20The%20way%20to%20pretend%20B.md) |
 | [2.7 I'd rather be a bookworm](/tutorials/2.7%20I'd%20rather%20be%20a%20bookworm.md) |
 | [2.8 Return to Paradise](/tutorials/2.8%20Return%20to%20Paradise.md) |
-| **Advanced Part 2** |
+| **Dual OS** |
 | [3.1 Seek common ground while reserving differences](/tutorials/3.1%20Seek%20common%20ground%20while%20reserving%20differences.md) |
 | [3.2 Decorate your own garden](/tutorials/3.2%20Decorate%20your%20own%20garden.md) |
