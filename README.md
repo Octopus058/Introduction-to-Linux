@@ -29,3 +29,5 @@ This repository stores Linux (Debian 12) tutorials.
 | **Dual OS** |
 | [3.1 Seek common ground while reserving differences](/tutorials/3.1%20Seek%20common%20ground%20while%20reserving%20differences.md) |
 | [3.2 Decorate your own garden](/tutorials/3.2%20Decorate%20your%20own%20garden.md) |
+| **Afterwords** |
+| [More than an OS](/tutorials/More%20than%20an%20OS.md) |
