@@ -6,7 +6,7 @@ This repository stores Linux (Debian 12) tutorials.
 | [Hello Linux!](/tutorials/Hello%20Linux!.md) |
 | **Basic Commands** |
 | [1.1 How to install Debian on Windows](/tutorials/1.1%20How%20to%20install%20Debian%20on%20Windows.md) |
-| [1.2 C++ & Python Environment Configuration on Linux Tutorial](/tutorials/1.2%20C++%20&%20Python%20Environment%20Configuration%20on%20Linux%20Tutorial.md) |
+| [1.2 C++ & Python Environment Configuration on Linux](/tutorials/1.2%20C++%20&%20Python%20Environment%20Configuration%20on%20Linux.md) |
 | [1.3 How to edit files on Linux](/tutorials/1.3%20How%20to%20edit%20files%20on%20Linux.md) |
 | [1.4 Linux directory structure and commands](/tutorials/1.4%20Linux%20directory%20structure%20and%20commands.md) |
 | [1.5 Linux file commands](/tutorials/1.5%20Linux%20file%20commands.md) |
