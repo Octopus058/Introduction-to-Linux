@@ -32,7 +32,7 @@ Moreover, I know some of you will take part in competitions about robots, All of
 
 ## Which Linux
 ![](/assets/Linux/Hello%20Linux!/3.png)
-There are always people debating which Linux distribution is better. Actually in my opinion most of them are similar, and the kernal commands are all the same.
+There are always people debating which Linux distribution is better. Actually in my opinion most of them are similar, and the kernel commands are all the same.
 
 For we newbies, I suggest Debian. `KDE` desktop is beautiful and highly customizable. The whole OS is stable enough to be used until death. And the most important is that you can find tutorials easier than Archlinux or Redhat when getting troubles.
 >[!NOTE]
