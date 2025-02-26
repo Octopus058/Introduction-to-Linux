@@ -1,2 +1,2 @@
 # Introduction-to-Linux-latex
-Linux (Debian 12) tutorials
+This repository stores Linux (Debian 12) tutorials in LaTeX.
