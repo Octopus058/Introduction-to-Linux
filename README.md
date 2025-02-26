@@ -1,4 +1,4 @@
-This repository stores Linux (Debian 12) tutorials.
+This repository stores Linux (Debian 12) tutorials (markdown).
 
 | TOC |
 | --- |
