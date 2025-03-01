@@ -1,0 +1,8 @@
+2.1 on Mar 1st, 2025
+- Added a new section `File Descriptor and Redirection Operators` in `Some trivial contents on Linux`.
+- Added a new section `VSCode LaTeX Environment` in `Decorate your own garden`.
+- Changed `rm` to a safer action in `Linux file commands`.
+- Added a new chapter `Having heard Dao in the morning` in `Advanced Usage`. 
+
+2.0 on Feb 26th, 2025
+- The first formal release of the project on GitHub.

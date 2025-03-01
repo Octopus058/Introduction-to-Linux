@@ -1,16 +1,16 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.18)  26 FEB 2025 10:56
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.27)  1 MAR 2025 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Tile/Work Directory/VScode/Introduction to Linux/Introdution to Linux"
-(d:/Tile/Work Directory/VScode/Introduction to Linux/Introdution to Linux.tex
+**"/home/oct0pu5/VSCode/Introduction-to-Linux-latex-main/Introdution to Linux"
+(/home/oct0pu5/VSCode/Introduction-to-Linux-latex-main/Introdution to Linux.tex
 LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22> (d:/texlive/2023/texmf-dist/tex/latex/ctex/ctexart.cls (d:/texlive/2023/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
+L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/ctex/ctexart.cls (/usr/share/texlive/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
 File: ctexbackend.cfg 2022/07/14 v2.5.10 Backend configuration file (CTEX)
-) (d:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-02-22 L3 programming layer (loader) 
- (d:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-01-16 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
 \g__graphics_track_int=\count181
 \l__pdf_internal_box=\box51
@@ -19,13 +19,13 @@ File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
 \g__pdf_backend_link_int=\count184
 ))
 Document Class: ctexart 2022/07/14 v2.5.10 Chinese adapter for class article (CTEX)
-(d:/texlive/2023/texmf-dist/tex/latex/ctex/ctexhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
-) (d:/texlive/2023/texmf-dist/tex/latex/ctex/ctexpatch.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/ctex/ctexpatch.sty
 Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
-) (d:/texlive/2023/texmf-dist/tex/latex/base/fix-cm.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
- (d:/texlive/2023/texmf-dist/tex/latex/base/ts1enc.def
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
@@ -34,11 +34,11 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 \l__ctex_tmp_dim=\dimen140
 \g__ctex_section_depth_int=\count186
 \g__ctex_font_size_int=\count187
- (d:/texlive/2023/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
-) (d:/texlive/2023/texmf-dist/tex/latex/base/article.cls
+) (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(d:/texlive/2023/texmf-dist/tex/latex/base/size12.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
@@ -52,12 +52,12 @@ File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen141
-) (d:/texlive/2023/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+) (/usr/share/texlive/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
 File: ctex-engine-xetex.def 2022/07/14 v2.5.10 XeLaTeX adapter (CTEX)
- (d:/texlive/2023/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+ (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
- (d:/texlive/2023/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2023-01-16 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen142
 \l__xtemplate_tmp_int=\count196
 \l__xtemplate_tmp_muskip=\muskip16
@@ -123,11 +123,11 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \g__xeCJK_fam_allocation_int=\count273
 \l__xeCJK_verb_case_int=\count274
 \l__xeCJK_verb_exspace_skip=\skip57
- (d:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.sty (d:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-02-02 L3 Experimental document command parser
+ (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-01-16 L3 Experimental document command parser
 )
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
- (d:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count275
 \l__fontspec_language_int=\count276
@@ -143,62 +143,55 @@ Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpa_dim=\dimen170
 \l__fontspec_tmpb_dim=\dimen171
 \l__fontspec_tmpc_dim=\dimen172
- (d:/texlive/2023/texmf-dist/tex/latex/base/fontenc.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (d:/texlive/2023/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (d:/texlive/2023/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 ))
 \ccwd=\dimen173
 \l__ctex_ccglue_skip=\skip58
 )
 \l__ctex_ziju_dim=\dimen174
- (d:/texlive/2023/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
 \l__zhnum_scale_int=\count286
 \l__zhnum_tmp_int=\count287
- (d:/texlive/2023/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
 ))
 \l__ctex_heading_skip=\skip59
- (d:/texlive/2023/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def
+ (/usr/share/texlive/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def
 File: ctex-scheme-chinese-article.def 2022/07/14 v2.5.10 Chinese scheme for article (CTEX)
- (d:/texlive/2023/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
 File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
-)) (d:/texlive/2023/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-windows.def
-File: ctex-fontset-windows.def 2022/07/14 v2.5.10 Windows fonts definition (CTEX)
-
-Package fontspec Info: Could not resolve font "KaiTi/B" (it probably doesn't
-(fontspec)             exist).
+)) (/usr/share/texlive/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.def
+File: ctex-fontset-fandol.def 2022/07/14 v2.5.10 Fandol fonts definition (CTEX)
 
 
-Package fontspec Info: Could not resolve font "SimHei/I" (it probably doesn't
-(fontspec)             exist).
+Package fontspec Warning: Font "FandolSong-Regular" does not contain requested
+(fontspec)                Script "CJK".
 
 
-Package fontspec Info: Could not resolve font "SimSun/BI" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: Font family 'SimSun(0)' created for font 'SimSun' with
-(fontspec)             options
-(fontspec)             [Script={CJK},BoldFont={SimHei},ItalicFont={KaiTi}].
+Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
+(fontspec)             'FandolSong-Regular' with options
+(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolSong-Bold},ItalicFont={FandolKai-Regular}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             <->"[FandolSong-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             <->"[FandolSong-Bold.otf]/OT:language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
+(fontspec)             <->"[FandolKai-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-)) (d:/texlive/2023/texmf-dist/tex/latex/ctex/config/ctex.cfg
+)) (/usr/share/texlive/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
-) (d:/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box55
 \beforetitleunit=\skip60
@@ -211,7 +204,8 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthfirst=\dimen179
 )
 
-Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault' (SimSun(0)).
+Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault'
+(xeCJK)                (FandolSong-Regular(0)).
 
 
 Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
@@ -261,259 +255,318 @@ Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             <->"Times New
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 
-(d:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
- (d:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip62
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen180
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen181
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count288
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count289
+\leftroot@=\count290
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count291
+\DOTSCASE@=\count292
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box56
+\strutbox@=\box57
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen182
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count293
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count294
+\dotsspace@=\muskip17
+\c@parentequation=\count295
+\dspbrk@lvl=\count296
+\tag@help=\toks18
+\row@=\count297
+\column@=\count298
+\maxfields@=\count299
+\andhelp@=\toks19
+\eqnshift@=\dimen183
+\alignsep@=\dimen184
+\tagshift@=\dimen185
+\tagwidth@=\dimen186
+\totwidth@=\dimen187
+\lineht@=\dimen188
+\@envbody=\toks20
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (d:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-) (d:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (d:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-) (d:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (d:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+\KV@toks@=\toks22
+) (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (d:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (d:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (d:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (d:/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (d:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (d:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
- (d:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (d:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (d:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count288
+\c@section@level=\count300
 )
-\@linkdim=\dimen180
-\Hy@linkcounter=\count289
-\Hy@pagecounter=\count290
- (d:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
-) (d:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+\@linkdim=\dimen189
+\Hy@linkcounter=\count301
+\Hy@pagecounter=\count302
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (d:/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count291
- (d:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count303
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4060.
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Option `unicode' set `true' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count292
- (d:/texlive/2023/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count304
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen181
- (d:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen190
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (d:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count293
-\Field@Width=\dimen182
-\Fld@charsize=\dimen183
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
- (d:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+\Fld@menulength=\count305
+\Field@Width=\dimen191
+\Fld@charsize=\dimen192
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count294
-\c@Item=\count295
-\c@Hfootnote=\count296
+\Hy@abspage=\count306
+\c@Item=\count307
+\c@Hfootnote=\count308
 )
 Package hyperref Info: Driver (autodetected): hxetex.
- (d:/texlive/2023/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2023-02-07 v7.00v Hyperref driver for XeTeX
- (d:/texlive/2023/texmf-dist/tex/generic/stringenc/stringenc.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2022-11-13 v7.00u Hyperref driver for XeTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\pdfm@box=\box56
-\c@Hy@AnnotLevel=\count297
-\HyField@AnnotCount=\count298
-\Fld@listcount=\count299
-\c@bookmark@seq@number=\count300
- (d:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+\pdfm@box=\box58
+\c@Hy@AnnotLevel=\count309
+\HyField@AnnotCount=\count310
+\Fld@listcount=\count311
+\c@bookmark@seq@number=\count312
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (d:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
-) (d:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip62
+\Hy@SectionHShift=\skip65
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 23.
- (d:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+Package hyperref Info: Option `breaklinks' set `true' on input line 24.
+ (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (d:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count301
-\Gm@cntv=\count302
-\c@Gm@tempcnt=\count303
-\Gm@bindingoffset=\dimen184
-\Gm@wd@mp=\dimen185
-\Gm@odd@mp=\dimen186
-\Gm@even@mp=\dimen187
-\Gm@layoutwidth=\dimen188
-\Gm@layoutheight=\dimen189
-\Gm@layouthoffset=\dimen190
-\Gm@layoutvoffset=\dimen191
-\Gm@dimlist=\toks18
-) (d:/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty
+\Gm@cnth=\count313
+\Gm@cntv=\count314
+\c@Gm@tempcnt=\count315
+\Gm@bindingoffset=\dimen193
+\Gm@wd@mp=\dimen194
+\Gm@odd@mp=\dimen195
+\Gm@even@mp=\dimen196
+\Gm@layoutwidth=\dimen197
+\Gm@layoutheight=\dimen198
+\Gm@layouthoffset=\dimen199
+\Gm@layoutvoffset=\dimen256
+\Gm@dimlist=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
- (d:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen192
-\ar@mcellbox=\box57
-\extrarowheight=\dimen193
-\NC@list=\toks19
-\extratabsurround=\skip63
-\backup@length=\skip64
-\ar@cellbox=\box58
+\col@sep=\dimen257
+\ar@mcellbox=\box59
+\extrarowheight=\dimen258
+\NC@list=\toks24
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box60
 )
-\TX@col@width=\dimen194
-\TX@old@table=\dimen195
-\TX@old@col=\dimen196
-\TX@target=\dimen197
-\TX@delta=\dimen198
-\TX@cols=\count304
-\TX@ftn=\toks20
-) (d:/texlive/2023/texmf-dist/tex/latex/float/float.sty
+\TX@col@width=\dimen259
+\TX@old@table=\dimen260
+\TX@old@col=\dimen261
+\TX@target=\dimen262
+\TX@delta=\dimen263
+\TX@cols=\count316
+\TX@ftn=\toks25
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count305
-\float@exts=\toks21
-\float@box=\box59
-\@float@everytoks=\toks22
-\@floatcapt=\box60
-) (d:/texlive/2023/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen199
-\WF@size=\dimen256
-\c@WF@wrappedlines=\count306
-\WF@box=\box61
-\WF@everypar=\toks23
+\c@float@type=\count317
+\float@exts=\toks26
+\float@box=\box61
+\@float@everytoks=\toks27
+\@floatcapt=\box62
+) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen264
+\WF@size=\dimen265
+\c@WF@wrappedlines=\count318
+\WF@box=\box63
+\WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
-) (d:/texlive/2023/texmf-dist/tex/latex/lastpage/lastpage.sty
-Package: lastpage 2023/03/07 v2.0a lastpage: 2.09 or 2e? (HMM)
- (d:/texlive/2023/texmf-dist/tex/latex/lastpage/lastpage2e.sty
-Package: lastpage2e 2023/03/07 v2.0a Decide which 2e lastpage version to use (HMM)
- (d:/texlive/2023/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
-Package: lastpagemodern 2023-03-07 v2.0a Refers to last page's name (HMM; JPG)
-) 
-)) (d:/texlive/2023/texmf-dist/tex/latex/tools/indentfirst.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (d:/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (d:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (d:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (d:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks24
-\pgfutil@tempdima=\dimen257
-\pgfutil@tempdimb=\dimen258
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box62
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (d:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen266
+\pgfutil@tempdimb=\dimen267
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box64
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (d:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (d:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (d:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (d:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (d:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
- (d:/texlive/2023/texmf-dist/tex/latex/graphics-def/xetex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen259
-\Gin@req@width=\dimen260
-) (d:/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (d:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+\Gin@req@height=\dimen268
+\Gin@req@width=\dimen269
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks25
-\pgfkeys@temptoks=\toks26
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks27
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen261
-\pgf@y=\dimen262
-\pgf@xa=\dimen263
-\pgf@ya=\dimen264
-\pgf@xb=\dimen265
-\pgf@yb=\dimen266
-\pgf@xc=\dimen267
-\pgf@yc=\dimen268
-\pgf@xd=\dimen269
-\pgf@yd=\dimen270
+\pgf@x=\dimen270
+\pgf@y=\dimen271
+\pgf@xa=\dimen272
+\pgf@ya=\dimen273
+\pgf@xb=\dimen274
+\pgf@yb=\dimen275
+\pgf@xc=\dimen276
+\pgf@yc=\dimen277
+\pgf@xd=\dimen278
+\pgf@yd=\dimen279
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count307
-\c@pgf@countb=\count308
-\c@pgf@countc=\count309
-\c@pgf@countd=\count310
-\t@pgf@toka=\toks28
-\t@pgf@tokb=\toks29
-\t@pgf@tokc=\toks30
-\pgf@sys@id@count=\count311
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+\c@pgf@counta=\count319
+\c@pgf@countb=\count320
+\c@pgf@countc=\count321
+\c@pgf@countd=\count322
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count323
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-xetex.def
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
 File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
 File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )
-\pgfsys@objnum=\count312
-))) (d:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+\pgfsys@objnum=\count324
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count313
-\pgfsyssoftpath@bigbuffer@items=\count314
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count325
+\pgfsyssoftpath@bigbuffer@items=\count326
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (d:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (d:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 227.
- (d:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1369.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
@@ -522,132 +575,132 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen271
-\pgfmath@count=\count315
-\pgfmath@box=\box63
-\pgfmath@toks=\toks31
-\pgfmath@stack@operand=\toks32
-\pgfmath@stack@operation=\toks33
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count316
-)) (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen280
+\pgfmath@count=\count327
+\pgfmath@box=\box65
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count328
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen272
-\pgf@picmaxx=\dimen273
-\pgf@picminy=\dimen274
-\pgf@picmaxy=\dimen275
-\pgf@pathminx=\dimen276
-\pgf@pathmaxx=\dimen277
-\pgf@pathminy=\dimen278
-\pgf@pathmaxy=\dimen279
-\pgf@xx=\dimen280
-\pgf@xy=\dimen281
-\pgf@yx=\dimen282
-\pgf@yy=\dimen283
-\pgf@zx=\dimen284
-\pgf@zy=\dimen285
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+\pgf@picminx=\dimen281
+\pgf@picmaxx=\dimen282
+\pgf@picminy=\dimen283
+\pgf@picmaxy=\dimen284
+\pgf@pathminx=\dimen285
+\pgf@pathmaxx=\dimen286
+\pgf@pathminy=\dimen287
+\pgf@pathmaxy=\dimen288
+\pgf@xx=\dimen289
+\pgf@xy=\dimen290
+\pgf@yx=\dimen291
+\pgf@yy=\dimen292
+\pgf@zx=\dimen293
+\pgf@zy=\dimen294
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen286
-\pgf@path@lasty=\dimen287
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen295
+\pgf@path@lasty=\dimen296
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen288
-\pgf@shorten@start@additional=\dimen289
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen297
+\pgf@shorten@start@additional=\dimen298
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box64
-\pgf@hbox=\box65
-\pgf@layerbox@main=\box66
-\pgf@picture@serial@count=\count317
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+\pgfpic=\box66
+\pgf@hbox=\box67
+\pgf@layerbox@main=\box68
+\pgf@picture@serial@count=\count329
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen290
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+\pgflinewidth=\dimen299
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen291
-\pgf@pt@y=\dimen292
-\pgf@pt@temp=\dimen293
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+\pgf@pt@x=\dimen300
+\pgf@pt@y=\dimen301
+\pgf@pt@temp=\dimen302
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen294
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+\pgfarrowsep=\dimen303
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen295
-\pgf@sys@shading@range@num=\count318
-\pgf@shadingcount=\count319
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+\pgf@max=\dimen304
+\pgf@sys@shading@range@num=\count330
+\pgf@shadingcount=\count331
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box67
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+\pgfexternal@startupbox=\box69
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (d:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box68
-) (d:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+\pgfnodeparttextbox=\box70
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (d:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen296
-\pgf@nodesepend=\dimen297
-) (d:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen305
+\pgf@nodesepend=\dimen306
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (d:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (d:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (d:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (d:/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty (d:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (d:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen298
-\pgffor@skip=\dimen299
-\pgffor@stack=\toks34
-\pgffor@toks=\toks35
-)) (d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+\pgffor@iter=\dimen307
+\pgffor@skip=\dimen308
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count320
-\pgfplotmarksize=\dimen300
+\pgf@plot@mark@count=\count332
+\pgfplotmarksize=\dimen309
 )
-\tikz@lastx=\dimen301
-\tikz@lasty=\dimen302
-\tikz@lastxsaved=\dimen303
-\tikz@lastysaved=\dimen304
-\tikz@lastmovetox=\dimen305
-\tikz@lastmovetoy=\dimen306
-\tikzleveldistance=\dimen307
-\tikzsiblingdistance=\dimen308
-\tikz@figbox=\box69
-\tikz@figbox@bg=\box70
-\tikz@tempbox=\box71
-\tikz@tempbox@bg=\box72
-\tikztreelevel=\count321
-\tikznumberofchildren=\count322
-\tikznumberofcurrentchild=\count323
-\tikz@fig@count=\count324
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+\tikz@lastx=\dimen310
+\tikz@lasty=\dimen311
+\tikz@lastxsaved=\dimen312
+\tikz@lastysaved=\dimen313
+\tikz@lastmovetox=\dimen314
+\tikz@lastmovetoy=\dimen315
+\tikzleveldistance=\dimen316
+\tikzsiblingdistance=\dimen317
+\tikz@figbox=\box71
+\tikz@figbox@bg=\box72
+\tikz@tempbox=\box73
+\tikz@tempbox@bg=\box74
+\tikztreelevel=\count333
+\tikznumberofchildren=\count334
+\tikznumberofcurrentchild=\count335
+\tikz@fig@count=\count336
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count325
-\pgfmatrixcurrentcolumn=\count326
-\pgf@matrix@numberofcolumns=\count327
+\pgfmatrixcurrentrow=\count337
+\pgfmatrixcurrentcolumn=\count338
+\pgf@matrix@numberofcolumns=\count339
 )
-\tikz@expandcount=\count328
- (d:/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count340
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (d:/texlive/2023/texmf-dist/tex/latex/everypage/everypage.sty
+))) (/usr/share/texlive/texmf-dist/tex/latex/everypage/everypage.sty
 Package: everypage 2020/10/17 R2.0b Hooks to run on every page
 
 
@@ -665,139 +718,75 @@ Package everypage Warning: You appear to be running a version of LaTeX
 (everypage)                If truly needed, Use `everypage-1x` to force the
 (everypage)                loading of an older code base.
 
-) (d:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/03/12 v3.6j Customizing captions (AR)
- (d:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen309
-\captionmargin=\dimen310
-\caption@leftmargin=\dimen311
-\caption@rightmargin=\dimen312
-\caption@width=\dimen313
-\caption@indent=\dimen314
-\caption@parindent=\dimen315
-\caption@hangindent=\dimen316
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen318
+\captionmargin=\dimen319
+\caption@leftmargin=\dimen320
+\caption@rightmargin=\dimen321
+\caption@width=\dimen322
+\caption@indent=\dimen323
+\caption@parindent=\dimen324
+\caption@hangindent=\dimen325
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count329
-\c@continuedfloat=\count330
+\c@caption@flags=\count341
+\c@continuedfloat=\count342
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
-) (d:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count331
-\lst@gtempboxa=\box73
-\lst@token=\toks36
-\lst@length=\count332
-\lst@currlwidth=\dimen317
-\lst@column=\count333
-\lst@pos=\count334
-\lst@lostspace=\dimen318
-\lst@width=\dimen319
-\lst@newlines=\count335
-\lst@lineno=\count336
-\lst@maxwidth=\dimen320
- (d:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count337
-\lst@skipnumbers=\count338
-\lst@framebox=\box74
-) (d:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count343
+\lst@gtempboxa=\box75
+\lst@token=\toks41
+\lst@length=\count344
+\lst@currlwidth=\dimen326
+\lst@column=\count345
+\lst@pos=\count346
+\lst@lostspace=\dimen327
+\lst@width=\dimen328
+\lst@newlines=\count347
+\lst@lineno=\count348
+\lst@maxwidth=\dimen329
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count349
+\lst@skipnumbers=\count350
+\lst@framebox=\box76
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
- (d:/texlive/2023/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
 Package: xeCJK-listings 2022/08/05 v3.9.1 xeCJK patch file for listings
-\l__xeCJK_listings_max_char_int=\count339
-\l__xeCJK_listings_flag_int=\count340
-) (d:/texlive/2023/texmf-dist/tex/latex/changepage/changepage.sty
+\l__xeCJK_listings_max_char_int=\count351
+\l__xeCJK_listings_flag_int=\count352
+) (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count341
-\cp@tempcnt=\count342
-) (d:/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\c@cp@cntr=\count353
+\cp@tempcnt=\count354
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip65
-\f@nch@O@elh=\skip66
-\f@nch@O@erh=\skip67
-\f@nch@O@olh=\skip68
-\f@nch@O@orh=\skip69
-\f@nch@O@elf=\skip70
-\f@nch@O@erf=\skip71
-\f@nch@O@olf=\skip72
-\f@nch@O@orf=\skip73
-) (d:/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+\f@nch@headwidth=\skip68
+\f@nch@O@elh=\skip69
+\f@nch@O@erh=\skip70
+\f@nch@O@olh=\skip71
+\f@nch@O@orh=\skip72
+\f@nch@O@elf=\skip73
+\f@nch@O@erf=\skip74
+\f@nch@O@olf=\skip75
+\f@nch@O@orf=\skip76
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip74
-\enit@outerparindent=\dimen321
-\enit@toks=\toks37
-\enit@inbox=\box75
-\enit@count@id=\count343
-\enitdp@description=\count344
-) (d:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip75
-
-For additional information on amsmath, use the `?' option.
-(d:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
- (d:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks38
-\ex@=\dimen322
-)) (d:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen323
-) (d:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
-)
-\inf@bad=\count345
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count346
-\leftroot@=\count347
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count348
-\DOTSCASE@=\count349
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box76
-\strutbox@=\box77
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen324
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count350
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count351
-\dotsspace@=\muskip18
-\c@parentequation=\count352
-\dspbrk@lvl=\count353
-\tag@help=\toks39
-\row@=\count354
-\column@=\count355
-\maxfields@=\count356
-\andhelp@=\toks40
-\eqnshift@=\dimen325
-\alignsep@=\dimen326
-\tagshift@=\dimen327
-\tagwidth@=\dimen328
-\totwidth@=\dimen329
-\lineht@=\dimen330
-\@envbody=\toks41
-\multlinegap=\skip76
-\multlinetaggap=\skip77
-\mathdisplay@stack=\toks42
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-) (d:/texlive/2023/texmf-dist/tex/latex/booktabs/booktabs.sty
+\labelindent=\skip77
+\enit@outerparindent=\dimen330
+\enit@toks=\toks42
+\enit@inbox=\box77
+\enit@count@id=\count355
+\enitdp@description=\count356
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen331
 \lightrulewidth=\dimen332
@@ -816,7 +805,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count359
 \@lastruleclass=\count360
 \@thisrulewidth=\dimen343
-) (d:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count361
 )
@@ -861,8 +850,8 @@ Package fontspec Info: Font family 'CourierNew(0)' created for font 'Courier
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
- (d:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 
 Package fontspec Info: Could not resolve font "Freestyle Script/BI" (it
@@ -965,83 +954,83 @@ Package fontspec Info: Font family 'TeXGyreTermes(0)' created for font 'TeX
 (./Introdution to Linux.aux)
 \openout1 = `"Introdution to Linux.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 146.
+LaTeX Font Info:    ... okay on input line 146.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 145.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 145.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 145.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 145.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 145.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 145.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 145.
-LaTeX Font Info:    Redeclaring math accent \check on input line 145.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 145.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 145.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 145.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 145.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 146.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 146.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 146.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 146.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 146.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 146.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 146.
+LaTeX Font Info:    Redeclaring math accent \check on input line 146.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 146.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 146.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 146.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 146.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 146.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 145.
+(Font)              `operators' in the math version `normal' on input line 146.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 145.
+(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 146.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 145.
+(Font)              `operators' in the math version `bold' on input line 146.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 145.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 146.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on input line 145.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 145.
+(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 145.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 145.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 145.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 146.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on input line 145.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line 145.
+(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 145.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 146.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 145.
-Package hyperref Info: Link coloring OFF on input line 145.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 146.
+Package hyperref Info: Link coloring OFF on input line 146.
  (./Introdution to Linux.out) (./Introdution to Linux.out)
 \@outlinefile=\write4
 \openout4 = `"Introdution to Linux.out"'.
@@ -1081,6 +1070,9 @@ Package hyperref Info: Link coloring OFF on input line 145.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 146.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen344
@@ -1092,31 +1084,23 @@ Package caption Info: End \AtBeginDocument code.
 
 ] (./Introdution to Linux.toc [1]
 
-Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
-(fontspec)             doesn't exist).
+Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
+(fontspec)                Script "CJK".
 
 
-Package fontspec Info: Could not resolve font "FangSong/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/I" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
-(fontspec)             with options [Script={CJK}].
+Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
+(fontspec)             'FandolFang-Regular' with options
+(fontspec)             [Script={CJK},Extension={.otf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
+(fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/sl' in size <12> not available
 (Font)              Font shape `TU/TeXGyreTermes(0)/m/it' tried instead on input line 61.
-
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1222,10 +1206,10 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 [4]
 
 LaTeX Font Warning: Font shape `TU/FreestyleScript(0)/m/it' undefined
-(Font)              using `TU/FreestyleScript(0)/m/n' instead on input line 299.
+(Font)              using `TU/FreestyleScript(0)/m/n' instead on input line 300.
 
 [5]
-Overfull \hbox (44.29254pt too wide) in paragraph at lines 319--321
+Overfull \hbox (44.29254pt too wide) in paragraph at lines 320--322
 []\TU/TeXGyreTermes(0)/m/n/10.95 If you must use VMware, see the link below, it contains Debian 12: []https://mirrors.ustc.edu.cn/debian-
  []
 
@@ -1270,7 +1254,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 File: assets/Linux/1.1 How to install Debian on Windows/7.png Graphic file (type bmp)
 <assets/Linux/1.1 How to install Debian on Windows/7.png>
 
-Overfull \hbox (3.68967pt too wide) in paragraph at lines 385--385
+Overfull \hbox (3.68967pt too wide) in paragraph at lines 386--386
 |[]\TU/TeXGyreTermes(0)/b/n/17.28 C++ & Python Environment Configuration on Linux| 
  []
 
@@ -1282,17 +1266,15 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
 [9]
-Overfull \hbox (8.04836pt too wide) in paragraph at lines 428--431
+Overfull \hbox (8.04836pt too wide) in paragraph at lines 429--432
 []\TU/TeXGyreTermes(0)/m/n/10.95 Remember, there are differences between Windows and Linux. You need to input \TU/CourierNew(0)/m/n/12 python3\TU/TeXGyreTermes(0)/m/n/10.95 ,
  []
 
 
-Overfull \hbox (3.81783pt too wide) in paragraph at lines 439--444
+Overfull \hbox (3.81783pt too wide) in paragraph at lines 440--445
 []\TU/TeXGyreTermes(0)/m/n/10.95 On Windows, we can use lots of tools such as \TU/CourierNew(0)/m/n/12 notepad\TU/TeXGyreTermes(0)/m/n/10.95 , \TU/CourierNew(0)/m/n/12 Devcpp\TU/TeXGyreTermes(0)/m/n/10.95 , \TU/CourierNew(0)/m/n/12 VSCode\TU/TeXGyreTermes(0)/m/n/10.95 , \TU/CourierNew(0)/m/n/12 Pycharm\TU/TeXGyreTermes(0)/m/n/10.95 ,
  []
 
-File: assets/Linux/1.3 How to edit files on Linux/1.png Graphic file (type bmp)
-<assets/Linux/1.3 How to edit files on Linux/1.png>
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1301,6 +1283,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
 [10]
+File: assets/Linux/1.3 How to edit files on Linux/1.png Graphic file (type bmp)
+<assets/Linux/1.3 How to edit files on Linux/1.png>
 File: assets/Linux/1.3 How to edit files on Linux/2.png Graphic file (type bmp)
 <assets/Linux/1.3 How to edit files on Linux/2.png>
 
@@ -1349,12 +1333,12 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
 [14]
-Overfull \hbox (25.55917pt too wide) in paragraph at lines 560--565
+Overfull \hbox (25.55917pt too wide) in paragraph at lines 568--573
 []\TU/TeXGyreTermes(0)/m/n/10.95 As we all know, There are some drives on Windows, we call them \TU/CourierNew(0)/m/n/12 top level directory\TU/TeXGyreTermes(0)/m/n/10.95 ,
  []
 
 
-Overfull \hbox (2.1258pt too wide) in paragraph at lines 594--597
+Overfull \hbox (2.1258pt too wide) in paragraph at lines 602--605
 []\TU/TeXGyreTermes(0)/m/n/10.95 To represent \TU/CourierNew(0)/m/n/12 test.cpp\TU/TeXGyreTermes(0)/m/n/10.95 in absolute path, It’s \TU/CourierNew(0)/m/n/12 /home/test.cpp\TU/TeXGyreTermes(0)/m/n/10.95 . And for \TU/CourierNew(0)/m/n/12 LICENSE\TU/TeXGyreTermes(0)/m/n/10.95 ,
  []
 
@@ -1381,8 +1365,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
 [16]
-Overfull \hbox (20.7035pt too wide) in paragraph at lines 684--689
-[]\TU/TeXGyreTermes(0)/m/n/10.95 As for me, \TU/CourierNew(0)/m/n/12 .. \TU/TeXGyreTermes(0)/m/n/10.95 is often used in \TU/CourierNew(0)/m/n/12 cd\TU/TeXGyreTermes(0)/m/n/10.95 . See the figure below, \TU/CourierNew(0)/m/n/12 cd \TU/TeXGyreTermes(0)/m/n/10.95 deafult path is \TU/CourierNew(0)/m/n/12 /home/oct0pu5\TU/TeXGyreTermes(0)/m/n/10.95 .
+Overfull \hbox (20.42975pt too wide) in paragraph at lines 692--697
+[]\TU/TeXGyreTermes(0)/m/n/10.95 As for me, \TU/CourierNew(0)/m/n/12 .. \TU/TeXGyreTermes(0)/m/n/10.95 is often used in \TU/CourierNew(0)/m/n/12 cd\TU/TeXGyreTermes(0)/m/n/10.95 . See the figure below, \TU/CourierNew(0)/m/n/12 cd \TU/TeXGyreTermes(0)/m/n/10.95 default path is \TU/CourierNew(0)/m/n/12 /home/oct0pu5\TU/TeXGyreTermes(0)/m/n/10.95 .
  []
 
 File: assets/Linux/1.4 Linux directory structure and command/4.png Graphic file (type bmp)
@@ -1504,7 +1488,7 @@ File: assets/Linux/1.5 Linux file commands/14.png Graphic file (type bmp)
 File: assets/Linux/1.5 Linux file commands/15.png Graphic file (type bmp)
 <assets/Linux/1.5 Linux file commands/15.png>
 
-Overfull \hbox (15.91383pt too wide) in paragraph at lines 961--968
+Overfull \hbox (15.91383pt too wide) in paragraph at lines 980--987
 []\TU/TeXGyreTermes(0)/m/n/10.95 When I input \TU/CourierNew(0)/m/n/12 echo world >> test.txt\TU/TeXGyreTermes(0)/m/n/10.95 , left terminal output \TU/CourierNew(0)/m/n/12 hello \n world\TU/TeXGyreTermes(0)/m/n/10.95 .
  []
 
@@ -1617,7 +1601,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
 [35]
-Overfull \hbox (12.88663pt too wide) in paragraph at lines 1275--1278
+Overfull \hbox (12.88663pt too wide) in paragraph at lines 1294--1297
 []\TU/CourierNew(0)/m/n/12 apt(-get) [install | remove | search] <name> \TU/TeXGyreTermes(0)/m/n/10.95 helps install or unin-
  []
 
@@ -1644,8 +1628,31 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
 [37]
+Overfull \hbox (14.08296pt too wide) in paragraph at lines 1354--1355
+[]\TU/TeXGyreTermes(0)/m/it/12 Check this blog for more information: []$[][][][][] [] [] [] [][][] [] [][][][][][][] [] [][][] [] [][][][][][][][][] []
+ []
+
+File: assets/Linux/1.8 Some trivial contents on Linux/4.png Graphic file (type bmp)
+<assets/Linux/1.8 Some trivial contents on Linux/4.png>
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[38]
 File: assets/Linux/1.9 Linux network commands/1.png Graphic file (type bmp)
 <assets/Linux/1.9 Linux network commands/1.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[39]
 File: assets/Linux/1.9 Linux network commands/2.png Graphic file (type bmp)
 <assets/Linux/1.9 Linux network commands/2.png>
 File: assets/Linux/1.9 Linux network commands/3.png Graphic file (type bmp)
@@ -1658,13 +1665,13 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[38]
-Overfull \hbox (17.80139pt too wide) in paragraph at lines 1389--1391
+[40]
+Overfull \hbox (17.80139pt too wide) in paragraph at lines 1462--1464
 []\TU/CourierNew(0)/m/n/12 -O \TU/TeXGyreTermes(0)/m/n/10.95 renames files you download. Like this: \TU/CourierNew(0)/m/n/12 wget oct0pu5.cn -O oct0pu5.html\TU/TeXGyreTermes(0)/m/n/10.95 . 
  []
 
 
-Overfull \hbox (76.65298pt too wide) in paragraph at lines 1392--1395
+Overfull \hbox (76.65298pt too wide) in paragraph at lines 1465--1468
 []\TU/CourierNew(0)/m/n/12 -i \TU/TeXGyreTermes(0)/m/n/10.95 makes \TU/CourierNew(0)/m/n/12 wget \TU/TeXGyreTermes(0)/m/n/10.95 can download multiple files like \TU/CourierNew(0)/m/n/12 pip install -r\TU/TeXGyreTermes(0)/m/n/10.95 . Make a \TU/CourierNew(0)/m/n/12 requirements.txt
  []
 
@@ -1677,9 +1684,11 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[39]
+[41]
 File: assets/Linux/1.9 Linux network commands/5.png Graphic file (type bmp)
 <assets/Linux/1.9 Linux network commands/5.png>
+File: assets/Linux/1.10 Linux process commands/1.png Graphic file (type bmp)
+<assets/Linux/1.10 Linux process commands/1.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
@@ -1688,9 +1697,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[40]
-File: assets/Linux/1.10 Linux process commands/1.png Graphic file (type bmp)
-<assets/Linux/1.10 Linux process commands/1.png>
+[42]
 File: assets/Linux/1.10 Linux process commands/2.png Graphic file (type bmp)
 <assets/Linux/1.10 Linux process commands/2.png>
 
@@ -1701,7 +1708,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[41]
+[43]
 File: assets/Linux/1.10 Linux process commands/3.png Graphic file (type bmp)
 <assets/Linux/1.10 Linux process commands/3.png>
 File: assets/Linux/1.10 Linux process commands/4.png Graphic file (type bmp)
@@ -1714,7 +1721,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[42]
+[44]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1722,7 +1729,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[43]
+[45]
 File: assets/Linux/1.11 Linux environment variables/1.png Graphic file (type bmp)
 <assets/Linux/1.11 Linux environment variables/1.png>
 File: assets/Linux/1.11 Linux environment variables/2.png Graphic file (type bmp)
@@ -1735,11 +1742,11 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[44]
+[46]
 File: assets/Linux/1.11 Linux environment variables/3.png Graphic file (type bmp)
 <assets/Linux/1.11 Linux environment variables/3.png>
 
-Overfull \hbox (3.96744pt too wide) in paragraph at lines 1606--1609
+Overfull \hbox (3.96744pt too wide) in paragraph at lines 1679--1682
 []\TU/TeXGyreTermes(0)/m/n/10.95 And 2 ways to add permanently. Write \TU/CourierNew(0)/m/n/12 ~/.bashrc \TU/TeXGyreTermes(0)/m/n/10.95 for current user or \TU/CourierNew(0)/m/n/12 /etc/profile
  []
 
@@ -1756,23 +1763,23 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[45]
-
-Package fancyhdr Warning: \headheight is too small (12.64723pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
-
-[46]
-
-Package fancyhdr Warning: \headheight is too small (12.64723pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
-
 [47]
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[48]
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[49]
 File: assets/Linux/1.12 Linux compression commands/1.png Graphic file (type bmp)
 <assets/Linux/1.12 Linux compression commands/1.png>
 File: assets/Linux/1.12 Linux compression commands/2.png Graphic file (type bmp)
@@ -1785,8 +1792,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[48] [49]
-Overfull \hbox (20.1251pt too wide) in paragraph at lines 1744--1749
+[50] [51]
+Overfull \hbox (20.1251pt too wide) in paragraph at lines 1817--1822
 []\TU/TeXGyreTermes(0)/m/n/10.95 This is one reason why I recommend WSL. Open \TU/CourierNew(0)/m/n/12 Powershell \TU/TeXGyreTermes(0)/m/n/10.95 or \TU/CourierNew(0)/m/n/12 Windows Terminal\TU/TeXGyreTermes(0)/m/n/10.95 ,
  []
 
@@ -1803,7 +1810,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[50]
+[52]
 File: assets/Linux/2.1 SHIT, I forgot my password again!/4.png Graphic file (type bmp)
 <assets/Linux/2.1 SHIT, I forgot my password again!/4.png>
 File: assets/Linux/2.1 SHIT, I forgot my password again!/5.png Graphic file (type bmp)
@@ -1816,7 +1823,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[51]
+[53]
 File: assets/Linux/2.1 SHIT, I forgot my password again!/6.png Graphic file (type bmp)
 <assets/Linux/2.1 SHIT, I forgot my password again!/6.png>
 
@@ -1827,13 +1834,13 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[52]
-Overfull \hbox (9.74342pt too wide) in paragraph at lines 1855--1855
-[]    \TU/CourierNew(0)/m/n/12 -VMCreatorId  \TU/FangSong(0)/m/n/12 “ \TU/CourierNew(0)/m/n/12 {40E0AC32-46A5-438A-A0B2-2B479E8F2E90} \TU/FangSong(0)/m/n/12 ” [] 
+[54]
+Overfull \hbox (9.74342pt too wide) in paragraph at lines 1928--1928
+[]    \TU/CourierNew(0)/m/n/12 -VMCreatorId  \TU/FandolFang-Regular(0)/m/n/12 “ \TU/CourierNew(0)/m/n/12 {40E0AC32-46A5-438A-A0B2-2B479E8F2E90} \TU/FandolFang-Regular(0)/m/n/12 ” [] 
  []
 
 
-Overfull \hbox (54.89935pt too wide) in paragraph at lines 1861--1863
+Overfull \hbox (54.89935pt too wide) in paragraph at lines 1934--1936
 []\TU/TeXGyreTermes(0)/m/n/10.95 For more information, check this blog: []https://blog.csdn.net/2301_81697902/article/details/137481359[]. 
  []
 
@@ -1844,20 +1851,20 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[53]
-Overfull \hbox (17.14214pt too wide) in paragraph at lines 1866--1870
+[55]
+Overfull \hbox (17.14214pt too wide) in paragraph at lines 1939--1943
 []\TU/TeXGyreTermes(0)/m/n/10.95 This is the official website: []https://mobaxterm.mobatek.net/[] and the Chinese version: []$[][][][][] []
  []
 
 
-Overfull \hbox (5.11862pt too wide) in paragraph at lines 1866--1870
+Overfull \hbox (5.11862pt too wide) in paragraph at lines 1939--1943
 [] [] [][][][][][] [] [][][] [] [][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/TeXGyreTermes(0)/m/n/10.95 . I take the
  []
 
 File: assets/Linux/2.2 MobaXterm, go ssh it!/1.png Graphic file (type bmp)
 <assets/Linux/2.2 MobaXterm, go ssh it!/1.png>
 
-Overfull \hbox (55.0492pt too wide) in paragraph at lines 1879--1884
+Overfull \hbox (55.0492pt too wide) in paragraph at lines 1952--1957
 \TU/TeXGyreTermes(0)/m/n/10.95 terminal in current path. Input \TU/CourierNew(0)/m/n/12 Python MobaXterm-Keygen.py <username> <version>
  []
 
@@ -1872,7 +1879,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[54]
+[56]
 File: assets/Linux/2.2 MobaXterm, go ssh it!/4.png Graphic file (type bmp)
 <assets/Linux/2.2 MobaXterm, go ssh it!/4.png>
 
@@ -1883,7 +1890,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[55]
+[57]
 File: assets/Linux/2.2 MobaXterm, go ssh it!/5.png Graphic file (type bmp)
 <assets/Linux/2.2 MobaXterm, go ssh it!/5.png>
 
@@ -1894,8 +1901,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[56]
-Overfull \hbox (29.96085pt too wide) in paragraph at lines 1968--1972
+[58]
+Overfull \hbox (29.96085pt too wide) in paragraph at lines 2041--2045
 \TU/TeXGyreTermes(0)/m/n/10.95 Then run following commands to ensure all packages are the newest and \TU/CourierNew(0)/m/n/12 update-manager-core
  []
 
@@ -1906,15 +1913,15 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[57]
-Overfull \hbox (10.0399pt too wide) in paragraph at lines 1990--1990
+[59]
+Overfull \hbox (10.0399pt too wide) in paragraph at lines 2063--2063
  []\TU/CourierNew(0)/m/n/12 which requires a reboot. Please reboot before upgrading.[] 
  []
 
 File: assets/Linux/2.3 I upgraded alone/1.png Graphic file (type bmp)
 <assets/Linux/2.3 I upgraded alone/1.png>
 
-Overfull \hbox (3.14867pt too wide) in paragraph at lines 2005--2008
+Overfull \hbox (3.14867pt too wide) in paragraph at lines 2078--2081
 \TU/TeXGyreTermes(0)/m/it/12 in \TU/CourierNew(0)/m/it/12 /etc/update-manager/release-upgrades\TU/TeXGyreTermes(0)/m/it/12 . Here’s the meaning of \TU/CourierNew(0)/m/it/12 lts\TU/TeXGyreTermes(0)/m/it/12 : 
  []
 
@@ -1931,46 +1938,46 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[58]
+[60]
 File: assets/Linux/2.3 I upgraded alone/5.png Graphic file (type bmp)
 <assets/Linux/2.3 I upgraded alone/5.png>
 
-Overfull \hbox (10.0399pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (10.0399pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse[] 
  []
 
 
-Overfull \hbox (18.44127pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (18.44127pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse[] 
  []
 
 
-Overfull \hbox (43.64537pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (43.64537pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse[] 
  []
 
 
-Overfull \hbox (26.84264pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (26.84264pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse[] 
  []
 
 
-Overfull \hbox (52.04674pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (52.04674pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse[] 
  []
 
 
-Overfull \hbox (5.83922pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (5.83922pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 # deb-src http://security.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse[] 
  []
 
 
-Overfull \hbox (31.04332pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (31.04332pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse[] 
  []
 
 
-Overfull \hbox (56.24742pt too wide) in paragraph at lines 2073--2073
+Overfull \hbox (56.24742pt too wide) in paragraph at lines 2146--2146
  []\TU/CourierNew(0)/m/n/7 # # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse[] 
  []
 
@@ -1981,7 +1988,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[59]
+[61]
 File: assets/Linux/2.3 I upgraded alone/6.png Graphic file (type bmp)
 <assets/Linux/2.3 I upgraded alone/6.png>
 
@@ -1992,13 +1999,13 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[60]
-Overfull \hbox (8.68756pt too wide) in paragraph at lines 2120--2121
+[62]
+Overfull \hbox (8.68756pt too wide) in paragraph at lines 2193--2194
 [][]$[][][][][] [] [] [] [][][][][][][][][][][] [] [][][][] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (37.49225pt too wide) in paragraph at lines 2122--2123
+Overfull \hbox (37.49225pt too wide) in paragraph at lines 2195--2196
 [][]$[][][][][] [] [] [] [][][][] [] [][][][] [] [][][] [] [][][][][][][][][][] [] [][][][][][][] [] [][][][][][][] [] [][][][][][][][][]$[] 
  []
 
@@ -2011,23 +2018,23 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[61]
-Overfull \hbox (35.45862pt too wide) in paragraph at lines 2159--2163
+[63]
+Overfull \hbox (35.45862pt too wide) in paragraph at lines 2232--2236
 []\TU/TeXGyreTermes(0)/m/n/10.95 Then use \TU/CourierNew(0)/m/n/12 journalctl \TU/TeXGyreTermes(0)/m/n/10.95 to restrict logs, like \TU/CourierNew(0)/m/n/12 sudo journalctl --vacuum-time=1w
  []
 
 
-Overfull \hbox (38.97974pt too wide) in paragraph at lines 2159--2163
+Overfull \hbox (38.97974pt too wide) in paragraph at lines 2232--2236
 \TU/TeXGyreTermes(0)/m/n/10.95 deletes all journals saved for more than a week and \TU/CourierNew(0)/m/n/12 sudo journalctl --vacuum-size=50M
  []
 
 
-Overfull \hbox (4.86954pt too wide) in paragraph at lines 2169--2171
+Overfull \hbox (4.86954pt too wide) in paragraph at lines 2242--2244
 []\TU/CourierNew(0)/m/n/12 sudo apt autoremove \TU/TeXGyreTermes(0)/m/n/10.95 and \TU/CourierNew(0)/m/n/12 sudo apt autoclean \TU/TeXGyreTermes(0)/m/n/10.95 cleans those useless pack-
  []
 
 
-Overfull \hbox (10.73528pt too wide) in paragraph at lines 2179--2183
+Overfull \hbox (10.73528pt too wide) in paragraph at lines 2252--2256
 \TU/CourierNew(0)/m/n/12 wsl --export Ubuntu-22.04 D:\Ubuntu-22.04.tar\TU/TeXGyreTermes(0)/m/n/10.95 . That export your WSL
  []
 
@@ -2040,7 +2047,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[62]
+[64]
 File: assets/Linux/2.5 What's the first word when messing up a command/1.png Graphic file (type bmp)
 <assets/Linux/2.5 What's the first word when messing up a command/1.png>
 File: assets/Linux/2.5 What's the first word when messing up a command/2.png Graphic file (type bmp)
@@ -2053,7 +2060,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[63]
+[65]
 File: assets/Linux/2.5 What's the first word when messing up a command/3.png Graphic file (type bmp)
 <assets/Linux/2.5 What's the first word when messing up a command/3.png>
 
@@ -2064,7 +2071,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[64]
+[66]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2072,21 +2079,21 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[65]
+[67]
 File: assets/Linux/2.5 What's the first word when messing up a command/4.png Graphic file (type bmp)
 <assets/Linux/2.5 What's the first word when messing up a command/4.png>
 
-Overfull \hbox (16.95952pt too wide) in paragraph at lines 2268--2274
+Overfull \hbox (16.95952pt too wide) in paragraph at lines 2341--2347
 []\TU/TeXGyreTermes(0)/m/n/10.95 Now we have gained a basic understanding that, \TU/CourierNew(0)/m/n/12 Pay Respects \TU/TeXGyreTermes(0)/m/n/10.95 aims to replace \TU/CourierNew(0)/m/n/12 thefuck
  []
 
 
-Overfull \hbox (37.33519pt too wide) in paragraph at lines 2275--2279
+Overfull \hbox (37.33519pt too wide) in paragraph at lines 2348--2352
 \TU/TeXGyreTermes(0)/m/n/10.95 64 CPU, or \TU/CourierNew(0)/m/n/12 AMD64 \TU/TeXGyreTermes(0)/m/n/10.95 in a more formal way. Download \TU/CourierNew(0)/m/n/12 pay-respects_0.6.11-1_amd64.deb
  []
 
 
-Overfull \hbox (1.49738pt too wide) in paragraph at lines 2281--2284
+Overfull \hbox (1.49738pt too wide) in paragraph at lines 2354--2357
 []\TU/TeXGyreTermes(0)/m/it/12 As of the completion of this tutorial, the latest version of \TU/CourierNew(0)/m/it/12 Pay Respects \TU/TeXGyreTermes(0)/m/it/12 is \TU/CourierNew(0)/m/it/12 0.6.11\TU/TeXGyreTermes(0)/m/it/12 ,
  []
 
@@ -2099,8 +2106,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[66]
-Overfull \hbox (15.57556pt too wide) in paragraph at lines 2295--2297
+[68]
+Overfull \hbox (15.57556pt too wide) in paragraph at lines 2368--2370
 []\TU/TeXGyreTermes(0)/m/n/10.95 Run \TU/CourierNew(0)/m/n/12 sudo dpkg -i pay-respects_0.6.11-1_amd64.deb \TU/TeXGyreTermes(0)/m/n/10.95 to install \TU/CourierNew(0)/m/n/12 .deb\TU/TeXGyreTermes(0)/m/n/10.95 . 
  []
 
@@ -2113,11 +2120,11 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[67]
+[69]
 File: assets/Linux/2.6 The way to pretend B/1.png Graphic file (type bmp)
 <assets/Linux/2.6 The way to pretend B/1.png>
 
-Overfull \hbox (64.99573pt too wide) in paragraph at lines 2355--2358
+Overfull \hbox (64.99573pt too wide) in paragraph at lines 2428--2431
 []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][][][] [] [][][][][][][][][] [] [][][][] [] [][][][][][][][][][][][][]$[]\TU/TeXGyreTermes(0)/m/it/12 . 
  []
 
@@ -2128,8 +2135,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[68]
-Overfull \hbox (4.54451pt too wide) in paragraph at lines 2371--2375
+[70]
+Overfull \hbox (4.54451pt too wide) in paragraph at lines 2444--2448
 []\TU/TeXGyreTermes(0)/m/n/10.95 As the same as \TU/CourierNew(0)/m/n/12 pay-respects\TU/TeXGyreTermes(0)/m/n/10.95 , just download \TU/CourierNew(0)/m/n/12 fastfetch-linux-amd64.deb
  []
 
@@ -2144,7 +2151,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[69]
+[71]
 File: assets/Linux/2.6 The way to pretend B/4.png Graphic file (type bmp)
 <assets/Linux/2.6 The way to pretend B/4.png>
 File: assets/Linux/2.6 The way to pretend B/5.png Graphic file (type bmp)
@@ -2157,8 +2164,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[70]
-Overfull \hbox (59.57594pt too wide) in paragraph at lines 2423--2427
+[72]
+Overfull \hbox (59.57594pt too wide) in paragraph at lines 2496--2500
 []\TU/TeXGyreTermes(0)/m/n/10.95 What’s more, it supports previewing file contents. Inputting something like \TU/CourierNew(0)/m/n/12 fzf --preview='cat
  []
 
@@ -2171,7 +2178,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[71]
+[73]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2179,11 +2186,11 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[72]
+[74]
 File: assets/Linux/2.7 I'd rather be a bookworm/1.png Graphic file (type bmp)
 <assets/Linux/2.7 I'd rather be a bookworm/1.png>
 
-Overfull \hbox (6.96973pt too wide) in paragraph at lines 2475--2484
+Overfull \hbox (6.96973pt too wide) in paragraph at lines 2548--2557
 []$[][][][][] [] [] [] [][][][] [] [][][][][][][] [] [][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]\TU/TeXGyreTermes(0)/m/n/10.95 . Ubuntu
  []
 
@@ -2194,31 +2201,31 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[73]
+[75]
 File: assets/Linux/2.7 I'd rather be a bookworm/2.png Graphic file (type bmp)
 <assets/Linux/2.7 I'd rather be a bookworm/2.png>
 
-Overfull \hbox (9.52858pt too wide) in paragraph at lines 2500--2502
+Overfull \hbox (9.52858pt too wide) in paragraph at lines 2573--2575
 []\TU/TeXGyreTermes(0)/m/n/10.95 Every commands are almost the same. Remember to change \TU/CourierNew(0)/m/n/12 apt \TU/TeXGyreTermes(0)/m/n/10.95 source and \TU/CourierNew(0)/m/n/12 apt update
  []
 
 
-Overfull \hbox (1.63853pt too wide) in paragraph at lines 2520--2520
+Overfull \hbox (1.63853pt too wide) in paragraph at lines 2593--2593
  []\TU/CourierNew(0)/m/n/7 deb http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware[] 
  []
 
 
-Overfull \hbox (26.84264pt too wide) in paragraph at lines 2520--2520
+Overfull \hbox (26.84264pt too wide) in paragraph at lines 2593--2593
  []\TU/CourierNew(0)/m/n/7 # deb-src http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware[] 
  []
 
 
-Overfull \hbox (18.44127pt too wide) in paragraph at lines 2520--2520
+Overfull \hbox (18.44127pt too wide) in paragraph at lines 2593--2593
  []\TU/CourierNew(0)/m/n/7 # deb http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware[] 
  []
 
 
-Overfull \hbox (35.244pt too wide) in paragraph at lines 2520--2520
+Overfull \hbox (35.244pt too wide) in paragraph at lines 2593--2593
  []\TU/CourierNew(0)/m/n/7 # deb-src http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware[] 
  []
 
@@ -2229,11 +2236,11 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[74]
+[76]
 File: assets/Linux/2.8 Return to Paradise/1.png Graphic file (type bmp)
 <assets/Linux/2.8 Return to Paradise/1.png>
 
-Overfull \hbox (32.64186pt too wide) in paragraph at lines 2566--2568
+Overfull \hbox (32.64186pt too wide) in paragraph at lines 2639--2641
 []\TU/CourierNew(0)/m/n/12 Plasma \TU/TeXGyreTermes(0)/m/n/10.95 is smaller than the ordinary \TU/CourierNew(0)/m/n/12 kubuntu\TU/TeXGyreTermes(0)/m/n/10.95 , just \TU/CourierNew(0)/m/n/12 apt install plasma-desktop\TU/TeXGyreTermes(0)/m/n/10.95 . 
  []
 
@@ -2244,21 +2251,10 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[75]
-Overfull \hbox (24.44225pt too wide) in paragraph at lines 2604--2604
- []\TU/CourierNew(0)/m/n/12 Xephyr -br -ac -noreset -resizeable -screen 1920x1080 :1 &[] 
- []
-
+[77]
 File: assets/Linux/2.8 Return to Paradise/2.png Graphic file (type bmp)
 <assets/Linux/2.8 Return to Paradise/2.png>
 
-Package fancyhdr Warning: \headheight is too small (12.64723pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
-
-[76]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2266,7 +2262,37 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[77] [78]
+[78]
+File: assets/Linux/2.9 Having heard Dao in the morning/1.png Graphic file (type bmp)
+<assets/Linux/2.9 Having heard Dao in the morning/1.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[79]
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[80]
+File: assets/Linux/2.9 Having heard Dao in the morning/2.png Graphic file (type bmp)
+<assets/Linux/2.9 Having heard Dao in the morning/2.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[81] [82]
 File: assets/Linux/3.1 Seek common ground while reserving differences/1.png Graphic file (type bmp)
 <assets/Linux/3.1 Seek common ground while reserving differences/1.png>
 File: assets/Linux/3.1 Seek common ground while reserving differences/2.png Graphic file (type bmp)
@@ -2279,7 +2305,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[79]
+[83]
 File: assets/Linux/3.1 Seek common ground while reserving differences/3.png Graphic file (type bmp)
 <assets/Linux/3.1 Seek common ground while reserving differences/3.png>
 File: assets/Linux/3.1 Seek common ground while reserving differences/4.png Graphic file (type bmp)
@@ -2292,8 +2318,8 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[80]
-Overfull \hbox (1.26416pt too wide) in paragraph at lines 2698--2701
+[84]
+Overfull \hbox (1.26416pt too wide) in paragraph at lines 2884--2887
 []\TU/TeXGyreTermes(0)/m/n/10.95 Download \TU/CourierNew(0)/m/n/12 Rufus\TU/TeXGyreTermes(0)/m/n/10.95 : []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][] [] [][][][][][][][][]$[].
  []
 
@@ -2306,7 +2332,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[81]
+[85]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2314,7 +2340,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[82]
+[86]
 File: assets/Linux/3.1 Seek common ground while reserving differences/6.png Graphic file (type bmp)
 <assets/Linux/3.1 Seek common ground while reserving differences/6.png>
 File: assets/Linux/3.1 Seek common ground while reserving differences/7.png Graphic file (type bmp)
@@ -2327,7 +2353,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[83]
+[87]
 File: assets/Linux/3.1 Seek common ground while reserving differences/8.png Graphic file (type bmp)
 <assets/Linux/3.1 Seek common ground while reserving differences/8.png>
 
@@ -2338,33 +2364,33 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[84]
+[88]
 File: assets/Linux/3.1 Seek common ground while reserving differences/9.png Graphic file (type bmp)
 <assets/Linux/3.1 Seek common ground while reserving differences/9.png>
 
-Overfull \hbox (6.44618pt too wide) in paragraph at lines 2807--2810
+Overfull \hbox (6.44618pt too wide) in paragraph at lines 2993--2996
 []\TU/TeXGyreTermes(0)/m/n/10.95 The solution is to \TU/CourierNew(0)/m/n/12 su - \TU/TeXGyreTermes(0)/m/n/10.95 and \TU/CourierNew(0)/m/n/12 vi /etc/sudoers \TU/TeXGyreTermes(0)/m/n/10.95 and find \TU/CourierNew(0)/m/n/12 root ALL=(ALL:ALL)
  []
 
 File: assets/Linux/3.1 Seek common ground while reserving differences/10.png Graphic file (type bmp)
 <assets/Linux/3.1 Seek common ground while reserving differences/10.png>
 
-Overfull \hbox (1.63853pt too wide) in paragraph at lines 2832--2832
+Overfull \hbox (1.63853pt too wide) in paragraph at lines 3018--3018
  []\TU/CourierNew(0)/m/n/7 deb http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware[] 
  []
 
 
-Overfull \hbox (26.84264pt too wide) in paragraph at lines 2832--2832
+Overfull \hbox (26.84264pt too wide) in paragraph at lines 3018--3018
  []\TU/CourierNew(0)/m/n/7 # deb-src http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware[] 
  []
 
 
-Overfull \hbox (18.44127pt too wide) in paragraph at lines 2832--2832
+Overfull \hbox (18.44127pt too wide) in paragraph at lines 3018--3018
  []\TU/CourierNew(0)/m/n/7 # deb http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware[] 
  []
 
 
-Overfull \hbox (35.244pt too wide) in paragraph at lines 2832--2832
+Overfull \hbox (35.244pt too wide) in paragraph at lines 3018--3018
  []\TU/CourierNew(0)/m/n/7 # deb-src http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware[] 
  []
 
@@ -2375,16 +2401,16 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[85]
+[89]
 File: assets/Linux/3.1 Seek common ground while reserving differences/11.png Graphic file (type bmp)
 <assets/Linux/3.1 Seek common ground while reserving differences/11.png>
 
-Overfull \hbox (13.89027pt too wide) in paragraph at lines 2861--2864
+Overfull \hbox (13.89027pt too wide) in paragraph at lines 3047--3050
 \TU/TeXGyreTermes(0)/m/n/10.95 wares. You can check this blog: []$[][][][][] [] [] [] [][][][][][][][] [] [][][][][] [] [][][] [] [] [] [][][][][][][][][][][]$[]. 
  []
 
 
-Overfull \hbox (14.31157pt too wide) in paragraph at lines 2901--2904
+Overfull \hbox (14.31157pt too wide) in paragraph at lines 3087--3090
 []\TU/TeXGyreTermes(0)/m/n/10.95 Besides, I highly recommend you to \TU/CourierNew(0)/m/n/12 sudo apt install desktop-file-utils
  []
 
@@ -2397,7 +2423,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[86]
+[90]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2405,7 +2431,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[87]
+[91]
 File: assets/Linux/3.2 Decorate your own garden/1.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/1.png>
 
@@ -2417,11 +2443,11 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[88]
+[92]
 File: assets/Linux/3.2 Decorate your own garden/2.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/2.png>
 
-Overfull \hbox (14.57681pt too wide) in paragraph at lines 2971--2974
+Overfull \hbox (14.57681pt too wide) in paragraph at lines 3157--3160
 []\TU/TeXGyreTermes(0)/m/n/10.95 Remove all Nvidia packages. You can simply \TU/CourierNew(0)/m/n/12 sudo apt autoremove *nvidia*\TU/TeXGyreTermes(0)/m/n/10.95 . 
  []
 
@@ -2434,7 +2460,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[89]
+[93]
 File: assets/Linux/3.2 Decorate your own garden/4.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/4.png>
 File: assets/Linux/3.2 Decorate your own garden/5.png Graphic file (type bmp)
@@ -2447,7 +2473,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[90]
+[94]
 File: assets/Linux/3.2 Decorate your own garden/6.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/6.png>
 
@@ -2458,7 +2484,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[91]
+[95]
 File: assets/Linux/3.2 Decorate your own garden/7.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/7.png>
 File: assets/Linux/3.2 Decorate your own garden/8.png Graphic file (type bmp)
@@ -2466,7 +2492,7 @@ File: assets/Linux/3.2 Decorate your own garden/8.png Graphic file (type bmp)
 File: assets/Linux/3.2 Decorate your own garden/9.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/9.png>
 
-Overfull \hbox (41.55077pt too wide) in paragraph at lines 3076--3081
+Overfull \hbox (41.55077pt too wide) in paragraph at lines 3262--3267
 \TU/TeXGyreTermes(0)/m/n/10.95 Here’s the url: []$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]. 
  []
 
@@ -2477,11 +2503,11 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[92]
+[96]
 File: assets/Linux/3.2 Decorate your own garden/10.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/10.png>
 
-Overfull \hbox (12.95514pt too wide) in paragraph at lines 3100--3105
+Overfull \hbox (12.95514pt too wide) in paragraph at lines 3286--3291
 \TU/TeXGyreTermes(0)/m/n/10.95 wards, switch to this desktop wallpaper plugin and set its path to \TU/CourierNew(0)/m/n/12 ~/.local/share/Steam/\TU/TeXGyreTermes(0)/m/n/10.95 .
  []
 
@@ -2494,10 +2520,13 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[93]
+[97]
+Overfull \hbox (3.14384pt too wide) in paragraph at lines 3306--3311
+[]\TU/TeXGyreTermes(0)/m/n/10.95 It’s quite easy and similar to C programming. Firstly you should install \TU/CourierNew(0)/m/n/12 textlive-full
+ []
+
 File: assets/Linux/3.2 Decorate your own garden/12.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/12.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2505,7 +2534,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[94]
+[98]
 File: assets/Linux/3.2 Decorate your own garden/13.png Graphic file (type bmp)
 <assets/Linux/3.2 Decorate your own garden/13.png>
 
@@ -2516,7 +2545,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[95]
+[99]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2524,7 +2553,7 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[96]
+[100]
 
 Package fancyhdr Warning: \headheight is too small (12.64723pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2532,9 +2561,16 @@ Package fancyhdr Warning: \headheight is too small (12.64723pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
 
-[97] 
-enddocument/afterlastpage: lastpage setting LastPage.
-(./Introdution to Linux.aux)
+[101] 
+AED: lastpage setting LastPage
+
+Package fancyhdr Warning: \headheight is too small (12.64723pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.85275pt}.
+
+[102] (./Introdution to Linux.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2542,12 +2578,12 @@ Package rerunfilecheck Info: File `"Introdution to Linux".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 31548 strings out of 476683
- 705939 string characters out of 5807575
- 1861012 words of memory out of 5000000
- 51149 multiletter control sequences out of 15000+600000
- 519639 words of font info for 151 fonts, out of 8000000 for 9000
+ 31508 strings out of 476775
+ 707136 string characters out of 5808212
+ 1859991 words of memory out of 5000000
+ 51028 multiletter control sequences out of 15000+600000
+ 519623 words of font info for 149 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 100i,12n,104p,1274b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,12n,104p,1276b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Introdution to Linux.pdf (102 pages).
+Output written on Introdution to Linux.pdf (107 pages).

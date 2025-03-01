@@ -19,6 +19,7 @@
   {}
 
 % 设置页面
+\usepackage{amsmath}
 \usepackage{hyperref}
 \hypersetup{breaklinks=true}
 \usepackage{geometry}
@@ -150,10 +151,10 @@
     \vspace*{96pt}
     \fontsize{26}{31.2}\selectfont{Introdution to Linux}\par % 主标题
     \vspace{39pt}
-    \fontsize{22}{26.4}\selectfont{\haettenfont v2. 0\normalfont}\par % 版本
+    \fontsize{22}{26.4}\selectfont{\haettenfont v2. 1\normalfont}\par % 版本
     \vspace{52.8pt}
     \fontsize{18}{21.6}\selectfont{Author: \customfont{Lancet Ross}}\par % 作者
-    \fontsize{18}{21.6}\selectfont{Last Edited on: Feb 26th, 2025}\par % 最后编辑时间
+    \fontsize{18}{21.6}\selectfont{Last Edited on: Mar 1st, 2025}\par % 最后编辑时间
     \vfill
 \end{titlepage}
 
@@ -442,6 +443,13 @@ it's not the same as Linux. Linux don't
 have a \texttt{notepad} anyway. At our current level, I advise you only
 1 way named \texttt{Vim}.
 
+\begin{mdquote}
+As for my personal experience, \texttt{Vim}\ is the best editor on Linux.
+And you can see more skills about \texttt{Vim}\ in 
+\textbf{2.9 Having heard Dao in the morning}.
+Why I don't mention \texttt{Emacs} in this tutorial? Because I never use it xD
+\end{mdquote}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/1.png}
@@ -682,7 +690,7 @@ Now we finished \texttt{cd}, it's time to talk about
 details that weren't clear in the previous text.
 
 As for me, \texttt{..}\ is often used in \texttt{cd}. See the figure
-below, \texttt{cd}\ deafult path is \texttt{/home/oct0pu5}. I input
+below, \texttt{cd}\ default path is \texttt{/home/oct0pu5}. I input
 \texttt{cd\ ..}\ twice and return \texttt{/}, then \texttt{cd\ etc}\ and
 \texttt{ls}, it shows all file in \texttt{/etc}. The above is the
 classic directory operation.
@@ -784,8 +792,19 @@ here:
 \texttt{rm} is a fantastic command. It deletes files and folders. Just
 use
 \texttt{rm\ -rf\ \textless{}file1\textgreater{}\ \textless{}file2\textgreater{}\ ...}\
-to destory your work. It can not only delete files and folders, but also
-forcely :)
+to destroy your work. It can not only delete files and folders, but also
+forcefully :)
+
+OK. Don't be serious, I was joking. \texttt{rm}\ is a dangerous command.
+According to Linux rules, it can delete \textbf{almost everything}. So I suggest
+you to add \texttt{-i}\ parameter to confirm deletion. And don't use
+\texttt{-f}\ (means forcefully) unless you are sure what you are doing.
+
+\begin{mdquote}
+If you don't want to input \texttt{-i}\ every time, you can add
+\texttt{alias\ rm='rm\ -i'}\ to \texttt{.bashrc}. Then you get a
+safer \texttt{rm}.
+\end{mdquote}
 
 I was keen on making my own virus when I was in high school. At that
 time I write many viruses by \texttt{Visual\ Basic\ Scripts}\ such as
@@ -802,7 +821,7 @@ listen to me my friends, \textbf{DON'T TRY THIS COMMAND
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/6.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/6.png}
 \end{figure}
 
 This story tells us when you must use \texttt{rm}, be careful, think
@@ -868,7 +887,7 @@ I suggest you always write \texttt{-n}\ because it shows which row it is.
 
 Amazing, \texttt{grep}\ even give 'hello' a red color to emphasize.
 
-After we learn \texttt{grep}, It is neccessary to talk about a useful
+After we learn \texttt{grep}, It is necessary to talk about a useful
 symbol \texttt{\textbar{}}. We have known \texttt{\textbar{}\textbar{}}\
 is \texttt{or}\ in C++. But this time we call \texttt{\textbar{}}\ pipe
 symbol. It can connect 2 commands, and make the result of left command
@@ -1328,6 +1347,60 @@ Here's a form including all time formats:
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.8 Some trivial contents on Linux/3.png}
 \end{figure}
+
+\subsubsection{\textbf{File Descriptor and Redirection Operators}}
+
+\begin{mdquote}
+Check this blog for more information: \url{https://www.cnblogs.com/hls-code/p/16968319.html}.
+\end{mdquote}
+
+\subsubsection*{\textbf{File Descriptor}}
+
+A file descriptor is an integer associated with the input and output of a file.
+The most 3 common are \texttt{stdin},\ \texttt{stdout}\ and \texttt{stderr}. 
+They are 0, 1 and 2 respectively.
+
+\texttt{stdin}\ is the standard input, which is what you type in the terminal.
+\texttt{stdout}\ is the standard output, which is what you see in the terminal.
+\texttt{stderr}\ is the standard error, which is the error message you see in the terminal.
+
+\subsubsection*{\textbf{Redirection Operators}}
+
+If you still remember what I said in \textbf{1.5 Linux file commands},
+you can use \texttt{>}\ and \texttt{>>}\ to redirect the output of a command to a file.
+They are the redirection operators. Redirection operators are using file descriptors.
+For example, \texttt{>}\ is the same as \texttt{1>}. Then you must know what \texttt{2>}\ means:
+It redirects the error message to a file.
+
+Here is a advanced usage.\ \texttt{2\textgreater{}\&1}\ means redirecting the error message
+to the standard output. It is often used to save errors to a log with the standard output.
+
+\begin{mdquote}
+This is a very useful skill!
+\end{mdquote}
+
+Moreover, \texttt{<}\ reads the content of a file as the input of a command,
+and \texttt{<<}\ reads the content of a file as the input of a command until a delimiter.
+
+\subsection*{\texttt{/dev/null}}
+
+\texttt{/dev/null} is a special file that discards all data written to it so we
+call it the black hole. It's useful when you want to discard error messages to
+make the output more clear. Here's an example:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.8 Some trivial contents on Linux/4.png}
+\end{figure}
+
+\texttt{cat /dev/null > test.cpp}\ is just the same as \texttt{echo "" > test.cpp}.
+It cleans the file but doesn't delete it.
+
+\begin{mdquote}
+\texttt{bash} will popup an error when you want to \texttt{>}\ an existing file by default.
+You can input \texttt{set\ +o\ noclobber}\ to disable this function. But \textbf{remember to enable
+it by \texttt{set\ -o\ noclobber}\ after testing!}
+\end{mdquote}
 
 \subsection{\textbf{Network commands on Linux}}
 
@@ -2536,7 +2609,7 @@ When I was writing \textbf{2.2 MobaXterm, go ssh it!}, I tried to make a
 \texttt{GNOME}\ desktop for Ubuntu. But I failed after more than 2
 days'work. This time I chose \texttt{Plasma}\ instead
 and it worked finally. But it can be improved that the GUI desktop is a
-bit laggy. I think the reason is WSL itself.
+bit lag. I think the reason is WSL itself.
 
 \begin{figure}[H]
     \centering
@@ -2568,12 +2641,14 @@ abandon it and choose \texttt{KDE}.
 
 Next we need \texttt{Xorg}\ and \texttt{Xserver}, input commands below:
 
+\fontsize{10}{12}
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
 sudo apt install xorg
 sudo apt install xserver-xephyr
 \end{verbatim}
 \end{adjustwidth}
+\fontsize{12}{14}
 
 Set the environment variables to enable Xephyr to function properly.
 
@@ -2597,12 +2672,14 @@ Here are 2 commands you need to run. And \texttt{export\ DISPLAY=:0}\
 before the first one. Similarly, \texttt{export\ DISPLAY=:1}\ before the
 second.
 
+\fontsize{10}{12}
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
 Xephyr -br -ac -noreset -resizeable -screen 1920x1080 :1 &
 sudo dbus-launch --exit-with-session startplasma-x11 &
 \end{verbatim}
 \end{adjustwidth}
+\fontsize{12}{14}
 
 \begin{mdquote}
 Don't change the resolution to 2560$\times$1440, a windowed
@@ -2620,6 +2697,115 @@ the desktop. Operate as you please!
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.8 Return to Paradise/2.png}
+\end{figure}
+
+\newpage
+\subsection{\textbf{Having heard Dao in the morning}}
+
+\begin{mdquote}
+Check this video for more information: \href{https://www.bilibili.com/video/BV1s4421A7he/}{\textit{Video link}}.
+\end{mdquote}
+
+\subsubsection{\textbf{Before the beginning}}
+
+We have introduced \texttt{Vim}\ in \textbf{1.3 How to edit files on Linux}.
+However, it's not enough to just know how to press \texttt{i}\ to enter
+insert mode. In this chapter I will introduce more key bindings and  
+something about \texttt{Vim}\ configuration.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.9 Having heard Dao in the morning/1.png}
+\end{figure}
+
+\subsubsection{\textbf{Modes in Vim}}
+
+\texttt{Vim}\ has 4 modes:
+
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item Normal mode: The default mode when you open a file.
+\item Insert mode (\texttt{i}): The mode you can input text.
+\item Visual mode (\texttt{v}): The mode you can select text.
+\item Command-line mode (\texttt{:}): The mode you can input commands.
+\end{itemize}
+
+\subsubsection{\textbf{Key bindings}}
+
+\subsubsection*{\textbf{Movement}}
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \texttt{h/j/k/l}: Move left/down/up/right. (You can also use arrow keys, but `h/j/k/l` is recommended by \texttt{Vim}.) 
+\item \texttt{w/b}: Move to the beginning of the next/previous word.
+\item \texttt{e/Ge}: Move to the end of the next/previous word.
+\item \verb|0 (^)/$|: Move to the beginning/end of the line.
+\item \texttt{gg/G}: Move to the beginning/end of the file.
+\item \texttt{Ctrl+d/u}: Half page down/up.
+\end{itemize}
+
+\subsection*{\textbf{Action}}
+
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \texttt{d}: Delete.
+\item \texttt{y}: Yank.
+\item \texttt{p}: Paste.
+\item \texttt{u}: Undo.
+\item \texttt{r}: Replace.
+\item \texttt{Ctrl+r}: Redo.
+\end{itemize}
+
+\subsubsection*{\textbf{Jump and search}}
+
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \texttt{/(?)<string>}: Search backwards (forward) 'string'.
+\item \texttt{n/N}: Jump to the next/previous search result.
+\item \texttt{m<letter>}: Mark the position.
+\item \texttt{`<letter>}: Jump to the position.
+\item \texttt{``}: Jump back to the last position.
+\end{itemize}
+
+\subsubsection{\textbf{Note}}
+
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \textbf{Almost every action can be combined with movement}. For example,
+\texttt{dw}\ means delete the word, \texttt{dG} means delete all the
+content from the cursor to the end of the file.
+\item Press an action key twice to apply it to the whole line. For
+example, \texttt{dd} means delete the whole line.
+\item In most cases, \texttt{y} can only be used in visual mode when you
+select text. But you can also use \texttt{yy} to yank the whole line in
+normal mode.
+\item \texttt{:} with a number can jump to the line as the same as 
+\texttt{<number>gg}.
+\item I feel confused which section can \texttt{>/<} be put in so here. 
+It indents the code to the right/left (Press twice).
+\end{itemize}
+
+\subsubsection{\textbf{Configuration}}
+
+You can find plenty of tutorials on the Internet about \texttt{Vim}
+configuration. However I think less is more. Here I'll introduce some
+basic configurations without plugins.
+
+Add these to your \texttt{/etc/vim/vimrc}:
+
+\fontsize{10}{12}
+\begin{adjustwidth}{2em}{0pt}
+\begin{verbatim}
+set nu " Show line number
+syntax on " Syntax highlighting
+set mouse=a " Enable mouse
+set showmatch " Highlight matching brackets
+set ignorecase " Ignore case when searching
+\end{verbatim}
+\end{adjustwidth}
+\fontsize{12}{14}
+
+Moreover, you can add a \texttt{Vim} extension in \texttt{VSCode} to
+experience the same key bindings in \texttt{Vim}. Actually, I'm using
+this extension to write this tutorial.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.9 Having heard Dao in the morning/2.png}
 \end{figure}
 
 \newpage
@@ -3107,6 +3293,25 @@ wallpapers in your \texttt{Wallpaper\ Engine}.
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/11.png}
 \end{figure}
+
+\subsubsection{\textbf{VSCode LaTeX Environment}}
+
+\begin{mdquote}
+Check this blog for more information: \url{https://zhuanlan.zhihu.com/p/581508127}.
+\end{mdquote}
+
+You should already know that all pdfs are generated by \texttt{LaTeX}.
+But how to write \texttt{LaTeX}\ in \texttt{VSCode}? 
+
+It's quite easy and similar to C programming. Firstly you should install 
+\texttt{textlive-full}\ in \texttt{apt}\ source (It may take several minutes). Then install \texttt{LaTeX Workshop}
+extension in VSCode. After these, you should do one more thing: settings.
+You can find many blogs about this on the Internet. But here I will give you
+a most common one, and this fits my template well:
+
+\href{assets/Linux/3.2 Decorate your own garden/settings.json}{\textit{settings.json}}
+
+Now you can write your own \texttt{LaTeX}!
 
 \subsubsection{\textbf{Other softwares}}
 
