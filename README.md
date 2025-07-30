@@ -1,4 +1,10 @@
+<div align="center">
+
 # Introduction-to-Linux-latex
+<hr>
+
+</div>
+
 This repository stores Linux (Debian 12) tutorials in LaTeX.
 
 >[!NOTE]
