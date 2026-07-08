@@ -149,12 +149,12 @@
 \begin{titlepage}
     \centering
     \vspace*{96pt}
-    \fontsize{26}{31.2}\selectfont{Introdution to Linux}\par % 主标题
+    \fontsize{26}{31.2}\selectfont{Introduction to Linux}\par % 主标题
     \vspace{39pt}
-    \fontsize{22}{26.4}\selectfont{\haettenfont v2. 1\normalfont}\par % 版本
+    \fontsize{22}{26.4}\selectfont{\haettenfont v3. 0\normalfont}\par % 版本
     \vspace{52.8pt}
-    \fontsize{18}{21.6}\selectfont{Author: \customfont{Lancet Ross}}\par % 作者
-    \fontsize{18}{21.6}\selectfont{Last Edited on: Mar 1st, 2025}\par % 最后编辑时间
+    \fontsize{18}{21.6}\selectfont{Author: \customfont{Oct0pu5}}\par % 作者
+    \fontsize{18}{21.6}\selectfont{Last Edited on: Jul 8th, 2026}\par % 最后编辑时间
     \vfill
 \end{titlepage}
 
@@ -182,6 +182,7 @@
 \newpage
 \titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{}
 \section*{\textbf{Preface: Hello Linux!}}
+\phantomsection
 \addcontentsline{toc}{section}{Preface: Hello Linux!}
 
 \subsection*{\textbf{First of all}}
@@ -192,17 +193,16 @@ below.}
 thousand words. Don't study with a mentality of not
 seeking deep understanding.
 
--> This tutorial takes \texttt{Debian\ 12}\ as most examples. Maybe there
-are examples of Ubuntu mixed in, because I have an existing Ubuntu
-virtual machine and I'm too lazy to install a Debian
+-> This tutorial takes \textbf{Fedora 44}\ as most examples. Maybe there
+are examples of other distros mixed in, because I have an existing Ubuntu
+virtual machine and I'm too lazy to install a Fedora
 virtual machine. They are the same in most cases.
 
 -> For the universality of the tutorial, the entire text is in English.
 Also, It \textbf{WILL} help your CET6.
 
--> Learn to use search engines. You can learn on CSDN: 
-\url{https://www.csdn.net/}, the biggest Linux forum: 
-\url{https://www.linux.org/} or any website you want.
+-> Learn to use search engines. You can learn on ArchLinux Wiki: 
+\url{wiki.archlinux.org} or any LLM you want.
 
 -> No one is a god. There must be mistakes in the tutorial, tell me if
 you find them.
@@ -210,14 +210,10 @@ you find them.
 -> Abandon Windows inertia thinking. Don't be afraid of
 terminal, GUI is not a must.
 
--> To follow Teacher Chen's advice, this tutorial starts
-from the basics, and doesn't involve any third-party
-software. It means what we only have is terminal (However I still state
-an ssh software and even a desktop OS in the advanced part).
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/Hello Linux!/1.png}
+    \includegraphics[width=0.6\textwidth,keepaspectratio]{assets/Hello Linux!/1.png}
 \end{figure}
 
 \subsection*{\textbf{What is Linux}}
@@ -245,41 +241,38 @@ cost --- it's ideal.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/Hello Linux!/2.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Hello Linux!/2.png}
 \end{figure}
 
 \subsection*{\textbf{Why Linux}}
 
-As a matter of fact, Linux is convenient, isn't it? And
-sometimes you know, there are lots of course designs that force you to
-use Linux to run programs which can have run on Windows. So, as a
-Windows user with 10+ years of experience, I (and also you) have to
-learn to use Linux instead.
-
-Moreover, I know some of you will take part in competitions about
-robots, All of these test your Linux usage ability. For example, raspi,
-nano, they mainboards is controlled through Linux. Essential, right?
+As a matter of fact, Linux is convenient, isn't it? Not only it is faster
+than Windows, but also it is more stable and secure. And the most
+important is that it is free.
 
 \subsection*{\textbf{Which Linux}}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/Hello Linux!/3.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Hello Linux!/3.png}
 \end{figure}
 
-There are always people debating which Linux distribution is better.
-Actually in my opinion most of them are similar, and the kernel commands
-are all the same.
+There are always people debating which Linux distro is better. Most of the
+times, Mint is the best choice for new users, Redhat for servers,
+and Archlinux for geeks. I don't want to say which is better, but I will
+give my personal suggestion. If you are a new user, don't use Archlinux,
+it will be a nightmare. As for me, I have used Ubuntu, Debian and Fedora,
+and I think Fedora fits me best. I can taste almost the lastest software
+and it is stable enough to use. The most important is that it's very easy
+to install Nvidia drivers. Yes, this is sometimes a quite troublesome thing
+on Linux.
 
-For we newbies, I suggest Debian.\ \texttt{KDE}\ desktop is beautiful and
-highly customizable. The whole OS is stable enough to be used until
-death. And the most important is that you can find tutorials easier than
-Archlinux or Redhat when getting troubles.
+Of course, I won't recommend you any distro, you can choose whatever
+you want. But this tutorial is based on Fedora, so if you want to follow me,
+let's try Fedora 44!
 
-\begin{mdquote}
-Why not Ubuntu? Check \textbf{2.7 I'd rather be a
-bookworm}!
-\end{mdquote}
+\textbf{P.S.} This tutorial is mainly based on Fedora 44, but there are
+also some examples of other distros mixed in.
 
 \subsection*{\textbf{At last}}
 
@@ -289,6 +282,11 @@ review and improve constantly. Maybe it's not useful at
 the moment, like calculus cannot be used to buy groceries either. It
 WILL make a huge impact one day. Now let's say the
 famous saying. \emph{Talk is cheap, show me the code!}
+
+\begin{flushright}
+Oct0pu5\\
+Last edited on: Jul 8th, 2026
+\end{flushright}
 
 \newpage
 \thispagestyle{empty}
@@ -303,98 +301,17 @@ famous saying. \emph{Talk is cheap, show me the code!}
 
 \fontsize{12}{14}
 \newpage
-\subsection{\textbf{How to install Debian on Windows}}
-
-\subsubsection{\textbf{VMware didn't meet my expectation}}
-Yes, I used VMware to load my Ubuntu (and also my Windows Server 2019
-before). Not many reasons for me but easy and fast. There are still 2
-Ubuntus in my VMware, one is used to finish the computer program course
-design, the other is for ISCC 2024.
-
-However, I must say that VMware is troublesome, bugs, errors, I could
-see those almost every week when I had to use it. The only exciting
-thing to me may be a free cd-key when I was still in high school and
-penniless. But this year they said VMware would be totally free for
-individuals, so no reason to use this awful software anymore I think.
-
-If you must use VMware, see the link below, it contains Debian 12:
-\href{https://mirrors.ustc.edu.cn/debian-cd/current/amd64/iso-cd/debian-12.9.0-amd64-netinst.iso}{https://mirrors.ustc.edu.cn/debian-cd/current/amd64/iso-cd/debian-12.9.0-amd64-netinst.iso}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.1 How to install Debian on Windows/1.png}
-\end{figure}
-
-\subsubsection{\textbf{WSL}}
-
-No doubt that GUI is familiar to us Windows users, but not exactly to
-Linuxer. Try using an OS with only terminal is hard but interesting.
-Then WSL is the best choice.
-
-I will give an example that installing Debian 12 on Windows 11.
-
-\subsubsection*{\textbf{An example}}
-
-Press \texttt{Win\ +\ R}\ and input \texttt{optionalfeatures}, click 
-\texttt{Windows\ subsystem\ for\ Linux}\ and \texttt{Virtual\ Machine\ Platform}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.1 How to install Debian on Windows/2.png}
-\end{figure}
-
-Open Microsoft Store, download Debian 12.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.1 How to install Debian on Windows/3.png}
-\end{figure}
-Press \texttt{Win\ +\ R}\ and input \texttt{wt}, input
-\texttt{wsl -update}, then you can use Linux on Windows.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.1 How to install Debian on Windows/4.png}
-\end{figure}
-
-Then connect your Debian with VSCode. Download \texttt{WSL}\ extension,
-connect to your Debian.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.1 How to install Debian on Windows/5.png}
-\end{figure}
-
-Now you can use VSCode to edit files what ever you want.
-
-\subsubsection*{\textbf{Notice}}
-
-If you want to call VSCode in the terminal, just input \texttt{code\ ..}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/Linux/1.1 How to install Debian on Windows/6.png}
-\end{figure}
-
-You can also check files here:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/Linux/1.1 How to install Debian on Windows/7.png}
-\end{figure}
-
 \subsection{\textbf{C++ \& Python Environment Configuration on Linux}}
 
 \subsubsection{\textbf{C++}}
 
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
-sudo apt update
-sudo apt install build-essential
+sudo dnf install gcc gcc-c++ cmake
 \end{verbatim}
 \end{adjustwidth}
 
-\texttt{build-essential}\ contains packages which C++ programs need such
+These packages contain the tools which C++ programs need such
 as \texttt{gcc},\ \texttt{g++},\ \texttt{cmake}, etc.
 
 If you have edited a file \texttt{hello.cpp}, then you can compile and
@@ -420,9 +337,8 @@ Don't use Python2, it has outdated!
 
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
-sudo apt update
-sudo apt install python3
-sudo apt install python3-pip
+sudo dnf install python3
+sudo dnf install python3-pip
 \end{verbatim}
 \end{adjustwidth}
 
@@ -452,7 +368,7 @@ Why I don't mention \texttt{Emacs} in this tutorial? Because I never use it xD
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/1.png}
 \end{figure}
 
 \subsubsection{\textbf{Vim}}
@@ -461,8 +377,7 @@ Run commands below to install:
 
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
-sudo apt update
-sudo apt install vim
+sudo dnf install vim
 \end{verbatim}
 \end{adjustwidth}
 
@@ -472,7 +387,7 @@ you. Here is the interface.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/2.png}
 \end{figure}
 
 \texttt{Vim}\ has 2 input modes and many different methods. Here, we only
@@ -485,7 +400,7 @@ then input \texttt{:wq}\ to save and quit \texttt{Vim}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/3.png}
 \end{figure}
 
 This is a table that lists various inputs and their functions.
@@ -510,7 +425,7 @@ Just input \texttt{/whatyousearch}. Take a look at this example below:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/4.png}
 \end{figure}
 
 \subsubsection{\textbf{Other Tools}}
@@ -519,7 +434,7 @@ Just input \texttt{/whatyousearch}. Take a look at this example below:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/5.png}
 \end{figure}
 
 \texttt{nano} is another editor besides \texttt{Vim}, I
@@ -540,15 +455,15 @@ mistake). So I won't use it anyway.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/6.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/6.png}
 \end{figure}
 
 If you want to install \texttt{Gedit}, follow the commands below:
 
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
-sudo apt upgrade
-sudo apt install gedit
+sudo dnf upgrade
+sudo dnf install gedit
 gedit yourfilename
 \end{verbatim}
 \end{adjustwidth}
@@ -557,7 +472,7 @@ It should be like this:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.3 How to edit files on Linux/7.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/7.png}
 \end{figure}
 
 \newpage
@@ -637,7 +552,7 @@ flat layout.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.4 Linux directory structure and command/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/1.png}
 \end{figure}
 
 \texttt{-a} means show all files include those are hidden.
@@ -646,7 +561,7 @@ before its name such as \texttt{.bashrc}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.4 Linux directory structure and command/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/2.png}
 \end{figure}
 
 \begin{mdquote}
@@ -663,7 +578,7 @@ with -l}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.4 Linux directory structure and command/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/3.png}
 \end{figure}
 
 \begin{mdquote}
@@ -697,7 +612,7 @@ classic directory operation.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.4 Linux directory structure and command/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/4.png}
 \end{figure}
 
 \subsubsection*{\textbf{pwd}}
@@ -708,7 +623,7 @@ purpose.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.4 Linux directory structure and command/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/5.png}
 \end{figure}
 
 \subsubsection*{\textbf{mkdir}}
@@ -722,7 +637,7 @@ otherwise it will throw error.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.4 Linux directory structure and command/6.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/6.png}
 \end{figure}
 
 \begin{mdquote}
@@ -732,7 +647,7 @@ solve this problem in \textbf{1.6 Linux user and permission commands}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.4 Linux directory structure and command/7.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/7.png}
 \end{figure}
 
 \newpage
@@ -743,14 +658,14 @@ solve this problem in \textbf{1.6 Linux user and permission commands}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/1.png}
 \end{figure}
 
 \texttt{cat} views file content.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/2.png}
 \end{figure}
 
 \texttt{more} suits for files with a lot of content, which can be viewed
@@ -758,7 +673,7 @@ page by page instead of displaying everything like \texttt{cat}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/3.png}
 \end{figure}
 
 \begin{mdquote}
@@ -775,7 +690,7 @@ When \texttt{cp} a folder, \texttt{-r} is a must.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/4.png}
+    \includegraphics[width=0.75\textwidth,keepaspectratio]{assets/1.4 Linux file commands/4.png}
 \end{figure}
 
 \texttt{mv} moves files and folders from one path to another. Grammar
@@ -784,7 +699,7 @@ here:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/5.png}
 \end{figure}
 
 \subsubsection{\textbf{rm}}
@@ -821,7 +736,7 @@ listen to me my friends, \textbf{DON'T TRY THIS COMMAND
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/6.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/1.4 Linux file commands/6.png}
 \end{figure}
 
 This story tells us when you must use \texttt{rm}, be careful, think
@@ -841,7 +756,7 @@ those 2 files.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/7.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/7.png}
 \end{figure}
 
 \texttt{-a}\ is used to show all possible files. If you install Python
@@ -861,12 +776,12 @@ You should notice that \texttt{+}\ means \texttt{\textgreater{}}\ and
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/8.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/8.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/9.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/9.png}
 \end{figure}
 \end{mdquote}
 
@@ -882,7 +797,7 @@ I suggest you always write \texttt{-n}\ because it shows which row it is.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/10.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/10.png}
 \end{figure}
 
 Amazing, \texttt{grep}\ even give 'hello' a red color to emphasize.
@@ -895,7 +810,7 @@ be the input of right side. Here's an example:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/11.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/11.png}
 \end{figure}
 \subsubsection{\textbf{wc}}
 
@@ -921,7 +836,7 @@ rows, words and bytes by default.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/12.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/12.png}
 \end{figure}
 
 \subsubsection{\textbf{echo}}
@@ -938,7 +853,7 @@ I introduce `` to encircle the reserved words. Example here:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/13.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/13.png}
 \end{figure}
 
 Besides, if you have learnt Python data analysis, then you must know
@@ -956,7 +871,7 @@ an append operation.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/14.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/14.png}
 \end{figure}
 
 \subsubsection{\textbf{tail}}
@@ -974,7 +889,7 @@ changed content.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/15.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/15.png}
 \end{figure}
 
 When I input
@@ -987,7 +902,7 @@ something troublesome below.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/16.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/16.png}
 \end{figure}
 
 I delete \texttt{test.txt}, and create a new one with a word 'new', but
@@ -998,7 +913,7 @@ to \texttt{-F}. Let's see what will happen.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.5 Linux file commands/17.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/17.png}
 \end{figure}
 
 Cool.\ \texttt{-F}\ will show hints when tracked file is deleted or
@@ -1061,7 +976,7 @@ requires password for the first time.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.6 Linux user and permission commands/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.5 Linux user and permission commands/1.png}
 \end{figure}
 
 Linux is interesting. It won't display when typing
@@ -1106,7 +1021,7 @@ in the end of the output.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.6 Linux user and permission commands/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.5 Linux user and permission commands/2.png}
 \end{figure}
 
 \texttt{getent\ group}\ views what the current groups are.
@@ -1150,7 +1065,7 @@ clean screen back. It proves effective every time!
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.7 Tricks for a real Linuxer/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/1.png}
 \end{figure}
 
 \begin{mdquote}
@@ -1161,7 +1076,7 @@ More than that, \texttt{Ctrl+l}\ is the same as \texttt{clear}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.7 Tricks for a real Linuxer/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/2.png}
 \end{figure}
 
 I should input \texttt{test1.cpp}\ normally but if I press \texttt{tab}\
@@ -1174,7 +1089,7 @@ plenty of time when you have to input some long commands.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.7 Tricks for a real Linuxer/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/3.png}
 \end{figure}
 
 I \texttt{vim\ test1.cpp}, what if I find a mistake? I have to type this
@@ -1192,7 +1107,7 @@ want to view.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.7 Tricks for a real Linuxer/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/4.png}
 \end{figure}
 
 \subsubsection{\textbf{ll}}
@@ -1205,7 +1120,7 @@ Also you can try \texttt{ll\ -h}\ which is the same as \texttt{ls\ -lh}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.7 Tricks for a real Linuxer/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/5.png}
 \end{figure}
 
 \subsubsection{\textbf{\texttt{Ctrl}\ combination
@@ -1230,7 +1145,7 @@ That is to say you can restore this process, using \texttt{fg}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.7 Tricks for a real Linuxer/6.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/6.png}
 \end{figure}
 
 In the figure above, we suspend \texttt{python3}\ with \texttt{Ctrl+Z}\
@@ -1244,7 +1159,7 @@ user or compilers.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.7 Tricks for a real Linuxer/7.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/7.png}
 \end{figure}
 
 I input \texttt{Ctrl+D}\ after \texttt{su\ -}\ and \texttt{python3}. Quite
@@ -1275,7 +1190,7 @@ displayed on terminal.
 \subsubsection{\textbf{Installing softwares}}
 
 \begin{mdquote}
-It has differences between Debian and CentOS in this section!
+It has differences between Fedora and Debian/Ubuntu in this section!
 \end{mdquote}
 
 Why Linux is hard to a newbie? I think it has a lot to do with the
@@ -1288,10 +1203,10 @@ website, most people ignore them. That's a pity.
 But don't worry, we can still install using our
 terminal.
 
-Next, I will take Debian as an example because CentOS has stopped
+Next, I will take Fedora as an example because CentOS has stopped
 maintenance and there may be unforeseen problems.
 
-\texttt{apt(-get)\ {[}install\ \textbar{}\ remove\ \textbar{}\ search{]}\ \textless{}name\textgreater{}}
+\texttt{dnf\ {[}install\ \textbar{}\ remove\ \textbar{}\ search{]}\ \textless{}name\textgreater{}}
 helps install or uninstall softwares. Also it needs \texttt{root}\
 permission so we add \texttt{sudo}.
 
@@ -1303,7 +1218,7 @@ explanation in \textbf{1.9 Network commands on Linux}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.8 Some trivial contents on Linux/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/1.png}
 \end{figure}
 
 \subsubsection{\textbf{Soft link}}
@@ -1313,7 +1228,7 @@ A soft link on Linux is like a shortcut on Windows. Grammar here:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.8 Some trivial contents on Linux/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/2.png}
 \end{figure}
 
 \subsubsection{\textbf{date}}
@@ -1345,14 +1260,14 @@ Here's a form including all time formats:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.8 Some trivial contents on Linux/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/3.png}
 \end{figure}
 
 \subsubsection{\textbf{File Descriptor and Redirection Operators}}
 
 \begin{mdquote}
 Check this blog for more information: \url{https://www.cnblogs.com/hls-code/p/16968319.html}.
-\end{mdquote}
+1.4 Linux directory structure and command\end{mdquote}
 
 \subsubsection*{\textbf{File Descriptor}}
 
@@ -1390,7 +1305,7 @@ make the output more clear. Here's an example:
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.8 Some trivial contents on Linux/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/4.png}
 \end{figure}
 
 \texttt{cat /dev/null > test.cpp}\ is just the same as \texttt{echo "" > test.cpp}.
@@ -1417,7 +1332,7 @@ is IP.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.9 Linux network commands/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/1.png}
 \end{figure}
 
 Input \texttt{hostname}\ to check your hostname. Or
@@ -1432,7 +1347,7 @@ your young soul. Like this:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.9 Linux network commands/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/2.png}
 \end{figure}
 
 \subsubsection{\textbf{ping}}
@@ -1445,7 +1360,7 @@ infinite.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.9 Linux network commands/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/3.png}
 \end{figure}
 
 \texttt{ping}\ can not only determine if the server is functioning
@@ -1478,7 +1393,7 @@ generally.\ \texttt{wget-log}\ shows the progress. In this example
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.9 Linux network commands/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/4.png}
 \end{figure}
 
 \texttt{wget\ -c\ {[}-t\ num{]}\ {[}-T\ num{]}\ url}\ avoids the issue of
@@ -1489,8 +1404,8 @@ no then infinite.\ \texttt{-T\ num}\ is timeout waiting time.
 \subsubsection{\textbf{curl}}
 
 \begin{mdquote}
-Debian may require self installation of \texttt{curl}. Input
-\texttt{sudo\ apt\ install\ curl}.
+Fedora may require self installation of \texttt{curl}. Input
+\texttt{sudo\ dnf\ install\ curl}.
 \end{mdquote}
 
 \texttt{curl}\ send a web request. Grammar here:
@@ -1530,7 +1445,7 @@ local address, ports, states and PID, everything is in sight.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.9 Linux network commands/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/5.png}
 \end{figure}
 
 \subsection{\textbf{Linux process commands}}
@@ -1546,7 +1461,7 @@ application and a unique PID for every process.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.10 Linux process commands/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/1.png}
 \end{figure}
 
 \texttt{UID}\ is the user to which the process belongs.\ \texttt{PPD}\ is
@@ -1562,7 +1477,7 @@ shows process in a tree structure.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.10 Linux process commands/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/2.png}
 \end{figure}
 
 You can see the \texttt{pstree}\ is controlled by \texttt{bash}.
@@ -1579,7 +1494,7 @@ example:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.10 Linux process commands/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/3.png}
 \end{figure}
 
 I \texttt{tail\ -F}\ a file and \texttt{kill}\ it. It shows 'Terminated'
@@ -1594,7 +1509,7 @@ ignore those inactive process.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.10 Linux process commands/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/4.png}
 \end{figure}
 
 Look, I am \texttt{vim}-ing a file. And there're more
@@ -1644,7 +1559,7 @@ could it work!
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.11 Linux environment variables/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/1.png}
 \end{figure}
 
 I only showed a part of it. There are some points we should understand.
@@ -1660,7 +1575,7 @@ connected together, \texttt{\{\}}\ needs to be added. Like this:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.11 Linux environment variables/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/2.png}
 \end{figure}
 
 \subsubsection{\textbf{Add environment variables}}
@@ -1673,7 +1588,7 @@ environment variable. It is only valid in the current terminal.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.11 Linux environment variables/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/3.png}
 \end{figure}
 
 And 2 ways to add permanently. Write \texttt{\textasciitilde{}/.bashrc}\
@@ -1682,19 +1597,19 @@ for current user or \texttt{/etc/profile}\ for all users. Then run
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.11 Linux environment variables/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/4.png}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.11 Linux environment variables/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/5.png}
 \end{figure}
 
 By the way, you can see codes below in \texttt{.bashrc}:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.11 Linux environment variables/6.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/6.png}
 \end{figure}
 
 You can input \texttt{ls\ -\/-help}\ for more information about
@@ -1770,7 +1685,7 @@ to \texttt{mkdir}\ or it will throw error!
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.12 Linux compression commands/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.11 Linux compression commands/1.png}
 \end{figure}
 
 There is a tip in the figure above.\ \texttt{-zcvf}\ can be decompressed
@@ -1794,7 +1709,7 @@ Don't ask similar silly questions again.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/1.12 Linux compression commands/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.11 Linux compression commands/2.png}
 \end{figure}
 
 \newpage
@@ -1822,7 +1737,7 @@ lot.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.1 SHIT, I forgot my password again!/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/1.png}
 \end{figure}
 
 \subsubsection{\textbf{Not WSL?}}
@@ -1835,7 +1750,7 @@ ask password of the current user.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.1 SHIT, I forgot my password again!/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/2.png}
 \end{figure}
 
 But what if you even forget your own password? You want to
@@ -1851,21 +1766,21 @@ Take Ubuntu as an example. Boot Ubuntu and hold \texttt{shift}\ to enter
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.1 SHIT, I forgot my password again!/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/3.png}
 \end{figure}
 
 Select \textbf{recovery mode}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.1 SHIT, I forgot my password again!/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/4.png}
 \end{figure}
 
 Wait a second and select \textbf{Drop to root shell prompt}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.1 SHIT, I forgot my password again!/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/5.png}
 \end{figure}
 
 Then \texttt{passwd}\ and input your new password. Ignore the error that
@@ -1873,7 +1788,7 @@ I accidentally pressed a \texttt{space}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.1 SHIT, I forgot my password again!/6.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/6.png}
 \end{figure}
 
 After that, select \textbf{Resume normal boot}. You can use it normally
@@ -1943,7 +1858,7 @@ the original version as an example.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/Linux/2.2 MobaXterm, go ssh it!/1.png}
+    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/1.png}
 \end{figure}
 
 Next, we will start to generate a key to crack it. Check this
@@ -1960,25 +1875,25 @@ your MobaXterm version.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/Linux/2.2 MobaXterm, go ssh it!/2.png}
+    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/2.png}
 \end{figure}
 
 And you can open MobaXterm and click \texttt{About}\ to check it.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/Linux/2.2 MobaXterm, go ssh it!/3.png}
+    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/3.png}
 \end{figure}
 
 \subsubsection{\textbf{Usage}}
 
 Open \texttt{Session}\ and choose \texttt{WSL}. Change
-\texttt{Distribution}\ to \texttt{Debian}. Then you can connect to WSL by
+\texttt{Distribution}\ to \texttt{Fedora}. Then you can connect to WSL by
 MobaXterm.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/Linux/2.2 MobaXterm, go ssh it!/4.png}
+    \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/4.png}
 \end{figure}
 
 Left side is a \texttt{SFTP}\ window and right side is the terminal. Now
@@ -1993,7 +1908,7 @@ terminal information more inconvenient.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.2 MobaXterm, go ssh it!/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/5.png}
 \end{figure}
 
 More than that, you can also press 'Remote
@@ -2058,7 +1973,7 @@ message like:
 
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
-You have not rebooted after updating a package 
+You have not rebooted after updating a package
 which requires a reboot. Please reboot before upgrading.
 \end{verbatim}
 \end{adjustwidth}
@@ -2072,7 +1987,7 @@ Some WSLs will show messages below:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.3 I upgraded alone/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/1.png}
 \end{figure}
 
 You need to change \texttt{Prompt=never}\ to \texttt{Prompt=lts}\\
@@ -2081,7 +1996,7 @@ the meaning of \texttt{lts}:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.3 I upgraded alone/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/2.png}
 \end{figure}
 
 \end{mdquote}
@@ -2090,7 +2005,7 @@ How long will it take!
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.3 I upgraded alone/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/3.png}
 \end{figure}
 
 
@@ -2100,7 +2015,7 @@ this:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.3 I upgraded alone/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/4.png}
 \end{figure}
 
 
@@ -2116,7 +2031,7 @@ appendWindowsPath=false
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.3 I upgraded alone/5.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/5.png}
 \end{figure}
 
 
@@ -2181,7 +2096,7 @@ terminal jumping line by line that is difficult to Windows GUI.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.3 I upgraded alone/6.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/6.png}
 \end{figure}
 
 \newpage
@@ -2201,13 +2116,13 @@ You can check the following blogs for more information:
 
 \subsubsection*{\textbf{Logs}}
 
-Debian log files are in \texttt{/var/log}. Sometimes a huge amount of
+Fedora log files are in \texttt{/var/log}. Sometimes a huge amount of
 log files can be generated and they are useless. So you need to manually
 clear them to free up disk space.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.4 No, the C drive is almost full!/1.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.4 No, the C drive is almost full!/1.png}
 \end{figure}
 
 You should clean \texttt{syslog}\ and \texttt{journal/}\ in the picture
@@ -2239,7 +2154,7 @@ deletes all journals bigger than 50M.
 Temporary files are in \texttt{/tmp}\ and \texttt{/var/tmp}. User cache
 is in \texttt{\textasciitilde{}/.cache}.\ \texttt{rm}\ them.
 
-\texttt{sudo\ apt\ autoremove}\ and \texttt{sudo\ apt\ autoclean}\ cleans
+\texttt{sudo\ dnf\ autoremove}\ and \texttt{sudo\ dnf\ clean\ all}\ cleans
 those useless packages.
 
 \subsubsection{\textbf{Transfer WSL out of C drive}}
@@ -2249,9 +2164,9 @@ still occupies tens of gigabytes of space on your C drive. Is there a
 permanent ultimate solution? The answer is YES! You can transfer your
 WSL out of C drive.
 
-Take Ubuntu 22.04 as an example. Run \texttt{wsl\ -\/-shutdown}\ in
+Take Fedora 44 as an example. Run \texttt{wsl\ -\/-shutdown}\ in
 Powershell first. Then
-\texttt{wsl\ -\/-export\ Ubuntu-22.04\ D:\textbackslash{}Ubuntu-22.04.tar}.
+\texttt{wsl\ -\/-export\ Fedora-44\ D:\textbackslash{}Fedora-44.tar}.
 That export your WSL as a \texttt{.tar}\ file to D drive.
 
 \begin{mdquote}
@@ -2259,130 +2174,19 @@ The name is up to your WSL name. You can input \texttt{wsl\ -l\ -v}\ to
 check it.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.4 No, the C drive is almost full!/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.4 No, the C drive is almost full!/2.png}
 \end{figure}
 \end{mdquote}
 
-Then \texttt{wsl\ -\/-unregister\ Ubuntu-22.04}\ and import the
+Then \texttt{wsl\ -\/-unregister\ Fedora-44}\ and import the
 transferred one.
-\texttt{wsl\ -\/-import\ Ubuntu-22.04\ D:\textbackslash{}WSL\ D:\textbackslash{}Ubuntu\ 22.04.tar}.
+\texttt{wsl\ -\/-import\ Fedora-44\ D:\textbackslash{}WSL\ D:\textbackslash{}Fedora-44.tar}.
 The \texttt{.tar}\ file can be a backup for your WSL or you can also
 delete it.
 
 If you find your user config is missing and only root exists, run
-\texttt{ubuntu22.04.exe\ config\ -\/-default-user\ \textless{}yourusername\textgreater{}}\
+\texttt{fedora.exe\ config\ -\/-default-user\ \textless{}yourusername\textgreater{}}\
 to solve this problem.
-
-\newpage
-\subsection{\textbf{What's the first word when messing up a command}}
-
-\subsubsection{\textbf{Before the beginning}}
-
-Let's see a picture first.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.5 What's the first word when messing up a command/1.png}
-\end{figure}
-
-I don't know if you often type 1 or 2 letters of a
-command incorrectly. If no, Congratulations. You are enough careful. But
-if yes, you're like most people who need to retype the
-entire command or press \texttt{↑}\ and start moving the cursor to modify
-incorrect letters. This is tiring, isn't it? I hoped to
-make a change. And it came true when I found a repository on GitHub
-named \texttt{thefuck}. Forget the NSFW, \texttt{thefuck}\ is
-interesting.
-
-\subsubsection{\textbf{thefuck}}
-
-\begin{mdquote}
-\texttt{thefuck}\ is a magnificent app which corrects your previous
-console command.
-\end{mdquote}
-
-See this demo: \href{https://raw.githubusercontent.com/Octopus058/Introduction-to-Linux/refs/heads/main/assets/Linux/2.5%20What's%20the%20first%20word%20when%20messing%20up%20a%20command/example.gif}{\textit{thefuck Demo}}
-
-Right. It has magic when you saw the demo. And you naturally opened the
-issues, saw the following scene:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.5 What's the first word when messing up a command/2.png}
-\end{figure}
-
-You won't believe that the repository you just found is
-already on the brink of death. Until you found this:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.5 What's the first word when messing up a command/3.png}
-\end{figure}
-
-To be frank, I felt terrible. There are so many repositories received
-huge amount of issues and PRs, but were ignored by maintainers. I really
-don't know why, but it IS an inevitable problem in the
-open source industry.
-
-However, the light hasn't gone out yet. Just as they
-said in issues, there's an active project working on it.
-It is \texttt{Pay\ Respects}. We can still say \texttt{fuck}\ to those
-wrong letters. I think it is the most reassuring thing to us.
-
-\subsubsection{\textbf{Pay Respects}}
-
-I asked the author 4 questions. He answered me respectively.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.5 What's the first word when messing up a command/4.png}
-\end{figure}
-
-Now we have gained a basic understanding that, \texttt{Pay\ Respects}\
-aims to replace \texttt{thefuck}\ with its faster speed and more accurate
-identification. But now it hasn't been on Debian, or
-Ubuntu in other way. Does this mean that we are unable to use it?
-Absolutely no. I found \texttt{.deb}\ from the releases. We can certainly
-install it on Debian!
-
-Input \texttt{arch}\ on WSL and you should receive \texttt{x86\_64}. This
-represents you have an Intel 64 CPU, or \texttt{AMD64}\ in a more formal
-way. Download \texttt{pay-respects\_0.6.11-1\_amd64.deb}\ from the
-releases page and you can start to install it on WSL.
-
-\begin{mdquote}
-As of the completion of this tutorial, the latest version of
-\texttt{Pay\ Respects}\ is \texttt{0.6.11}, it will update and
-don't be a nerd.
-\end{mdquote}
-
-Toggle the \texttt{.deb}\ into Debian rather than simply \texttt{wget}\ it
-due to the risk of download failure caused by intermittent access to
-GitHub.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.5 What's the first word when messing up a command/5.png}
-\end{figure}
-
-Run \texttt{sudo\ dpkg\ -i\ pay-respects\_0.6.11-1\_amd64.deb}\ to
-install \texttt{.deb}.
-
-After works above, add this to your \texttt{.bashrc}\ and
-don't forget to \texttt{source}\ it.
-
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
-eval "$(pay-respects bash --alias)"
-\end{verbatim}
-\end{adjustwidth}
-
-Now you can pay respects with confidence!
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.5 What's the first word when messing up a command/7.png}
-\end{figure}
 
 \newpage
 \subsection{\textbf{The way to pretend B}}
@@ -2400,7 +2204,7 @@ tool which fetches system information and prints it prettily.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.6 The way to pretend B/1.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/1.png}
 \end{figure}
 
 However, the last release of \texttt{neofetch}\ is in 2020, and its
@@ -2442,9 +2246,9 @@ Q: Neofetch is good enough. Why do I need fastfetch?
 \subsubsection*{\textbf{Installation}}
 
 As the same as \texttt{pay-respects}, just download
-\texttt{fastfetch-linux-amd64.deb}\ from GitHub releases page and put
-into your Ubuntu by MobaXterm. Then run
-\texttt{sudo\ dpkg\ -i\ fastfetch-linux-amd64.deb}\ and all done.
+\texttt{fastfetch-linux-amd64.rpm}\ from GitHub releases page and put
+into your Fedora by MobaXterm. Then run
+\texttt{sudo\ dnf\ install\ fastfetch-linux-amd64.rpm}\ and all done.
 
 \subsubsection*{\textbf{Usage}}
 
@@ -2452,7 +2256,7 @@ Input \texttt{fastfetch}\ and you will obtain all you want.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.6 The way to pretend B/2.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/2.png}
 \end{figure}
 
 Someone careful may ask, Does \texttt{fastfetch}\ safe because it seems
@@ -2466,11 +2270,11 @@ see this part in GitHub README.
 \subsubsection{\textbf{btop}}
 
 I think \texttt{btop}\ is the coolest \texttt{top}\ to monitor OS
-resource. It's in \texttt{apt}\ source.
+resource. It's in \texttt{dnf}\ repository.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.6 The way to pretend B/3.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/3.png}
 \end{figure}
 
 There is only 1 more thing you need to know that if you experience
@@ -2479,18 +2283,18 @@ turn \texttt{Truecolor}\ to false.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.6 The way to pretend B/4.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/4.png}
 \end{figure}
 
 \subsubsection{\textbf{fzf}}
 
 \texttt{fzf}\ is Fuzzy Fliter, an extraordinary tool to replace
-\texttt{find}. And it's already in the \texttt{apt}\
-source.
+\texttt{find}. And it's already in the \texttt{dnf}\
+repository.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.6 The way to pretend B/5.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/5.png}
 \end{figure}
 
 What's more, it supports previewing file contents.
@@ -2500,7 +2304,7 @@ must amaze you.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.6 The way to pretend B/6.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/6.png}
 \end{figure}
 
 If you think it's over, you're
@@ -2511,7 +2315,7 @@ select a file and press \texttt{Enter}, don't forget to
 take a picture of your surprised big mouth.
 
 \newpage
-\subsection{\textbf{I'd rather be a bookworm}}
+\subsection{\textbf{Ubuntu was supposed to die}}
 
 \begin{mdquote}
 This chapter was written after Introduction to Linux v0.9 (This is
@@ -2519,10 +2323,8 @@ equivalent to content before Section 2.5), some of my view had changed a
 lot during this period.
 \end{mdquote}
 
-\subsubsection{\textbf{Ubuntu was supposed to die}}
-
 You will never know how long I take to determine my mind to change my
-Ubuntu to Debian.
+Ubuntu to other distros.
 
 Since my first encounter with Linux, I have been using Ubuntu 18.04 LTS.
 But it's too old, I have to move forward.
@@ -2538,7 +2340,7 @@ CAN'T Canonical do?
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.7 I'd rather be a bookworm/1.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.6 Ubuntu was supposed to die/1.jpeg}
 \end{figure}
 
 This all happens on Ubuntu 24.04, but if i choose 22.04 LTS? Well,
@@ -2558,147 +2360,6 @@ lost oneself and suffered the consequences. I have to say,
 Moreover, see what Richard Stallman said 11 years ago:
 \url{https://www.youtube.com/watch?v=CP8CNp-vksc}.
 
-\subsubsection{\textbf{Clean up our act}}
-
-Never forget Ubuntu is just a Debian distro. So
-\href{https://www.debian.org/intro/why_debian}{\textit{why not just
-Debian?}} Debian is safer, stabler and healthier. You can download it
-just in WSL.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.7 I'd rather be a bookworm/2.png}
-\end{figure}
-
-Every commands are almost the same. Remember to change \texttt{apt}\
-source and \texttt{apt\ update\ \&\&\ apt\ upgrade}.
-
-\begin{mdquote}
-Tsing Hua source have certification problems so I recommend you to use
-USTC source instead.
-\end{mdquote}
-
-\fontsize{7}{9}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
-# 默认注释了源码仓库，如有需要可自行取消注释
-deb http://mirrors.ustc.edu.cn/debian bookworm main contrib non-free non-free-firmware
-# deb-src http://mirrors.ustc.edu.cn/debian bookworm main contrib non-free non-free-firmware
-deb http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware
-# deb-src http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware
-
-# backports 软件源，请按需启用
-# deb http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware
-# deb-src http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware
-\end{verbatim}
-\end{adjustwidth}
-
-\fontsize{12}{14}
-
-Besides, There are very few pre-installed software packages, such as
-\texttt{vim}, \texttt{net-tools}, etc. They need to be installed by
-yourself. And there are no aliases like \texttt{ll}\ either. You can
-write them in \texttt{.bashrc}.
-
-\newpage
-\subsection{\textbf{Return to Paradise}}
-
-\subsubsection{\textbf{Before the beginning}}
-
-When I was writing \textbf{2.2 MobaXterm, go ssh it!}, I tried to make a
-\texttt{GNOME}\ desktop for Ubuntu. But I failed after more than 2
-days'work. This time I chose \texttt{Plasma}\ instead
-and it worked finally. But it can be improved that the GUI desktop is a
-bit lag. I think the reason is WSL itself.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.8 Return to Paradise/1.png}
-\end{figure}
-
-More than that, it's a windowed, not a fullscreen
-application controlled by \texttt{Xephyr}. And I don't
-know why it can't rename files (even if I boot it with
-\texttt{sudo}).
-
-But no matter what, it was a big success, declaring that I have
-basically solved the GUI problem of WSL. Next step I may change the
-desktop to relatively lighter \texttt{xfce}\ to see how smooth it will be
-and decide exactly which should be used.
-
-\subsubsection{\textbf{Installation}}
-
-\begin{mdquote}
-Check this blog for more information: \href{https://ivonblog.com/posts/run-linux-desktop-on-wsl/}{https://ivonblog.com/posts/run-linux-desktop-on-wsl/}.
-\end{mdquote}
-
-\texttt{GNOME}\ desktop need \texttt{systemd}, WSL is supposed to support
-\texttt{systemd}\ but there's lots of bugs so we have to
-abandon it and choose \texttt{KDE}.
-
-\texttt{Plasma} is smaller than the ordinary \texttt{kubuntu}, just
-\texttt{apt\ install\ plasma-desktop}.
-
-Next we need \texttt{Xorg}\ and \texttt{Xserver}, input commands below:
-
-\fontsize{10}{12}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
-sudo apt install xorg
-sudo apt install xserver-xephyr
-\end{verbatim}
-\end{adjustwidth}
-\fontsize{12}{14}
-
-Set the environment variables to enable Xephyr to function properly.
-
-\fontsize{10}{12}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
-echo "export XDG_SESSION_TYPE=x11" >> ~/.profile
-echo "export GDK_PLATFORM=x11" >> ~/.profile
-echo "export GDK_BACKEND=x11" >> ~/.profile
-echo "export QT_QPA_PLATFORM=xcb" >> ~/.profile
-echo "export WAYLAND_DISPLAY=" >> ~/.profile
-
-source ~/.profile
-\end{verbatim}
-\end{adjustwidth}
-\fontsize{12}{14}
-
-\subsubsection{\textbf{Run}}
-
-Here are 2 commands you need to run. And \texttt{export\ DISPLAY=:0}\
-before the first one. Similarly, \texttt{export\ DISPLAY=:1}\ before the
-second.
-
-\fontsize{10}{12}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
-Xephyr -br -ac -noreset -resizeable -screen 1920x1080 :1 &
-sudo dbus-launch --exit-with-session startplasma-x11 &
-\end{verbatim}
-\end{adjustwidth}
-\fontsize{12}{14}
-
-\begin{mdquote}
-Don't change the resolution to 2560$\times$1440, a windowed
-application can't fill the screen properly. Besides,
-don't forget the final \texttt{\&}\ of the command!
-\end{mdquote}
-
-I recommend you to write this 2 commands into 2 \texttt{.sh}. For
-example, the first one is \texttt{Xephyr.sh}, when you need just input
-\texttt{./Xephyr.sh}.
-
-After the above operation, wait for about half a minute and you will see
-the desktop. Operate as you please!
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.8 Return to Paradise/2.png}
-\end{figure}
-
 \newpage
 \subsection{\textbf{Having heard Dao in the morning}}
 
@@ -2715,7 +2376,7 @@ something about \texttt{Vim}\ configuration.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/2.9 Having heard Dao in the morning/1.png}
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.7 Having heard Dao in the morning/1.png}
 \end{figure}
 
 \subsubsection{\textbf{Modes in Vim}}
@@ -2805,7 +2466,7 @@ this extension to write this tutorial.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/Linux/2.9 Having heard Dao in the morning/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.7 Having heard Dao in the morning/2.png}
 \end{figure}
 
 \newpage
@@ -2813,579 +2474,198 @@ this extension to write this tutorial.
 \begin{center}
     \vspace*{96pt}
     \fontsize{60}{60}\customfont{3}\par
-    \fontsize{26}{31.2}\section{\textbf{Dual OS}}\par % 标题
+    \fontsize{26}{31.2}\section{\textbf{Dual OS}}\par
     \vspace{25pt}
-    \fontsize{18}{21.6}\selectfont{\textit{Keep it simple stupid. ---Dennis Ritchie}}\par % 名言
+    \fontsize{18}{21.6}\customfont{\textit{I'd argue that everybody wants to do something that matters. --- Linus Torvalds}}\par
     \vfill
 \end{center}
 
 \newpage
-\subsection{\textbf{Seek common ground while reserving differences}}
+\subsection{\textbf{Shorin ArchLinux Guide}}
 
-\subsubsection{\textbf{Drunbing Time}}
+If Virtual Machine or WSL is not enough for you, you can try to install dual
+OS on your computer. Now I am using Fedora 44 and Windows 11 on my laptop.
+I have to say that dual OS is tryable for the ones who wants to tinker with Linux.
 
-Before this section I want to be a drunbee first. Tutorial is cheap,
-show me your screenshot: \href{https://raw.githubusercontent.com/Octopus058/Introduction-to-Linux/refs/heads/main/assets/Linux/3.1%20Seek%20common%20ground%20while%20reserving%20differences/example.gif}{screenshot}
+I much recommend you to star this repository: \url{https://github.com/SHORiN-KiWATA/Shorin-ArchLinux-Guide}.
+This is a detailed tutorial about installing ArchLinux (Also Mint and CachyOS) on your
+computer. The thought is the same for all Linux distros, so you can follow this
+tutorial to install any Linux OS. Its sufficiently detailed. Also, you can seek
+help from LLMs, like DeepSeek if you encounter any problems. To be honest,
+it's 2026, and tweaking Linux no longer means pulling your hair out over wikis
+and forums. AI helps a lot. You can even ask it to write a short tutorial for you.
+But I still recommend you to read the Shorin ArchLinux Guide first to have a
+general idea.
 
-Recently, I installed Windows + Debian dual OS. Debian \texttt{KDE}\ is
-much prettier as I said in \textbf{Hello Linux!}.
+\subsection{\textbf{How to play games on Linux}}
 
-\begin{mdquote}
-For we newbies, I suggest Debian.\ \texttt{KDE}\ desktop is beautiful and
-highly customizable. Here is a example:
+There are lots of videos about this topic. Many content creator shows you the fps
+and the performance of games on Linux. In this tutorial, I want to talk about
+some basic knowledge about playing games on Linux.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/1.png}
-\end{figure}
+I am a game lover, and I have played hundreds of games. And I have to say,
+most of the times Linux lost to Windows in terms of performance. But it's catching
+up. I think quite acceptable for now.
 
-\end{mdquote}
+\subsubsection{\textbf{Proton}}
 
-\subsubsection{\textbf{How to marry Debian}}
+Linux cannot run Windows executables directly. It uses a compatibility layer
+called \texttt{Wine}. Wine is a free and open-source compatibility layer that
+allows users to run Windows applications on Unix-like operating systems including
+Linux. Besides, Valve has developed a compatibility layer called \texttt{Proton},
+which is based on Wine and designed to run Windows games on Linux through the
+Steam platform.
 
-\begin{mdquote}
-Installing dual OS is \textbf{VERY}\ prone to make mistakes. Make sure to
-follow the tutorial and do not miss or skip any steps! I strongly
-recommend those who are not confident to install under my supervision.
-\end{mdquote}
+For most games, you can just install Steam on Linux and run the game directly.
+Steam will automatically use Proton to run the game. However, there are some
+Proton versions developed by the community, such as \texttt{Proton-GE},
+\texttt{DW-Proton}, and \texttt{Proton-CachyOS}. Proton-GE improves
+compatibility, DW-Proton improves performance on anime games,
+and Proton-CachyOS is widely approved by the community for its high performance.
+You can choose the appropriate Proton version according to your needs.
 
-\subsubsection*{\textbf{Preparation}}
+I prefer to use Proton-CachyOS. To install community Proton versions, you can
+use the \texttt{ProtonUp-Qt}\ tool. However, DW-Proton is not available on
+ProtonUp-Qt, so you need to download it from its GitHub releases page.
 
-\begin{mdquote}
-This section assumes Windows 10/11 OS with GPT disk partition and UEFI
-BIOS mode. To check these, open \texttt{disk\ manager}\ and right click
-your disk to see if there is a \texttt{Transfer\ to\ MBR\ disk}\ option.
+\subsubsection{\textbf{Anti-Cheat, the last boss}}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/2.png}
-\end{figure}
+You must have heard that Linux can't play some online games.
+True. The culprit is kernel-level anti-cheat.
 
-And run \texttt{msinfo32}\ to check your BIOS mode.
+Briefly speaking, something like \texttt{EAC}\ or \texttt{BattlEye}. They
+dig into Windows kernel so deep that Proton can't translate.
+Here are games you should expect to fail:
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/3.png}
-\end{figure}
-
-\end{mdquote}
-
-\paragraph{\textbf{Make USB drive}}\par
-\vspace{1em}
-Download \texttt{.iso} from USTC mirror:
-\url{https://mirrors.ustc.edu.cn/}. I supposed you to choose
-\texttt{KDE}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/4.png}
-\end{figure}
-
-Download \texttt{Rufus}:
-\url{https://github.com/pbatard/rufus/releases/}. This is almost the
-best tool to create bootable USB flash drives.
-
-Prepare a USB disk bigger than 8GB and make sure there
-isn't any important data in it. Use \texttt{Rufus}\ to
-format and write it. Don't forget \texttt{GPT}\ disk
-partition.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/5.png}
-\end{figure}
-
-Afterwards, you will obtain an installation USB drive.
-
-\paragraph{\textbf{Check settings}}\par
-\vspace{1em}
-\begin{mdquote}
-\textbf{DON'T SKIP THIS PART, IT'S VERY
-IMPORTANT!} You can watch this video:
-\url{https://www.bilibili.com/video/BV1Cc41127B9}.
-\end{mdquote}
-
-Close \texttt{bitlocker}\ in control panel.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/6.png}
-\end{figure}
-
-Close \texttt{Nvidia\ GPU\ Direct}. That means choose \texttt{Optimus}\
-in Nvidia control panel.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/7.png}
-\end{figure}
-
-Close \texttt{Secure\ Boot}\ and \texttt{Intel\ RST}\ in BIOS. BIOS varies
-in different models of computers, please carefully search for these
-options.
-
-\paragraph{\textbf{Perform disk partition}}\par
-\vspace{1em}
-Open \texttt{disk\ manager}\ to allocate a portion of the disk for Linux.
-If you have 2 hard drives, I recommend partitioning on the one without
-Windows C drive.
-
-I allocate 200GB for Debian.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/8.png}
-\end{figure}
-
-We will do the remaining work when installing Debian.
-
-\paragraph{\textbf{Install Debian}}\par
-\vspace{1em}
-\begin{mdquote}
-This section is missing pictures. If there is a chance, it will be
-supplemented in the future. 
-\end{mdquote}
-
-Boot computer from USB disk. Then Choose
-\textbf{Install}.
-
-The automatic installer for Debian is already comprehensive enough and
-generally does not encounter fatal errors. However, there are still some
-potential issues that may arise during the installation process. Here
-are what you should do:
-
-\begin{itemize}
-\item
-  Skip DHCP configuration.
-\item
-  Skip installing missing firmware.
-\item
-  Skip \texttt{apt}\ source configuration. Do it after the installation
-  is done.
-\item
-  Please \textbf{strictly} follow the following steps for disk
-  partitioning: Allocate space of the same size as RAM from the end of
-  idle space for \texttt{swap}\ partitions first, then allocate all space
-  for \texttt{/}, don't forget that the file system is
-  \texttt{ext4}\ format.
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \textbf{Riot Vanguard}: Valorant.
+\item \textbf{EAC}: Fortnite, Rust.
+\item \textbf{BattlEye}: PUBG, Rainbow Six Siege, Destiny 2.
+\item \textbf{EA Anti-Cheat}: FIFA/EA FC, Battlefield. EA
+doesn't care. \textbf{FUCK EA!}
+\item \textbf{GameGuard}: Korean MMOs.
 \end{itemize}
 
-After all of these are completed, you should have finished installing
-Debian.
+But there IS a silver lining. Some devs bothered to tick the checkbox,
+so \textbf{Apex Legends}, \textbf{War Thunder}
+and \textbf{Dead by Daylight} run fine.
 
-\subsubsection*{\textbf{Some important configurations}}
+\begin{mdquote}
+Check \url{https://www.protondb.com/} before buying. Platinum/Gold usually means
+good for Linux.
+\end{mdquote}
 
-\paragraph{\textbf{vim}}\par
-\vspace{1em}
-When we finally touch this new OS, The first thing to do is to change
-\texttt{apt}\ sources. However, Debian doesn't
-pre-install \texttt{vim}\ so you have to install by yourself.
+If the game you MUST play every day is on that failure list... well,
+keep your Windows or learn to use VM on Linux.
 
-If you think you can easily handle the next steps, then you are
-completely wrong. When you type \texttt{sudo}\ terminal will throw an
-error:
+\subsection{\textbf{Nvidia Driver on Fedora}}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/9.png}
-\end{figure}
+\subsubsection{\textbf{RPMFusion}}
 
-The solution is to \texttt{su\ -}\ and \texttt{vi\ /etc/sudoers}\ and find
-\texttt{root\ ALL=(ALL:ALL)\ ALL}. Add your username behind it like
-this:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/10.png}
-\end{figure}
-
-Then install \texttt{vim}? No. The current \texttt{apt}\ source actually
-is a CDROM source and not the networked. So change it to USTC source
-with \texttt{vi}.
-
-\fontsize{7}{9}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
-# 默认注释了源码仓库，如有需要可自行取消注释
-deb http://mirrors.ustc.edu.cn/debian bookworm main contrib non-free non-free-firmware
-# deb-src http://mirrors.ustc.edu.cn/debian bookworm main contrib non-free non-free-firmware
-deb http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware
-# deb-src http://mirrors.ustc.edu.cn/debian bookworm-updates main contrib non-free non-free-firmware
-
-# backports 软件源，请按需启用
-# deb http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware
-# deb-src http://mirrors.ustc.edu.cn/debian bookworm-backports main contrib non-free non-free-firmware
-\end{verbatim}
-\end{adjustwidth}
-\fontsize{12}{14}
-
-Afterwards, don't forget to update and upgrade.
+Forget downloading \texttt{.run}\ files from Nvidia. The correct way is:
 
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
-sudo apt update
-sudo apt upgrade
-sudo apt install vim
+sudo dnf install \
+  https://mirrors.rpmfusion.org/free/fedora/\
+  rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install \
+  https://mirrors.rpmfusion.org/nonfree/fedora/\
+  rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install akmod-nvidia
 \end{verbatim}
 \end{adjustwidth}
 
-\paragraph{\textbf{fcitx5}}\par
-\vspace{1em}
-I know you must notice that Debian has no Chinese input method.
-Don't worry. You can use \texttt{fcitx5}.
-\texttt{Ctrl+space}\ shifts languages.
+After reboot, open terminal and type \texttt{nvidia-smi}.
+If you see a table with GPU info, congratulations.
+But there is still a probability that you will see a black screen. If so, read on.
 
-\begin{mdquote}
-Debian won't autostart fcitx5 so you need to set it manually.
-\end{mdquote}
+\subsubsection{\textbf{Secure Boot}}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/11.png}
-\end{figure}
+Fedora keeps Secure Boot on. That's good for security, bad for Nvidia.
+The module needs a signature, or the kernel says no.
 
-More than that, Recently I found that \texttt{fcitx5} has a bug that it
-can't be used in some softwares. You can check this
-blog: \url{https://zhuanlan.zhihu.com/p/15007602945}.
+You have 2 choices:
 
-Solution is to
+\begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
+\item \textbf{Easy way:} Enter BIOS and disable Secure Boot. Done.
+\item \textbf{Proper way:} Sign the module yourself.
+\end{itemize}
 
-\fontsize{8}{10}
 \begin{adjustwidth}{2em}{0pt}
 \begin{verbatim}
-sudo chmod 777 /usr/share/applications/<softwarenamne>.desktop
+sudo kmodgenca -a
+sudo mokutil --import /etc/pki/akmods/certs/public_key.der
+# reboot -> MOK manager pops up -> enroll the key
 \end{verbatim}
 \end{adjustwidth}
-\fontsize{12}{14}
-
-and right click it, then add codes below to its environment variables:
-
-\fontsize{8}{10}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
-GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx QT_IM_MODULE=fcitx XMODIFIERS=@im=fcitx
-
-# or this, at least one should work
-
-LANG=zh_CN.UTF-8
-\end{verbatim}
-\end{adjustwidth}
-\fontsize{12}{14}
-
-It is useful to \texttt{Wechat}, \texttt{Steam}\ and so on.
-
-\paragraph{\textbf{Debian with KDE desktop has a bug since 2019}}\par
-\vspace{1em}
-If you install a new application now, It won't appear
-neither on desktop nor in applications launcher. Quite weird and it
-confused me for hours. Finally I found a blog posted from 2019 to solve
-it:
-\url{https://zhuanlan.zhihu.com/p/78349174?utm_psn=1872047636346957824}.
-Simply saying, it means
-\texttt{mkdir\ -p\ \textasciitilde{}/.local/share/applications/}.
-
-Besides, I highly recommend you to
-\texttt{sudo\ apt\ install\ desktop-file-utils}\ to prevent some abnormal
-bugs.
-
-\paragraph{\textbf{Set shortcut keys for the terminal}}\par
-\vspace{1em}
-Every time I want to open the terminal, I have to look for the
-\texttt{Konsole}\ application. Shortcut keys are better. I prefer
-\texttt{Ctrl+Alt+T}. You can set as your wish.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.1 Seek common ground while reserving differences/12.png}
-\end{figure}
-
-\newpage
-\subsection{\textbf{Decorate your own garden}}
-
-\subsubsection{\textbf{Achievement}}
-
-Stop talking nonsense, let's start with the picture
-above.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/1.png}
-\end{figure}
-
-This is a pretty good OS which can be normally used in daily life if
-there's no need for major games or professional
-softwares such as AutoCAD, Multisim or something else.
-
-The software I use can be roughly divided into two categories: chat,
-tools and entertainment. The chat software mainly includes \texttt{QQ},
-\texttt{Wechat}, \texttt{Teamspeak}\ and \texttt{Discord}. And tools like
-\texttt{GIMP}, \texttt{Kdenlive}\ and \texttt{WPS}. As for entertainment
-software, \texttt{Steam}\ and \texttt{Yesplaymusic}\ are the must.
-
-\subsubsection{\textbf{Some of my recommendations}}
-
-\subsubsection*{\textbf{Nvidia driver}}
-
-I don't know if you still remember the picture of Linus
-pointing his 🖕 vertically at Nvidia. You can still see it in the
-preface \textbf{Hello Linux!}.
-
-Actually this is not just a joke. Installing a Nvidia driver on Linux is
-quite hard for a newbie. I have reviewed many posts and blogs, and
-finally figured out what's going on.
-
-Firstly I must say that you can find a lot of related content online.
-But they are a mix of good and bad, and many of them are outdated and
-not suitable for the current situation. So maybe it's a
-better idea to follow my steps.
 
 \begin{mdquote}
-I \textbf{DON'T} recommend downloading drivers from the
-\texttt{apt}\ source, as this doesn't seem to be
-applicable to the latest GPUs (such as 4060 laptop), and the
-\href{https://wiki.debian.org/NvidiaGraphicsDrivers}{\textit{Debian Wiki}} also
-has similar instructions:
+Don't use the \texttt{nvidia}\ package from Fedora's own repo!
+Use \texttt{akmod-nvidia}\ from RPMFusion. When kernel updates,
+\texttt{akmod}\ rebuilds automatically. The other one will leave you
+staring at a black screen after every \texttt{dnf\ upgrade}.
 \end{mdquote}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/2.png}
-\end{figure}
+\subsection{\textbf{Softwares I am Using}}
 
-\begin{itemize}
-\item
-  Remove all Nvidia packages. You can simply
-  \texttt{sudo\ apt\ autoremove\ *nvidia*}.
-\item
-  Download Nvidia driver from its website. Like this:
-\end{itemize}
+\subsubsection{\textbf{QQ \& WeChat}}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/3.png}
-\end{figure}
+Good news is that both have official Linux versions now. Just go to their
+websites, grab the \texttt{.rpm}. WeChat's mini-program
+support is still broken, but chatting works fine. QQ is almost
+on par with Windows.
 
-\begin{itemize}
-\item
-  Start installing it.
-  \texttt{sudo\ bash\ \textless{}itsname\textgreater{}.run}. And you
-  will meet some options. There are 2 which you need to pay attention
-  to. Select \textbf{Yes} when it asks about \textbf{DKMS}. Select
-  \textbf{No} when it asks about \textbf{X-config}.
-\end{itemize}
+\subsubsection{\textbf{Clash Verge Rev}}
 
-\begin{mdquote}
-If you choose wrong options, it may lead to a result that you
-can't install Nvidia driver properly, even
-can't boot the desktop.
-\end{mdquote}
+You know what this is for. The original Clash is dead for years, this is the
+revival.
 
-\begin{itemize}
-\item
-  The installation program should require a restart. Do it and type
-  \texttt{nvidia-smi} to see whether you win the battle when your OS is
-  reborn. It will be like this:
-\end{itemize}
+After install, paste your subscription, then turn it on. The gate of the world
+finally opens for you.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/4.png}
-\end{figure}
+\subsubsection{\textbf{Piliplus}}
 
+This is a native Bilibili client, which is much smoother than the web version,
+and no browser RAM waste. However, if you want to live stream or uploading
+videos it seems that the fastest way is still using the web version.
 
-\subsubsection*{\textbf{Theme and window effect}}
+\subsubsection{\textbf{SPlayer}}
 
-Open your settings and find \textbf{Global Theme}. Choose a better theme
-for yourself, I personally like \texttt{Glassy}.
+Netease Cloud Music team gives up on Linux, the latest version is years old.
+And you can't even find it in a proper way. SPlayer is a good alternative,
+with a similar interface and better performance. The most important thing is that
+it is still alive, contrary to \texttt{YesPlayMusic}. Also, it supports
+\texttt{lyrica}\ or other desktop lyrics software, which is a must-have for me.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/5.png}
-\end{figure}
-
-
-If you want to get the window effects I showed at the beginning of
-\textbf{3.1 Seek common ground while reserving differences}, find this
-two options in \textbf{Windows effects}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/6.png}
-\end{figure}
-
-
-\subsubsection*{\textbf{fcitx5 skins}}
-
-Do you feel uncomfortable with the white and small UI of
-\texttt{fcitx5}? Don't worry. GitHub is a wonderful
-place that you can find almost whatever you want here. See this
-repository: \url{https://github.com/thep0y/fcitx5-themes-candlelight}.
-
-The installation steps are clearly written in \texttt{README.md}, so
-they will not be repeated here.
-
-Here's a demonstration of \texttt{winter}:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/7.png}
-\end{figure}
-
-\subsubsection*{\textbf{latte}}
-
-If you ask me what is the greatest software for Linux desktop
-beautification, I think I would say \texttt{latte}.
-
-This is what \texttt{latte-dock}\ do. A fascinating applications dock.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/8.png}
-\end{figure}
-
-And it's easy to install. You can make it in
-\texttt{apt}\ source.
-
-Toggle your desktop shortcuts for applications onto \texttt{latte}\
-works.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/9.png}
-\end{figure}
-
-After installing \texttt{latte}, you can certainly place the taskbar at
-the top of the desktop, just like what I do.
-
-\subsubsection*{\textbf{Wallpaper Engine for KDE}}
-
-Yes, you read it right. KDE desktop supports \texttt{Wallpaper\ Engine}.
-But it's not as simple as launching \texttt{Steam}\
-directly. You need to install a desktop wallpaper plugin to call it.
-Here's the url:
-\url{https://github.com/catsout/wallpaper-engine-kde-plugin}.
-
-Do as \texttt{README.md}\ requires. But there's more you
-need to know.
-
-\begin{itemize}
-\item
-  When you install dependencies, add \texttt{ninja-build}.
-\item
-  Add \texttt{-b\ qt5}\ parameter to \texttt{git\ clone}. See this:
-  \url{https://github.com/catsout/wallpaper-engine-kde-plugin/issues/463}.
-\end{itemize}
-
-Then download the plugin on the right side of the picture.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/10.png}
-\end{figure}
-
-You need to install \texttt{Steam}\ and download (\textbf{NOT} run)
-\texttt{Wallpaper\ Engine}. Afterwards, switch to this desktop wallpaper
-plugin and set its path to
-\texttt{\textasciitilde{}/.local/share/Steam/}. Now you can choose
-wallpapers in your \texttt{Wallpaper\ Engine}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/11.png}
-\end{figure}
-
-\subsubsection{\textbf{VSCode LaTeX Environment}}
-
-\begin{mdquote}
-Check this blog for more information: \url{https://zhuanlan.zhihu.com/p/581508127}.
-\end{mdquote}
-
-You should already know that all pdfs are generated by \texttt{LaTeX}.
-But how to write \texttt{LaTeX}\ in \texttt{VSCode}? 
-
-It's quite easy and similar to C programming. Firstly you should install 
-\texttt{textlive-full}\ in \texttt{apt}\ source (It may take several minutes). Then install \texttt{LaTeX Workshop}
-extension in VSCode. After these, you should do one more thing: settings.
-You can find many blogs about this on the Internet. But here I will give you
-a most common one, and this fits my template well:
-
-\href{assets/Linux/3.2 Decorate your own garden/settings.json}{\textit{settings.json}}
-
-Now you can write your own \texttt{LaTeX}!
-
-\subsubsection{\textbf{Other softwares}}
-
-\paragraph{\textbf{VLC}}
-
-As for me, \texttt{VLC}\ is the best media player on Linux, just like
-\texttt{Potplayer}\ on Windows. It can not only handle almost any media
-format but is also highly customizable. So why not?
-
-\paragraph{\textbf{stacer}}
-
-Looks like a \texttt{Dism++}\ and \texttt{taskmgr}\ combination. You can
-check your system information, boot items and service, clean trash files
-and more.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/12.png}
-\end{figure}
-
-\paragraph{\textbf{Yesplaymusic}}
-
-There's a good news that \texttt{Cloudmusic}\ has Linux
-version but also a bad one that it has been outdated since 2020. So I
-introduce \texttt{Yesplaymusic}\ as a replacement for
-\texttt{Cloudmusic}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Linux/3.2 Decorate your own garden/13.png}
-\end{figure}
-
-\paragraph{\textbf{Clash verge rev}}
-
-To be frank, accessing GitHub and other foreign forums has always been a
-hassle, which means that you have to surf the internet
-\emph{scientifically}.
-
-I guess you have heard about \texttt{Shadowsocks}, \texttt{V2ray}\ and
-\texttt{Clash}. In fact the original \texttt{Clash}\ has fallen and
-there's a resurrection version called
-\texttt{Clash\ verge\ rev}. Try it and you will find a familiar feeling
-like before.
 
 \newpage
 \titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{}
 \section*{\textbf{Afterwards: More than an OS}}
+\phantomsection
 \addcontentsline{toc}{section}{Afterwards: More than an OS}
 
 \subsection*{\textbf{All good must come to an end}}
 
 At this point, this tutorial is over. If you can persist in seeing this,
-it's very difficult. Linux is like a delicate
-handicraft, not a massive object like Windows. And this is just the
-reason why it wins love of programmers. Please always remember
-it's a tool, not a lock. We learn Linux for better
+it's very difficult. Linux is like a delicate handicraft, not a massive object
+like Windows. And this is just the reason why it wins love of programmers.
+Please always remember it's a tool, not a lock. We learn Linux for better
 programming, not for showing off and putting it aside. I hope that by
 studying this tutorial, you can adjust your mindset, not only Linux, but
 also any problems encountered in learning.
 
 \subsubsection*{\textbf{Combining practice with theory}}
 
-It's not important to understand the tutorial, but to
-learn how to solve problems.
+It's not important to understand the tutorial, but to learn how to solve problems.
 
 Before this tutorial, I had only been using Linux for a while and know
 some basic commands. But when I began to write 1.11 and the following
 chapters, I was sure that I learnt a lot while writing. For example,
-\texttt{MobaXterm}\ was recommended to me by the chairman of Intelligent
-Control Association (If it's a wrong name please tell
-me).\ \texttt{WSL}\ was explored by myself. You can hardly see it in
-almost any tutorial. And I can responsibly say that the tutorial I wrote
-is definitely much better than most of the video courses on
-\texttt{Bilibili}.
+\texttt{MobaXterm}\ was recommended to me by a senior I really admire.
+\texttt{WSL}\ was explored by myself. And I can responsibly say that
+the tutorial I wrote is definitely much better than most of the video
+courses on \texttt{Bilibili}.
 
 So what I want to say is that learning while operating is the
 \textbf{correct} study method. I can imagine that there will be many
@@ -3395,13 +2675,12 @@ another way, do you know why the tutorial is in English?
 
 \subsubsection*{\textbf{How to solve problems}}
 
-I must point out what the 'problems' I
-said is. They are various unforeseen issues that arise during the
-process of following the tutorial (for me, they are during the process
-of writing the tutorial).\ \textbf{Never} think that tutorials are 100\%
-applicable to everyone, even if I have identified various issues as much
-as possible. There always are more troubles waiting for you due to the
-different situations of each individuals.
+I must point out what the 'problems' I said is. They are various unforeseen
+issues that arise during the process of following the tutorial (for me, they
+are during the process of writing the tutorial).\ \textbf{Never} think that
+tutorials are 100\% applicable to everyone, even if I have identified various
+issues as much as possible. There always are more troubles waiting for you due
+to the different situations of each individuals.
 
 In this way, I advise you to learn to use GitHub and other forums
 wisely. You can see these two examples:
@@ -3419,40 +2698,39 @@ effective than directly seeking help from others.
 \subsubsection*{\textbf{Study is one's own business}}
 
 Although saying this can easily undermine confidence, the fact is that
-study is on your own, instead of someone else's carrer.
-I guess you probably opened this tutorial voluntarily, not by force. So
-that you should stick to it and learn Linux by yourself. However, on the
-other hand, what you have learned has nothing to do with others. Of
-course, I have written so much in the hope that you can truly learn. As
-for how many people can persist, I will never know.
+study is on your own, instead of someone else's carrer. I guess you probably
+opened this tutorial voluntarily, not by force. So that you should stick to
+it and learn Linux by yourself. However, on the other hand, what you have
+learned has nothing to do with others. Of course, I have written so much in
+the hope that you can truly learn. As for how many people can persist, I will
+never know.
 
 Apart from this tutorial, why not think about your course? How are you
 doing with your English, math, and major courses? What are your goals?
 Have you worked hard for them? I think these questions are worth your
-careful consideration. Please don't say
-'it's too early to think about these
-things now', planning your studies and life is never too
-early.
+careful consideration. Please don't say 'it's too early to think about these
+things now', planning your studies and life is never too early.
 
 \subsection*{\textbf{We finally arrive at the final destination}}
 
 Actually, writing this tutorial is largely due to Teacher
-Chen's request. I happen to be bored during the
-holidays, so I write a bit every day. And I find it quite interesting
-during this, killing two birds with one stone. At first, I planned to
-finish at 2.5, but as I researched with more and more things, I
-gradually reached 3.2. It took a month and about 11,000 words from start
-to finish. This should be the longest thing I have ever written?
-
+Chen's request. I happen to be bored during the holidays, so I write a bit
+every day. And I find it quite interesting during this, killing two birds
+with one stone. At first, I planned to finish at 2.5, but as I researched
+with more and more things, I gradually reached the final. It took a long time.
 
 Well, there are still many areas that have not been covered in this
 tutorial, such as shell, and the basic commands are not explained in
 detail enough. For beginners, it should be sufficient, as many advanced
 uses still need to be explored by oneself. If you want to use Linux as a
-server, I think you can read some content about \texttt{Docker}\ and
-operations.
+server, I think you can read some content about \texttt{Docker}\ and operations.
 
-Let's end with a famous quote: \emph{knowledge is
-boundless; there is no royal load for learning.}
+Let's end with a famous quote: \emph{knowledge is boundless; there is no royal
+load for learning.}
+
+\begin{flushright}
+Oct0pu5\\
+Last edited on: Jul 8th, 2026
+\end{flushright}
 
 \end{document}
