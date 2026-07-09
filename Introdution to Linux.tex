@@ -1,65 +1,16 @@
-\documentclass[12pt]{ctexart}
+\documentclass[lang=en,color=blue,12pt]{elegantbook}
 \usepackage{xeCJK}
 \usepackage{fontspec}
-\usepackage{titlesec}
-% 设置全局字体为楷体
-\setCJKmainfont{KaiTi}[
-    BoldFont={SimHei}, % 使用黑体作为粗体
-    ItalicFont={STXinwei}, % 使用楷体作为斜体
-    BoldItalicFont={SimHei} % 使用黑体作为粗斜体
-]
-% 设置英文字体
-\setmainfont{Times New Roman}
-
-% 设置section标题的字号
-\titleformat{\section}
-  {\normalfont\fontsize{26}{31.2}\bfseries}
-  {}
-  {0pt}
-  {}
-
-% 设置页面
+% ---- Packages ----
 \usepackage{amsmath}
-\usepackage{hyperref}
-\hypersetup{breaklinks=true}
-\usepackage{geometry}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{float}
 \usepackage{wrapfig}
 \usepackage{lastpage}
-\usepackage{titlesec}
 \usepackage{indentfirst}
-\usepackage{tikz}
-\usepackage{everypage}
-\usepackage{caption}
-\captionsetup[figure]{labelformat=empty}
-\usepackage{xcolor}
 \usepackage{listings}
-\usepackage{hyperref} % 超链接
-\usepackage{tikz}
-% 插图片
 \usepackage{graphicx}
-% 设置摘要页缩减 
-\usepackage{changepage}
-% 设置页眉页脚
-\usepackage{fancyhdr}
-\setlength{\headheight}{12.64723pt}
-\addtolength{\topmargin}{-0.64723pt}
-% 清空页眉页脚
-\pagestyle{fancy}
-% 设置列表缩进
-\usepackage[shortlabels]{enumitem}
-% 设置修改默认的section标题大小
-\usepackage{titlesec}
-\titleformat*{\section}{\LARGE}
-\titleformat*{\subsection}{\Large}
-\titleformat*{\subsubsection}{\Large}
-% 使用数学宏包
-\usepackage{amsmath}
-% 设置表格的列格式
-\usepackage{array}
-% 三线表宏包
 \usepackage{booktabs}
 % 设置产考文献不输出默认名
 \usepackage{etoolbox}
@@ -68,10 +19,8 @@
 \usepackage{url}
 % 设置等宽的代码字体
 \setmonofont{Courier New}
-% 颜色
-\usepackage{xcolor}
+
 % 代码高亮方案宏包
-\usepackage{listings}
 \definecolor{CPPLight}  {HTML} {686868}
 \definecolor{CPPSteel}  {HTML} {888888}
 \definecolor{CPPDark}   {HTML} {262626}
@@ -82,18 +31,24 @@
 \definecolor{CPPViolet} {HTML} {7040A0}
 \definecolor{CPPGray}  {HTML} {B8B8B8}
 \lstset{
-	basicstyle=\ttfamily,
+	basicstyle=\ttfamily\small,
 	breaklines=true,
-	framextopmargin=50pt,
-	frame=bottomline,
+	xleftmargin=2em,
+    resetmargins=true,
+    % GitHub-style code blocks
+	frame=single,
+    frameround=tttt,
+    framesep=8pt,
+    framerule=0.4pt,
+    rulecolor=\color{gray!35},
 	columns=fixed,
-    %numbers=left,                                       % 在左侧显示行号
-	frame=none,                                          % 不显示背景边框
-	backgroundcolor=\color[RGB]{255,255,255},            % 设定背景颜色
-	keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+    %numbers=left,
+	% frame=none replaced by frame=single above
+	backgroundcolor=\color{gray!10},
+	keywordstyle=\color[RGB]{207,47,47},
 	numberstyle=\footnotesize\color{darkgray},           % 设定行号格式
-	commentstyle=\itshape\color[RGB]{0,96,96},                % 设置代码注释的格式
-	stringstyle=\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+	commentstyle=\itshape\color[RGB]{106,115,125},
+	stringstyle=\color[RGB]{3,47,98},
 	showstringspaces=false,                              % 不显示字符串中的空格
 	language=python,                                     % 设置语言
 	morekeywords={alignas,continute,friend,register,true,alignof,decltype,goto,
@@ -112,14 +67,6 @@
 	emphstyle=\color{CPPViolet}, 
 }
 
-% 绘制页面边框
-\usepackage{everypage}
-\AddEverypageHook{
-  \begin{tikzpicture}[remember picture, overlay]
-    \draw[thick] ([xshift=0.5cm, yshift=0.5cm]current page.south west) rectangle ([xshift=-0.5cm, yshift=-0.5cm]current page.north east);
-  \end{tikzpicture}
-}
-
 % 设置自定义字体
 \newfontfamily\customfont{Freestyle Script}
 \newfontfamily\haettenfont{Haettenschweiler}
@@ -127,65 +74,47 @@
 \setmainfont{TeX Gyre Termes}
 \renewcommand{\contentsname}{Table of Contents}
 
-% 引用格式
-\newenvironment{mdquote}
-{%
-  \par\noindent
-  \begin{list}{}{%
-      \setlength{\leftmargin}{1em}%
-      \setlength{\rightmargin}{0pt}%
-      \setlength{\itemindent}{0pt}%
-      \setlength{\listparindent}{\parindent}%
-      \setlength{\topsep}{0.5\baselineskip}%
-  }
-  \item[\textbf{>}\ ]\itshape
+% 所有行内代码加浅灰底色（GitHub 风格）
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{1pt}%
+  \colorbox{gray!10}{\oldtexttt{#1}}%
+  \endgroup
 }
-{\end{list}\par}
 
+% ElegantBook 原生定义 warning/important/tip（带计数器，用 * 去编号）
+\newcommand{\warningname}{Warning}
+\newcommand{\importantname}{Important}
+\newcommand{\tipname}{Tip}
+\elegantnewtheorem{warning}{Warning}{thmstyle}{warn}
+\elegantnewtheorem{important}{Important}{defstyle}{impt}
+\elegantnewtheorem{tip}{Tip}{prostyle}{tip}
+
+% ---- Metadata ----
+\title{Introduction to Linux}
+\subtitle{v3.1}
+\author{Oct0pu5}
+\date{Jul 9th, 2026}
+\extrainfo{Value your freedom or you will lose it, teaches history. --- RMS}
+
+\cover{assets/cover.png}
 
 \begin{document}
 
-% 标题页
-\begin{titlepage}
-    \centering
-    \vspace*{96pt}
-    \fontsize{26}{31.2}\selectfont{Introduction to Linux}\par % 主标题
-    \vspace{39pt}
-    \fontsize{22}{26.4}\selectfont{\haettenfont v3. 0\normalfont}\par % 版本
-    \vspace{52.8pt}
-    \fontsize{18}{21.6}\selectfont{Author: \customfont{Oct0pu5}}\par % 作者
-    \fontsize{18}{21.6}\selectfont{Last Edited on: Jul 8th, 2026}\par % 最后编辑时间
-    \vfill
-\end{titlepage}
+\maketitle
 
-% 目录页
-\newpage
-\thispagestyle{empty}
-\small
+\frontmatter
 \tableofcontents
-\newpage
-% 目录页后面是第一页
-\setcounter{page}{1}
 
-% 开始写正文
-% 设置正文的页边距
-\newgeometry{top=3cm, left=3.5cm, right=3.5cm}
-% 设置正文的页眉页脚
-\fancyhf{}
-\fancyhead[C]{ }
-% 此处修改右上角页码
-\fancyhead[R]{Page \thepage\ of\ \NoHyper\pageref{LastPage}\endNoHyper}
-\fancyhead[L]{\customfont Introdution to Linux}
-\fancyfoot[C]{\bfseries\thepage}
+\mainmatter
 
 % 序言页
-\newpage
-\titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{}
-\section*{\textbf{Preface: Hello Linux!}}
-\phantomsection
-\addcontentsline{toc}{section}{Preface: Hello Linux!}
+\chapter*{Preface: Hello Linux!}
+\addcontentsline{toc}{chapter}{Preface: Hello Linux!}
+\chaptermark{Preface: Hello Linux!}
 
-\subsection*{\textbf{First of all}}
+\section*{First of all}
 \textbf{Before the beginning of this tutorial, you must see things
 below.}
 
@@ -211,16 +140,16 @@ you find them.
 terminal, GUI is not a must.
 
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.6\textwidth,keepaspectratio]{assets/Hello Linux!/1.png}
 \end{figure}
 
-\subsection*{\textbf{What is Linux}}
+\section*{\textbf{What is Linux}}
 
 Quoted from \url{https://www.linux.org/threads/what-is-linux.4106/}
 
-\begin{mdquote}
+\begin{note}
 Linux is an operating system that evolved from a kernel created by
 \emph{Linus Torvalds} when he was a student at the University of
 Helsinki. It is an operating system means that it's
@@ -237,22 +166,22 @@ sold it more than anything else. Linux can be installed on a home PC as
 well as a network server for a fraction of the cost of other
 companies' software packages. More reliability and less
 cost --- it's ideal.
-\end{mdquote}
+\end{note}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Hello Linux!/2.png}
 \end{figure}
 
-\subsection*{\textbf{Why Linux}}
+\section*{\textbf{Why Linux}}
 
 As a matter of fact, Linux is convenient, isn't it? Not only it is faster
 than Windows, but also it is more stable and secure. And the most
 important is that it is free.
 
-\subsection*{\textbf{Which Linux}}
+\section*{\textbf{Which Linux}}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Hello Linux!/3.png}
 \end{figure}
@@ -274,7 +203,7 @@ let's try Fedora 44!
 \textbf{P.S.} This tutorial is mainly based on Fedora 44, but there are
 also some examples of other distros mixed in.
 
-\subsection*{\textbf{At last}}
+\section*{\textbf{At last}}
 
 Rome is not built in a day, and Linux can't be learnt at
 once. It's like your school courses which needs to
@@ -288,28 +217,18 @@ Oct0pu5\\
 Last edited on: Jul 8th, 2026
 \end{flushright}
 
-\newpage
-\thispagestyle{empty}
-\begin{center}
-    \vspace*{96pt}
-    \fontsize{60}{60}\customfont{1}\par
-    \fontsize{26}{31.2}\section{\textbf{Basic Commands}}\par % 标题
-    \vspace{25pt}
-    \fontsize{18}{21.6}\customfont{\textit{Value your freedom or you will lose it, teaches history. ---RMS}}\par % 名言
-    \vfill
-\end{center}
+\chapter{Basic Commands}
 
-\fontsize{12}{14}
-\newpage
-\subsection{\textbf{C++ \& Python Environment Configuration on Linux}}
+\begin{flushright}
+\textit{Value your freedom or you will lose it, teaches history. --- RMS}
+\end{flushright}
+\section{\textbf{C++ \& Python Environment Configuration on Linux}}
 
-\subsubsection{\textbf{C++}}
+\subsection{\textbf{C++}}
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo dnf install gcc gcc-c++ cmake
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 These packages contain the tools which C++ programs need such
 as \texttt{gcc},\ \texttt{g++},\ \texttt{cmake}, etc.
@@ -317,38 +236,34 @@ as \texttt{gcc},\ \texttt{g++},\ \texttt{cmake}, etc.
 If you have edited a file \texttt{hello.cpp}, then you can compile and
 run it.
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 g++ hello.cpp -o hello
 ./hello
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
-\begin{mdquote}
+\begin{note}
 If you have problems when downloading dependencies of \texttt{g++}, check
 \textbf{10 Linux network commands}\ first then contact me.
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{Python}}
+\subsection{\textbf{Python}}
 
-\begin{mdquote}
+\begin{important*}
 Don't use Python2, it has outdated!
-\end{mdquote}
+\end{important*}
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo dnf install python3
 sudo dnf install python3-pip
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 Remember, there are differences between Windows and Linux. You need to
 input \texttt{python3},\ \texttt{pip3}\ instead of \texttt{python},\
 \texttt{pip}.
 
-\subsection{\textbf{How to edit files on Linux}}
+\section{\textbf{How to edit files on Linux}}
 
-\subsubsection{\textbf{Brief}}
+\subsection{\textbf{Brief}}
 
 We install Linux, aiming to write codes. Then we must know how to edit
 files.
@@ -359,33 +274,31 @@ it's not the same as Linux. Linux don't
 have a \texttt{notepad} anyway. At our current level, I advise you only
 1 way named \texttt{Vim}.
 
-\begin{mdquote}
+\begin{note}
 As for my personal experience, \texttt{Vim}\ is the best editor on Linux.
 And you can see more skills about \texttt{Vim}\ in 
 \textbf{2.9 Having heard Dao in the morning}.
 Why I don't mention \texttt{Emacs} in this tutorial? Because I never use it xD
-\end{mdquote}
+\end{note}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/1.png}
 \end{figure}
 
-\subsubsection{\textbf{Vim}}
+\subsection{\textbf{Vim}}
 
 Run commands below to install:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo dnf install vim
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 When editing files, just input \texttt{vim\ yourfilename}. If
 doesn't exist, \texttt{Vim}\ will open a new file for
 you. Here is the interface.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/2.png}
 \end{figure}
@@ -398,14 +311,14 @@ this, input and delete whatever you want!
 When you think all is done, press \texttt{esc}\ to quit insertion mode,
 then input \texttt{:wq}\ to save and quit \texttt{Vim}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/3.png}
 \end{figure}
 
 This is a table that lists various inputs and their functions.
 
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
     \begin{tabular}{cc}
     \toprule
@@ -423,16 +336,16 @@ Sometimes you need to find a function or variable in massive codes. On
 Windows \texttt{Ctrl+F}\ helps you. Also, \texttt{Vim}\ has this ability.
 Just input \texttt{/whatyousearch}. Take a look at this example below:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/4.png}
 \end{figure}
 
-\subsubsection{\textbf{Other Tools}}
+\subsection{\textbf{Other Tools}}
 
-\subsubsection*{\textbf{nano}}
+\subsection*{\textbf{nano}}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/5.png}
 \end{figure}
@@ -443,7 +356,7 @@ it nearly in all aspects. If you want to learn \texttt{nano}, check this
 tutorial:
 \url{https://blog.csdn.net/f272935657/article/details/141575478}.
 
-\subsubsection*{\textbf{Gedit}}
+\subsection*{\textbf{Gedit}}
 
 \texttt{Gedit}\ is a light text editor. It supports various languages and
 its graphical interface is more like \texttt{notepad}, making it more
@@ -453,32 +366,29 @@ However, \texttt{Gedit}\ has bugs for Linux without GUI, these warnings
 often make users puzzled (although it IS simple and will cause no
 mistake). So I won't use it anyway.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/6.png}
 \end{figure}
 
 If you want to install \texttt{Gedit}, follow the commands below:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo dnf upgrade
 sudo dnf install gedit
 gedit yourfilename
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 It should be like this:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/7.png}
 \end{figure}
 
-\newpage
-\subsection{\textbf{Directory structure}}
+\section{\textbf{Directory structure}}
 
-\subsubsection{\textbf{Top level directory}}
+\subsection{\textbf{Top level directory}}
 
 As we all know, There are some drives on Windows, we call them
 \texttt{top\ level\ directory}, such as \texttt{C:\textbackslash{}},
@@ -491,7 +401,7 @@ are different on Windows and Linux. Actually \texttt{\textbackslash{}}\
 on Windows and \texttt{/}\ on Linux. It's very easy to
 confuse so recite it by heart.
 
-\subsubsection{\textbf{Absolute path and relative
+\subsection{\textbf{Absolute path and relative
 path}}
 
 I have taught this part in HTML tutorial, but still need to emphasize
@@ -502,14 +412,12 @@ current directory. In actual operation we use relative path more often.
 
 Assume we have following directory structure:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 home/
 |—— test.cpp
 |—— README.md
 |—— LICENSE
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 Here are 2 examples showing what're absolute path and
 relative path:
@@ -521,12 +429,12 @@ To represent \texttt{test.cpp}in absolute path, It's
 Isn't it very simple? For beginners,
 it's easy to make mistakes. Make sure to memorize it.
 
-\subsubsection{\textbf{Special path symbols}}
+\subsection{\textbf{Special path symbols}}
 
 Linux provides 3 \texttt{Special\ path\ symbols} for users to write file
 path easier. I list them in a form.
 
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
     \begin{tabular}{cc}
     \toprule
@@ -540,9 +448,9 @@ path easier. I list them in a form.
 \end{table}
 I will explain them in more detail in the following text.
 
-\subsubsection{\textbf{Directory Commands}}
+\subsection{\textbf{Directory Commands}}
 
-\subsubsection*{\textbf{ls}}
+\subsection*{\textbf{ls}}
 
 \texttt{ls}\ list files in current directory. Here's its
 grammar: \texttt{ls\ {[}-a\ -h\ -l{]}\ {[}path{]}}.
@@ -550,7 +458,7 @@ grammar: \texttt{ls\ {[}-a\ -h\ -l{]}\ {[}path{]}}.
 If you choose no parameter, \texttt{ls}\ represents displaying files in a
 flat layout.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/1.png}
 \end{figure}
@@ -559,15 +467,15 @@ flat layout.
 It's easy to hide files on Linux, just add a \texttt{.}\
 before its name such as \texttt{.bashrc}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/2.png}
 \end{figure}
 
-\begin{mdquote}
+\begin{note}
 Files and folders are distinguished by color in WSL, those blue names
 are folders.
-\end{mdquote}
+\end{note}
 
 \texttt{-l}\ means show files in a column with more information like
 'detailed information' on Windows.
@@ -576,21 +484,21 @@ are folders.
 (represent by \texttt{k},\ \texttt{m},\ \texttt{g}) and \textbf{must use
 with -l}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/3.png}
 \end{figure}
 
-\begin{mdquote}
+\begin{note}
 Parameters above can be put together like \texttt{-alh}.
-\end{mdquote}
+\end{note}
 
 As for \texttt{path}\ parameter, we often take following strategy: switch
 to the desired directory and \texttt{ls}\ rather than
 \texttt{ls\ desireddirectory}\ directly, so I won't teach
 it xD
 
-\subsubsection*{\textbf{cd}}
+\subsection*{\textbf{cd}}
 
 As the same as \texttt{cd}\ on Windows Terminal, its function is
 \textbf{c}hange \textbf{d}irectory. Grammar here:
@@ -610,23 +518,23 @@ below, \texttt{cd}\ default path is \texttt{/home/oct0pu5}. I input
 \texttt{ls}, it shows all file in \texttt{/etc}. The above is the
 classic directory operation.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/4.png}
 \end{figure}
 
-\subsubsection*{\textbf{pwd}}
+\subsection*{\textbf{pwd}}
 
 \textbf{P}rint current \textbf{w}ork \textbf{d}irectory. Often used to
 check whether you are in right directory, or copy the directory for any
 purpose.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/5.png}
 \end{figure}
 
-\subsubsection*{\textbf{mkdir}}
+\subsection*{\textbf{mkdir}}
 
 \textbf{M}a\textbf{k}e \textbf{dir}ectory. Grammar here:
 \texttt{mkdir\ {[}-p{]}\ \textless{}path\textgreater{}}.
@@ -635,35 +543,34 @@ If you just want to create one level folder, ignore \texttt{-p}. If more
 than one level is needed, \texttt{mkdir}\ must attach \texttt{-p},
 otherwise it will throw error.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/6.png}
 \end{figure}
 
-\begin{mdquote}
+\begin{note}
 \texttt{mkdir} can only take effect in \texttt{/home}\ by default. We can
 solve this problem in \textbf{1.6 Linux user and permission commands}.
-\end{mdquote}
+\end{note}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/7.png}
 \end{figure}
 
-\newpage
-\subsection{\textbf{Linux file commands}}
-\subsubsection{\textbf{touch cat more}}
+\section{\textbf{Linux file commands}}
+\subsection{\textbf{touch cat more}}
 
 \texttt{touch} creates new file.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/1.png}
 \end{figure}
 
 \texttt{cat} views file content.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/2.png}
 \end{figure}
@@ -671,16 +578,16 @@ solve this problem in \textbf{1.6 Linux user and permission commands}.
 \texttt{more} suits for files with a lot of content, which can be viewed
 page by page instead of displaying everything like \texttt{cat}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/3.png}
 \end{figure}
 
-\begin{mdquote}
+\begin{note}
 Press \texttt{space} to turn the page, press \texttt{q} to quit.
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{cp mv}}
+\subsection{\textbf{cp mv}}
 
 \texttt{cp} copies files and folders from one path and pastes to another
 path. Grammar here:
@@ -688,7 +595,7 @@ path. Grammar here:
 
 When \texttt{cp} a folder, \texttt{-r} is a must.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth,keepaspectratio]{assets/1.4 Linux file commands/4.png}
 \end{figure}
@@ -697,12 +604,12 @@ When \texttt{cp} a folder, \texttt{-r} is a must.
 here:
 \texttt{mv\ \textless{}path1\textgreater{}\ \textless{}path2\textgreater{}}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/5.png}
 \end{figure}
 
-\subsubsection{\textbf{rm}}
+\subsection{\textbf{rm}}
 
 \texttt{rm} is a fantastic command. It deletes files and folders. Just
 use
@@ -715,11 +622,11 @@ According to Linux rules, it can delete \textbf{almost everything}. So I suggest
 you to add \texttt{-i}\ parameter to confirm deletion. And don't use
 \texttt{-f}\ (means forcefully) unless you are sure what you are doing.
 
-\begin{mdquote}
+\begin{note}
 If you don't want to input \texttt{-i}\ every time, you can add
 \texttt{alias\ rm='rm\ -i'}\ to \texttt{.bashrc}. Then you get a
 safer \texttt{rm}.
-\end{mdquote}
+\end{note}
 
 I was keen on making my own virus when I was in high school. At that
 time I write many viruses by \texttt{Visual\ Basic\ Scripts}\ such as
@@ -728,13 +635,13 @@ point to delete files however I was confused by the complex user
 permission system on Windows until now. When I met Linux, I knew my
 dream come true.
 
-\begin{mdquote}
+\begin{warning*}
 Although this is just a joke (but it's damn fact),
 listen to me my friends, \textbf{DON'T TRY THIS COMMAND
 \texttt{sudo\ rm\ -rf\ /*}\ OR YOU WILL BE REGRETFUL!}
-\end{mdquote}
+\end{warning*}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/1.4 Linux file commands/6.png}
 \end{figure}
@@ -743,7 +650,7 @@ This story tells us when you must use \texttt{rm}, be careful, think
 twice and don't regret. And ask yourself a question, how
 to delete this file properly?
 
-\subsubsection{\textbf{which}}
+\subsection{\textbf{which}}
 
 \texttt{which} finds files called by commands. Grammar here:
 \texttt{which\ {[}-a{]}\ \textless{}command\textgreater{}}.
@@ -754,7 +661,7 @@ ignored others.}
 See the example below, It means \texttt{python3}\ and \texttt{g++}\ call
 those 2 files.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/7.png}
 \end{figure}
@@ -762,40 +669,40 @@ those 2 files.
 \texttt{-a}\ is used to show all possible files. If you install Python
 3.10.x and 3.11.x, you maybe need \texttt{which\ -a\ python3}.
 
-\subsubsection{\textbf{find}}
+\subsection{\textbf{find}}
 
 \texttt{find}\ finds files based on file name or file size. Grammar here:
 \texttt{find\ path\ -name\ 'name'} or
 \texttt{find\ \textless{}path\textgreater{}\ -size\ +\textbar{}-n{[}k\ M\ G{]}}.
 
 
-\begin{mdquote}
+\begin{note}
 You should notice that \texttt{+}\ means \texttt{\textgreater{}}\ and
 \texttt{-}\ means \texttt{\textless{}}\ when based on size. Also
 \texttt{k}\ is a lowercase!*
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/8.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/9.png}
 \end{figure}
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{grep}}
+\subsection{\textbf{grep}}
 
 \texttt{grep}\ is the same as \texttt{findstr}\ in Windows CMD. It can
 filter string out. Grammar here:
 \texttt{grep\ {[}-n{]}\ 'string'\ \textless{}path\textgreater{}}.
 
-\begin{mdquote}
+\begin{note}
 I suggest you always write \texttt{-n}\ because it shows which row it is.
-\end{mdquote}
+\end{note}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/10.png}
 \end{figure}
@@ -808,16 +715,16 @@ is \texttt{or}\ in C++. But this time we call \texttt{\textbar{}}\ pipe
 symbol. It can connect 2 commands, and make the result of left command
 be the input of right side. Here's an example:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/11.png}
 \end{figure}
-\subsubsection{\textbf{wc}}
+\subsection{\textbf{wc}}
 
 \texttt{wc}\ counts the rows, words, bytes, characters of a file. Grammar
 here:\texttt{wc\ {[}-c\ -m\ -l\ -w{]}\ path}.
 
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
     \begin{tabular}{cc}
     \toprule
@@ -834,12 +741,12 @@ here:\texttt{wc\ {[}-c\ -m\ -l\ -w{]}\ path}.
 If there isn't any parameter, \texttt{wc}\ will count
 rows, words and bytes by default.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/12.png}
 \end{figure}
 
-\subsubsection{\textbf{echo}}
+\subsection{\textbf{echo}}
 
 \texttt{echo}\ = \texttt{cout}, input \texttt{echo\ 'sth'}\ then terminal
 returns sth.
@@ -851,7 +758,7 @@ Have you met following experience, want to define a variable and
 discover that it is a reserved word? What if I have to do like this? So
 I introduce `` to encircle the reserved words. Example here:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/13.png}
 \end{figure}
@@ -869,12 +776,12 @@ on the right side.
 \texttt{\textgreater{}\textgreater{}}\ do the similar thing but actually
 an append operation.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/14.png}
 \end{figure}
 
-\subsubsection{\textbf{tail}}
+\subsection{\textbf{tail}}
 
 \texttt{tail}\ views the end of the file and also monitor the latest
 changes to the file. Grammar here:
@@ -887,7 +794,7 @@ changes to the file. Grammar here:
 keep running, when the tracked file changes \texttt{tail}\ output the
 changed content.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/15.png}
 \end{figure}
@@ -900,7 +807,7 @@ error. It told me \texttt{test.txt}\ is truncated. It tells us never
 overwrite file or \texttt{tail}\ will be disabled. Moreover, there is
 something troublesome below.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/16.png}
 \end{figure}
@@ -911,7 +818,7 @@ I delete \texttt{test.txt}, and create a new one with a word 'new', but
 Don't be worry, we have a solution: change \texttt{-f}\
 to \texttt{-F}. Let's see what will happen.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/17.png}
 \end{figure}
@@ -919,13 +826,12 @@ to \texttt{-F}. Let's see what will happen.
 Cool.\ \texttt{-F}\ will show hints when tracked file is deleted or
 create.
 
-\newpage
-\subsection{\textbf{Linux user and permission commands}}
-\begin{mdquote}
+\section{\textbf{Linux user and permission commands}}
+\begin{warning*}
 All commands in this chapter except \texttt{su}\ need \texttt{sudo}!
-\end{mdquote}
+\end{warning*}
 
-\subsubsection{\textbf{Permission information}}
+\subsection{\textbf{Permission information}}
 
 There are 3 permissions on Linux: \texttt{r}\ for read, \texttt{w}\ for
 write and \texttt{x}\ for execute.
@@ -941,13 +847,13 @@ Let's take an example. \texttt{drwxr-xr-x}\ means a
 folder which current user can \texttt{rwx}\ and user group and other
 users can only \texttt{r-x}.
 
-\subsubsection*{\textbf{root}}
+\subsection*{\textbf{root}}
 
 \texttt{root}\ user dominates Linux as \texttt{TrustedInstaller}\ on
 Windows. And ordinary users can only control \texttt{/home}\ and
 \texttt{r-x}\ the other directories.
 
-\subsubsection*{\textbf{su}}
+\subsection*{\textbf{su}}
 
 \textbf{S}witch \textbf{u}ser. Grammar here:
 \texttt{su\ -\ {[}username{]}}. \texttt{-}\ is optional in fact, but I
@@ -960,21 +866,21 @@ don't ask others because they don't know
 your password neither. If you really forget it, check \textbf{2.1 SHIT, 
 I forgot my password again!}.
 
-\begin{mdquote}
+\begin{important*}
 Don't always run commands as \texttt{root} user to save
 efforts. It may cause unforeseen problems.
-\end{mdquote}
+\end{important*}
 
 To return to the user before switching, you can enter \texttt{exit}.
 
-\subsubsection*{\textbf{sudo}}
+\subsection*{\textbf{sudo}}
 
 We \textbf{STRONGLY}\ recommend everyone to use \texttt{sudo}\ rather than
 \texttt{su\ -}\ in most situations. And it's easy, just
 add \texttt{sudo}\ before commands that require permission, and it
 requires password for the first time.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.5 Linux user and permission commands/1.png}
 \end{figure}
@@ -982,15 +888,15 @@ requires password for the first time.
 Linux is interesting. It won't display when typing
 password. So recite your password, type it and press \texttt{Enter}.
 
-\subsubsection{\textbf{user and user group}}
+\subsection{\textbf{user and user group}}
 
-\subsubsection*{\textbf{user group}}
+\subsection*{\textbf{user group}}
 
 user must be in a user group. Try 2 commands below:
 \texttt{groupadd\ \textless{}groupname\textgreater{}},
 \texttt{groupdel\ \textless{}groupname\textgreater{}}.
 
-\subsubsection*{\textbf{user}}
+\subsection*{\textbf{user}}
 
 \texttt{useradd\ {[}-g\ -d{]}\ \textless{}username\textgreater{}}\ adds a
 user.
@@ -1019,14 +925,14 @@ adds the user to the user group.
 \texttt{getent\ passwd}\ views what the current users are. You can see me
 in the end of the output.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.5 Linux user and permission commands/2.png}
 \end{figure}
 
 \texttt{getent\ group}\ views what the current groups are.
 
-\subsubsection{\textbf{chmod}}
+\subsection{\textbf{chmod}}
 
 \texttt{chmod}\ changes files and folders permission. Grammar here:
 `chmod {[}-R{]}.
@@ -1044,7 +950,7 @@ represents \texttt{rwx}\ and now we have a command
 \texttt{chmod\ -R\ 777\ path}\ to achieve all permission of the file or
 folder.
 
-\subsubsection{\textbf{chown}}
+\subsection{\textbf{chown}}
 
 \texttt{chown} changes user and user group to which file and folder
 belong. Grammar here:
@@ -1055,7 +961,7 @@ and user group.
 
 Not very useful in my opinion :/
 
-\subsection{\textbf{Tricks for a real Linuxer}}
+\section{\textbf{Tricks for a real Linuxer}}
 
 \subsubsection{clear}
 
@@ -1063,18 +969,18 @@ Sometimes the terminal looks really messy and you cannot find the
 information you need at a glance. Now we have \texttt{clear}\ to bring a
 clean screen back. It proves effective every time!
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/1.png}
 \end{figure}
 
-\begin{mdquote}
+\begin{note}
 More than that, \texttt{Ctrl+l}\ is the same as \texttt{clear}.
-\end{mdquote}
+\end{note}
 
 \subsubsection{\texttt{tab}}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/2.png}
 \end{figure}
@@ -1083,11 +989,11 @@ I should input \texttt{test1.cpp}\ normally but if I press \texttt{tab}\
 terminal will help me complete it automatically.\ \texttt{tab}\ do save
 plenty of time when you have to input some long commands.
 
-\subsubsection{\textbf{Search for commands with \texttt{↑}\ and
+\subsection{\textbf{Search for commands with \texttt{↑}\ and
 \texttt{↓}}}
 
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/3.png}
 \end{figure}
@@ -1098,19 +1004,19 @@ appear directly.\ \texttt{↑}\ and \texttt{↓}\ is a quick way to search
 history. I will introduce more in the following section
 \textbf{history}.
 
-\subsubsection{\textbf{history}}
+\subsection{\textbf{history}}
 
 Want to view previous commands? Feel slow for \texttt{↑}\ and \texttt{↓}?
 \texttt{history}\ is capable of this task. In most situation we only need
 \texttt{history\ num}\ and \texttt{num}\ is the number of commands you
 want to view.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/4.png}
 \end{figure}
 
-\subsubsection{\textbf{ll}}
+\subsection{\textbf{ll}}
 
 Do you feel inconvenient when inputting \texttt{ls\ -l}? Linux gives us
 an upgrade plan \texttt{ll}.\ \texttt{ll}\ equals to \texttt{ls\ -l}\ and
@@ -1118,15 +1024,15 @@ it's shorter to type.
 
 Also you can try \texttt{ll\ -h}\ which is the same as \texttt{ls\ -lh}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/5.png}
 \end{figure}
 
-\subsubsection{\textbf{\texttt{Ctrl}\ combination
+\subsection{\textbf{\texttt{Ctrl}\ combination
 keys}}
 
-\subsubsection*{\textbf{\texttt{Ctrl+C}}}
+\subsection*{\textbf{\texttt{Ctrl+C}}}
 
 Always remember \texttt{Ctrl+C}\ is NOT copy on Linux. It is a
 \texttt{key\ interruption}\ to kill the process.
@@ -1137,13 +1043,13 @@ during the process? \emph{Damn I must kill it RIGHT NOW!} Then
 \texttt{Ctrl+C}\ helps you to save those poor remaining files. But
 shouldn't be able to save your career.
 
-\subsubsection*{\textbf{\texttt{Ctrl+Z}}}
+\subsection*{\textbf{\texttt{Ctrl+Z}}}
 
 Many confuse \texttt{Ctrl+Z}\ and \texttt{Ctrl+C}, regard them as the
 same but actually not.\ \texttt{Ctrl+Z}\ freezes, or suspends the process.
 That is to say you can restore this process, using \texttt{fg}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/6.png}
 \end{figure}
@@ -1152,12 +1058,12 @@ In the figure above, we suspend \texttt{python3}\ with \texttt{Ctrl+Z}\
 then restore it with \texttt{fg}. If it is \texttt{Ctrl+C}\
 \texttt{python3}\ will be killed.
 
-\subsubsection*{\textbf{\texttt{Ctrl+D}}}
+\subsection*{\textbf{\texttt{Ctrl+D}}}
 
 \texttt{Ctrl+D}\ exits some status. We often use it to exit \texttt{root}\
 user or compilers.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/7.png}
 \end{figure}
@@ -1165,13 +1071,13 @@ user or compilers.
 I input \texttt{Ctrl+D}\ after \texttt{su\ -}\ and \texttt{python3}. Quite
 convenient.
 
-\subsubsection*{\textbf{\texttt{Ctrl+A / Ctrl+E}}}
+\subsection*{\textbf{\texttt{Ctrl+A / Ctrl+E}}}
 
 \texttt{Ctrl+A}\ moves the cursor to the beginning of the row, and
 \texttt{Ctrl+E}\ the end. They save time to click the mouse or hold
 \texttt{←}\ and \texttt{→}.
 
-\subsubsection*{\textbf{\texttt{Ctrl+S / Ctrl+Q}}}
+\subsection*{\textbf{\texttt{Ctrl+S / Ctrl+Q}}}
 
 Always remember \texttt{Ctrl+S}\ is NOT save on Linux. (I said familiar
 words in the section \texttt{Ctrl+C}) It freezes the terminal. And
@@ -1184,14 +1090,13 @@ and continue to observe the following situation. So we can say
 \texttt{Ctrl+S}\ and \texttt{Ctrl+Q}\ helps look through the content
 displayed on terminal.
 
-\newpage
-\subsection{\textbf{Some trivial contents on Linux}}
+\section{\textbf{Some trivial contents on Linux}}
 
-\subsubsection{\textbf{Installing softwares}}
+\subsection{\textbf{Installing softwares}}
 
-\begin{mdquote}
+\begin{note}
 It has differences between Fedora and Debian/Ubuntu in this section!
-\end{mdquote}
+\end{note}
 
 Why Linux is hard to a newbie? I think it has a lot to do with the
 hassle of installing softwares. On Windows, users open Microsoft Store
@@ -1215,23 +1120,17 @@ dependency list has not been updated. Then you need to download a single
 package. Use \texttt{wget\ url}. I will provide a more detailed
 explanation in \textbf{1.9 Network commands on Linux}.
 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/1.png}
-\end{figure}
-
-\subsubsection{\textbf{Soft link}}
+\subsection{\textbf{Soft link}}
 
 A soft link on Linux is like a shortcut on Windows. Grammar here:
 \texttt{ln\ -s\ src\ dest}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/2.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/1.png}
 \end{figure}
 
-\subsubsection{\textbf{date}}
+\subsection{\textbf{date}}
 
 \texttt{date} views system time. Grammar here:
 \texttt{date\ {[}-d{]}\ \ {[}+format{]}}.
@@ -1241,7 +1140,7 @@ A soft link on Linux is like a shortcut on Windows. Grammar here:
 Remember \texttt{+format}\ needs quotation marks when there is a space.
 Here's a form including all time formats:
 
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
     \begin{tabular}{cc}
     \toprule
@@ -1258,18 +1157,18 @@ Here's a form including all time formats:
     \end{tabular}
 \end{table}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/3.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/2.png}
 \end{figure}
 
-\subsubsection{\textbf{File Descriptor and Redirection Operators}}
+\subsection{\textbf{File Descriptor and Redirection Operators}}
 
-\begin{mdquote}
+\begin{note}
 Check this blog for more information: \url{https://www.cnblogs.com/hls-code/p/16968319.html}.
-1.4 Linux directory structure and command\end{mdquote}
+\end{note}
 
-\subsubsection*{\textbf{File Descriptor}}
+\subsection*{\textbf{File Descriptor}}
 
 A file descriptor is an integer associated with the input and output of a file.
 The most 3 common are \texttt{stdin},\ \texttt{stdout}\ and \texttt{stderr}. 
@@ -1279,7 +1178,7 @@ They are 0, 1 and 2 respectively.
 \texttt{stdout}\ is the standard output, which is what you see in the terminal.
 \texttt{stderr}\ is the standard error, which is the error message you see in the terminal.
 
-\subsubsection*{\textbf{Redirection Operators}}
+\subsection*{\textbf{Redirection Operators}}
 
 If you still remember what I said in \textbf{1.5 Linux file commands},
 you can use \texttt{>}\ and \texttt{>>}\ to redirect the output of a command to a file.
@@ -1290,9 +1189,9 @@ It redirects the error message to a file.
 Here is a advanced usage.\ \texttt{2\textgreater{}\&1}\ means redirecting the error message
 to the standard output. It is often used to save errors to a log with the standard output.
 
-\begin{mdquote}
+\begin{tip*}
 This is a very useful skill!
-\end{mdquote}
+\end{tip*}
 
 Moreover, \texttt{<}\ reads the content of a file as the input of a command,
 and \texttt{<<}\ reads the content of a file as the input of a command until a delimiter.
@@ -1305,21 +1204,21 @@ make the output more clear. Here's an example:
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/4.png}
+    \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/3.png}
 \end{figure}
 
 \texttt{cat /dev/null > test.cpp}\ is just the same as \texttt{echo "" > test.cpp}.
 It cleans the file but doesn't delete it.
 
-\begin{mdquote}
+\begin{note}
 \texttt{bash} will popup an error when you want to \texttt{>}\ an existing file by default.
 You can input \texttt{set\ +o\ noclobber}\ to disable this function. But \textbf{remember to enable
 it by \texttt{set\ -o\ noclobber}\ after testing!}
-\end{mdquote}
+\end{note}
 
-\subsection{\textbf{Network commands on Linux}}
+\section{\textbf{Network commands on Linux}}
 
-\subsubsection{\textbf{hostname and IP}}
+\subsection{\textbf{hostname and IP}}
 
 IP is your network address if you are connected to the internet.
 It's divided into IPv4 and IPv6. Our country use IPv4
@@ -1330,7 +1229,7 @@ Input \texttt{ifconfig}\ and the terminal shows lots of information. Pay
 attention to \texttt{eth0}, you will find \texttt{inet}, the following
 is IP.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/1.png}
 \end{figure}
@@ -1345,12 +1244,12 @@ certainly change it.
 \texttt{hostnamectl\ set-hostname\ \textless{}name\textgreater{}}\ saves
 your young soul. Like this:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/2.png}
 \end{figure}
 
-\subsubsection{\textbf{ping}}
+\subsection{\textbf{ping}}
 
 \texttt{ping} checks whether the server is connectable. Grammar here:
 \texttt{ping\ {[}-c\ num{]}\ \textless{}ip/hostname\textgreater{}}.
@@ -1358,7 +1257,7 @@ your young soul. Like this:
 \texttt{-c\ num} decides how many times you \texttt{ping}. If no then
 infinite.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/3.png}
 \end{figure}
@@ -1367,7 +1266,7 @@ infinite.
 properly, but also you are connected to the internet. Obviously you
 won't \texttt{ping}\ anything when offline.
 
-\subsubsection{\textbf{wget}}
+\subsection{\textbf{wget}}
 
 \texttt{wget} is a powerful command to download things from the
 internet. It has many parameters that can't be omitted
@@ -1391,7 +1290,7 @@ generally.\ \texttt{wget-log}\ shows the progress. In this example
 \texttt{index.html}\ is downloaded in the blink of a eye so
 \texttt{wget-log}\ is empty.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/4.png}
 \end{figure}
@@ -1401,12 +1300,12 @@ file download interruption.\ \texttt{-t\ num}\ is the times of retry. If
 no then infinite.\ \texttt{-T\ num}\ is timeout waiting time.
 \texttt{wget}\ will retry if timeout waiting time is exceeded.
 
-\subsubsection{\textbf{curl}}
+\subsection{\textbf{curl}}
 
-\begin{mdquote}
+\begin{note}
 Fedora may require self installation of \texttt{curl}. Input
 \texttt{sudo\ dnf\ install\ curl}.
-\end{mdquote}
+\end{note}
 
 \texttt{curl}\ send a web request. Grammar here:
 \texttt{curl\ {[}-O\ \textbar{}\ -o\ rename{]}\ \textless{}url\textgreater{}}.
@@ -1418,13 +1317,13 @@ I have to say again that the main function of \texttt{curl}\ is sending
 web requests, downloading files is just a part. So I suggest you to use
 \texttt{wget}\ more currently.
 
-\subsubsection{\textbf{Port}}
+\subsection{\textbf{Port}}
 
 Port is the interface for computer interaction. Our familiar USB, VGA
 are all physical ports. And we also have virtual ports in computer OS.
 Linux has 65536 ports. They are 0 to 65535 and divided into 3 parts.
 
-\begin{table}[H]
+\begin{table}[htbp]
     \centering
     \begin{tabular}{cc}
     \toprule
@@ -1437,29 +1336,29 @@ Linux has 65536 ports. They are 0 to 65535 and divided into 3 parts.
     \end{tabular}
 \end{table}
 
-\subsubsection*{\textbf{netstat}}
+\subsection*{\textbf{netstat}}
 
 \texttt{netstat}\ can check the port occupancy status. Use
 \texttt{netstat\ -tunpl}\ to show all information you need. Prototype,
 local address, ports, states and PID, everything is in sight.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/5.png}
 \end{figure}
 
-\subsection{\textbf{Linux process commands}}
+\section{\textbf{Linux process commands}}
 
-\subsubsection{\textbf{Process}}
+\subsection{\textbf{Process}}
 
 Applications are managed by OS. OS registers process for a running
 application and a unique PID for every process.
 
-\subsubsection{\textbf{ps}}
+\subsection{\textbf{ps}}
 
 \texttt{ps\ -ef}\ shows all information of all process.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/1.png}
 \end{figure}
@@ -1470,19 +1369,19 @@ the \texttt{PID}\ of parent process.\ \texttt{C}\ is CPU usage.
 terminal, if not terminal startup then '?'.\ \texttt{TIME}\ is the time
 that process occupies CPU.\ \texttt{CMD}\ is the path or commands.
 
-\subsubsection{\textbf{pstree}}
+\subsection{\textbf{pstree}}
 
 \texttt{pstree}\ is more like an upgraded version of \texttt{ps}. It
 shows process in a tree structure.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/2.png}
 \end{figure}
 
 You can see the \texttt{pstree}\ is controlled by \texttt{bash}.
 
-\subsubsection{\textbf{kill}}
+\subsection{\textbf{kill}}
 
 \texttt{kill}\ closes the process. Grammar here:
 \texttt{kill\ {[}-9{]}\ \textless{}PID\textgreater{}}.
@@ -1492,7 +1391,7 @@ You can see the \texttt{pstree}\ is controlled by \texttt{bash}.
 \texttt{kill}\ is usually used together with \texttt{ps}. See this
 example:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/3.png}
 \end{figure}
@@ -1501,13 +1400,13 @@ I \texttt{tail\ -F}\ a file and \texttt{kill}\ it. It shows 'Terminated'
 which means it closes itself. And when \texttt{kill\ -9}\ 'Killed' means
 OS closes it forcefully.
 
-\subsubsection{\textbf{top}}
+\subsection{\textbf{top}}
 
 \texttt{top}\ monitors process information in real-time. \texttt{top}\
 refreshes every 3 seconds by default. We usually use \texttt{top\ -i}\ to
 ignore those inactive process.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/4.png}
 \end{figure}
@@ -1541,10 +1440,9 @@ physical and shared memory.\ \texttt{S}\ is process status.\ \texttt{S},\
 zombie, low priority and idle.\ \texttt{\%CPU}\ and \texttt{\%MEM}\ is CPU
 and memory usage.\ \texttt{TIME+}\ is the time that process occupies CPU.
 
-\newpage
-\subsection{\textbf{Linux environment variables}}
+\section{\textbf{Linux environment variables}}
 
-\subsubsection{\textbf{Environment variable}}
+\subsection{\textbf{Environment variable}}
 
 Environment variables are parameters which specify OS runtime
 environment. It counts a lot and is usually global. A common example is
@@ -1553,11 +1451,11 @@ you are installing Python. If there are no environment variables, Python
 can't find most of its libraries. In other words, how
 could it work!
 
-\subsubsection{\textbf{env}}
+\subsection{\textbf{env}}
 
 \texttt{env} views all environment variables on Linux.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/1.png}
 \end{figure}
@@ -1568,17 +1466,17 @@ I only showed a part of it. There are some points we should understand.
 \texttt{HOME}\ is current user's \texttt{/home}.
 \texttt{PATH}\ contains directories of all executable files.
 
-\subsubsection{\textbf{\$}}
+\subsection{\textbf{\$}}
 
 \texttt{\$}\ represents taking variable values. When characters are
 connected together, \texttt{\{\}}\ needs to be added. Like this:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/2.png}
 \end{figure}
 
-\subsubsection{\textbf{Add environment variables}}
+\subsection{\textbf{Add environment variables}}
 
 There are many ways to add environment variables, including temporary
 and permanent ones.
@@ -1586,7 +1484,7 @@ and permanent ones.
 \texttt{export\ var=\textless{}value\textgreater{}}\ temporarily adds a
 environment variable. It is only valid in the current terminal.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/3.png}
 \end{figure}
@@ -1595,19 +1493,19 @@ And 2 ways to add permanently. Write \texttt{\textasciitilde{}/.bashrc}\
 for current user or \texttt{/etc/profile}\ for all users. Then run
 \texttt{source\ thatfile} to make it effective.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/4.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/5.png}
 \end{figure}
 
 By the way, you can see codes below in \texttt{.bashrc}:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/6.png}
 \end{figure}
@@ -1617,10 +1515,9 @@ You can input \texttt{ls\ -\/-help}\ for more information about
 \texttt{alias\ lh='ll\ -h'}\ to create
 your own commands.
 
-\newpage
-\subsection{\textbf{Linux compression commands}}
+\section{\textbf{Linux compression commands}}
 
-\subsubsection{\textbf{Murmurs}}
+\subsection{\textbf{Murmurs}}
 
 I personally feel that compression and decompression related commands
 are one of the most troublesome contents in this tutorial. But we still
@@ -1628,7 +1525,7 @@ have to overcome difficulties. There is a good news that this chapter is
 the end of the main part of the tutorial (but not the end of your Linux
 learning road :D). I know you must be tired but cheer up!
 
-\subsubsection{\textbf{tar}}
+\subsection{\textbf{tar}}
 
 Before the commands, let's understand the types of
 compressed files on Linux first.\ \texttt{.zip}\ is the same as Windows,
@@ -1654,10 +1551,10 @@ decompression is \texttt{gzip}. Moreover, \texttt{gzip}\ is also an
 compression algorithm. In other words, we call this the backend of
 \texttt{tar}.
 
-\begin{mdquote}
+\begin{note}
 There are more algorithm except \texttt{gzip}, but it's
 commonly used.
-\end{mdquote}
+\end{note}
 
 Here's the grammar:
 \texttt{tar\ {[}-c\ \textbar{}\ -v\ \textbar{}\ -x\ \textbar{}\ -f\ \textbar{}\ -z\ \textbar{}\ -C{]}\ \textless{}file1\textgreater{}\ \textless{}file2\textgreater{}\ ...}.
@@ -1683,7 +1580,7 @@ I compressed 3 c++ files and decompressed them into
 to \texttt{mkdir}\ or it will throw error!
 
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.11 Linux compression commands/1.png}
 \end{figure}
@@ -1694,7 +1591,7 @@ decompressed by \texttt{-xvf}. It's easy to make
 mistakes here. My suggestion is to compress everything in \texttt{gzip}\
 format.
 
-\subsubsection{\textbf{More to say}}
+\subsection{\textbf{More to say}}
 
 I was planning to talk about \texttt{zip}.\ \texttt{zip}\ is more familiar
 to Windows users, but in order to avoid the bad habit of only using
@@ -1707,27 +1604,19 @@ But remember, \texttt{zip}\ isn't easier than
 After learning this chapter, you should know what it is.
 Don't ask similar silly questions again.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.11 Linux compression commands/2.png}
 \end{figure}
 
-\newpage
-\thispagestyle{empty}
-\begin{center}
-    \vspace*{96pt}
-    \fontsize{60}{60}\customfont{2}\par
-    \fontsize{26}{31.2}\section{\textbf{Advanced Usage}}\par % 标题
-    \vspace{25pt}
-    \fontsize{18}{21.6}\selectfont{\textit{Without absolute certainty, what do we do? We do the best we can. ---RMS}}\par % 名言
-    \vfill
-\end{center}
+\chapter{Advanced Usage}
 
-\fontsize{12}{14}
-\newpage
-\subsection{\textbf{SHIT, I forgot my password again!}}
+\begin{flushright}
+\textit{Without absolute certainty, what do we do? We do the best we can. --- RMS}
+\end{flushright}
+\section{\textbf{SHIT, I forgot my password again!}}
 
-\subsubsection{\textbf{WSL}}
+\subsection{\textbf{WSL}}
 
 This is one reason why I recommend WSL. Open \texttt{Powershell}\ or
 \texttt{Windows\ Terminal}, input \texttt{wsl\ -u\ -root}. Ignore the
@@ -1735,20 +1624,20 @@ warnings (If there are) then WSL becomes active and you are the root
 user. And \texttt{passwd\ \textless{}username\textgreater{}}\ helps a
 lot.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/1.png}
 \end{figure}
 
-\subsubsection{\textbf{Not WSL?}}
+\subsection{\textbf{Not WSL?}}
 
-\subsubsection*{\textbf{Terminal}}
+\subsection*{\textbf{Terminal}}
 
 If you still remember the password of your account, the problem will be
 much simpler. Input \texttt{sudo\ passwd\ root}\ and the terminal will
 ask password of the current user.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/2.png}
 \end{figure}
@@ -1758,27 +1647,27 @@ But what if you even forget your own password? You want to
 root user password. This is trapped in a \texttt{while(1)}\ endless loop.
 So we can only take out our last resort.
 
-\subsubsection*{\textbf{GRUB}}
+\subsection*{\textbf{GRUB}}
 
 Take Ubuntu as an example. Boot Ubuntu and hold \texttt{shift}\ to enter
 \texttt{GRUB}\ (like \texttt{BIOS}\ on Windows) menu. Select
 \textbf{Advance options for Ubuntu.}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/3.png}
 \end{figure}
 
 Select \textbf{recovery mode}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/4.png}
 \end{figure}
 
 Wait a second and select \textbf{Drop to root shell prompt}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/5.png}
 \end{figure}
@@ -1786,7 +1675,7 @@ Wait a second and select \textbf{Drop to root shell prompt}.
 Then \texttt{passwd}\ and input your new password. Ignore the error that
 I accidentally pressed a \texttt{space}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/6.png}
 \end{figure}
@@ -1794,28 +1683,26 @@ I accidentally pressed a \texttt{space}.
 After that, select \textbf{Resume normal boot}. You can use it normally
 now.
 
-\newpage
-\subsection{\textbf{MobaXterm, go ssh it!}}
+\section{\textbf{MobaXterm, go ssh it!}}
 
-\begin{mdquote}
+\begin{note}
 Check this blog for more detail:
 \url{https://blog.csdn.net/erciguihua/article/details/144258751}.
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{Before the beginning}}
+\subsection{\textbf{Before the beginning}}
 
-\begin{mdquote}
+\begin{note}
 Your Windows version must be at least Windows11 22H2. That means your
 laptop is bought at least after June, 2023 or you must upgrade your
 Windows.
-\end{mdquote}
+\end{note}
 
 Create \texttt{.wslconfig}\ in
 \texttt{C:\textbackslash{}Users\textbackslash{}\textless{}username\textgreater{}}\
 on Windows. After that write codes below:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 [wsl2]
 networkingMode=mirrored
 dnsTunneling=true
@@ -1823,13 +1710,12 @@ firewall=true
 autoProxy=true
 [experimental]
 autoMemoryReclaim=gradual
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 Also, Open the Powershell and try these 2 commands below. One of them is
 effective.
 
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
     Set-NetFirewallHyperVVMSetting -Name 
     ‘{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' 
     -DefaultInboundAction Allow
@@ -1840,7 +1726,7 @@ effective.
     -DisplayName “My Web Server” -Direction Inbound 
     -VMCreatorId “{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}”
     -Protocol TCP -LocalPorts 80
-\end{verbatim}
+\end{lstlisting}
 
 It will not only solve problems such as \emph{WSL in NAT mode
 doesn't support \texttt{localhost}\ proxy} and IP address
@@ -1849,14 +1735,14 @@ for WSL changes frequently.
 For more information, check this blog:
 \href{https://blog.csdn.net/2301\_81697902/article/details/137481359}{https://blog.csdn.net/2301\_81697902/article/details/137481359}.
 
-\subsubsection{\textbf{Downloading and cracking}}
+\subsection{\textbf{Downloading and cracking}}
 
 This is the official website: \href{https://mobaxterm.mobatek.net/}{https://mobaxterm.mobatek.net/} and
 the Chinese version:
 \url{https://github.com/RipplePiam/MobaXterm-Chinese-Simplified}. I take
 the original version as an example.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/1.png}
 \end{figure}
@@ -1873,25 +1759,25 @@ folder and it's done.
 \texttt{username}\ can be named arbitrarily and \texttt{version}\ is up to
 your MobaXterm version.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/2.png}
 \end{figure}
 
 And you can open MobaXterm and click \texttt{About}\ to check it.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/3.png}
 \end{figure}
 
-\subsubsection{\textbf{Usage}}
+\subsection{\textbf{Usage}}
 
 Open \texttt{Session}\ and choose \texttt{WSL}. Change
 \texttt{Distribution}\ to \texttt{Fedora}. Then you can connect to WSL by
 MobaXterm.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/4.png}
 \end{figure}
@@ -1906,7 +1792,7 @@ enable 'Paste using right-click'.
 MobaXterm does not enable this option by default, which makes copying
 terminal information more inconvenient.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/5.png}
 \end{figure}
@@ -1918,15 +1804,14 @@ monitors hardware information of WSL.
 Last but not least, you can split your screen into 2 or even 4
 terminals. Just hit the \texttt{Split}\ button.
 
-\newpage
-\subsection{\textbf{I upgraded alone}}
+\section{\textbf{I upgraded alone}}
 
-\begin{mdquote}
+\begin{note}
 This chapter is for Ubuntu user. Check this blog:
 \url{https://blog.csdn.net/no1xium/article/details/127012204}
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{Before the beginning}}
+\subsection{\textbf{Before the beginning}}
 
 Before writing this tutorial, I use Ubuntu 18.04 rather than Debian.
 Actually it's the first Linux OS I met. If you are the
@@ -1948,7 +1833,7 @@ versions do not match. My suggestion is to change \texttt{apt}\ source,
 run \texttt{sudo\ apt\ update}\ and \texttt{sudo\ apt\ upgrade}\ these
 three steps. Now we can start upgrading now.
 
-\subsubsection{\textbf{Upgrading}}
+\subsection{\textbf{Upgrading}}
 
 No OS allows cross level upgrades. So we have to upgrade twice. To 20.04
 first, then to 22.04.
@@ -1958,34 +1843,30 @@ source to TsingHua source first. Then run following commands to ensure
 all packages are the newest and \texttt{update-manager-core}\ is
 installed.
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo apt update
 sudo apt upgrade
 sudo apt autoremove
 sudo apt install update-manager-core
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 After that, input \texttt{sudo\ do-release-upgrade}\ and start.
 \textbf{Follow the requirements.} For example, if terminal pops up a
 message like:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 You have not rebooted after updating a package
 which requires a reboot. Please reboot before upgrading.
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 Just \texttt{sudo\ reboot}\ and type \texttt{sudo\ do-release-upgrade}\
 again.
 
-\begin{mdquote}
+\begin{note}
 Some WSLs will show messages below:
 
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/1.png}
 \end{figure}
@@ -1994,16 +1875,16 @@ You need to change \texttt{Prompt=never}\ to \texttt{Prompt=lts}\\
 in \texttt{/etc/update-manager/release-upgrades}. Here's
 the meaning of \texttt{lts}:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/2.png}
 \end{figure}
 
-\end{mdquote}
+\end{note}
 
 How long will it take!
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/3.png}
 \end{figure}
@@ -2013,7 +1894,7 @@ Thanks to TsingHua source, it just spent less than half an hour. After
 rebooting input\\ \texttt{cat\ /etc/os-release}\ and it should be like
 this:
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/4.png}
 \end{figure}
@@ -2022,27 +1903,23 @@ this:
 If you see errors below, input \texttt{sudo\ vim\ /etc/wsl.conf}\ and
 paste these codes:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 [interop]
 appendWindowsPath=false
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/5.png}
 \end{figure}
 
 
-\subsubsection{\textbf{Examine} \texttt{apt}}
+\subsection{\textbf{Examine} \texttt{apt}}
 
 Input \texttt{sudo\ vim\ /etc/apt/sources.list}\ and ensure the content
 is:
 
-\fontsize{7}{9}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash, basicstyle=\ttfamily\scriptsize]
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
@@ -2058,13 +1935,11 @@ deb http://security.ubuntu.com/ubuntu/ focal-security main restricted universe m
 # 预发布软件源，不建议启用
 # deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
 # # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
-\end{verbatim}
-\end{adjustwidth}
-\fontsize{12}{14}
+\end{lstlisting}
 
 Then run \texttt{sudo\ apt\ update}.
 
-\subsubsection{\textbf{To the end}}
+\subsection{\textbf{To the end}}
 
 Do as the same as before, upgrade Ubuntu to 22.04 LTS. I only spent
 about 20 minutes. Rebooting is required but you actually
@@ -2077,14 +1952,12 @@ All looks fine except one thing, your Powershell. Run
 It won't cause much problems but we can solve it
 quickly. Do as the following steps.
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 wsl --export Ubuntu-18.04 ubuntu22.04.tar
 wsl --unregister Ubuntu-18.04
 wsl --import Ubuntu-22.04 <yourtarpath>
 wsl --set-default Ubuntu-22.04
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 Then \texttt{wsl\ -l\ -v}, it will be \texttt{Ubuntu-22.04}. You can
 delete the \texttt{.tar}\ now.
@@ -2094,15 +1967,14 @@ Microsoft Store again. That WILL be as fast as a turtle compared to
 upgrading with the terminal. Also, you can experience the beauty of
 terminal jumping line by line that is difficult to Windows GUI.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/6.png}
 \end{figure}
 
-\newpage
-\subsection{\textbf{No, the C drive is almost full!}}
+\section{\textbf{No, the C drive is almost full!}}
 
-\begin{mdquote}
+\begin{note}
 You can check the following blogs for more information:
 
 \url{https://huaweicloud.csdn.net/6707a519e2ce0119e0a1c650.html}
@@ -2110,17 +1982,17 @@ You can check the following blogs for more information:
 \url{https://blog.csdn.net/a772304419/article/details/130932469}
 
 \url{https://www.jianshu.com/p/83f8f800c3a2}
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{Logs, temporary files and cache}}
+\subsection{\textbf{Logs, temporary files and cache}}
 
-\subsubsection*{\textbf{Logs}}
+\subsection*{\textbf{Logs}}
 
 Fedora log files are in \texttt{/var/log}. Sometimes a huge amount of
 log files can be generated and they are useless. So you need to manually
 clear them to free up disk space.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.4 No, the C drive is almost full!/1.png}
 \end{figure}
@@ -2128,28 +2000,26 @@ clear them to free up disk space.
 You should clean \texttt{syslog}\ and \texttt{journal/}\ in the picture
 above.
 
-\begin{mdquote}
+\begin{note}
 If you are worried about \texttt{rm}, \texttt{mv}\ logs to a new folder
 and \texttt{rm\ -rf}\ this folder.
-\end{mdquote}
+\end{note}
 
 For \texttt{syslog}, just \texttt{rm}\ it. For \texttt{journal/}, run
 commands below:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo systemctl stop systemd-journald
 sudo rm -rf /var/log/journal/*
 sudo systemctl start systemd-journald
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 Then use \texttt{journalctl}\ to restrict logs, like
 \texttt{sudo\ journalctl\ -\/-vacuum-time=1w}\ deletes all journals saved
 for more than a week and \texttt{sudo\ journalctl\ -\/-vacuum-size=50M}\
 deletes all journals bigger than 50M.
 
-\subsubsection*{\textbf{Temporary files and cache}}
+\subsection*{\textbf{Temporary files and cache}}
 
 Temporary files are in \texttt{/tmp}\ and \texttt{/var/tmp}. User cache
 is in \texttt{\textasciitilde{}/.cache}.\ \texttt{rm}\ them.
@@ -2157,7 +2027,7 @@ is in \texttt{\textasciitilde{}/.cache}.\ \texttt{rm}\ them.
 \texttt{sudo\ dnf\ autoremove}\ and \texttt{sudo\ dnf\ clean\ all}\ cleans
 those useless packages.
 
-\subsubsection{\textbf{Transfer WSL out of C drive}}
+\subsection{\textbf{Transfer WSL out of C drive}}
 
 After above work. You have saved tons of space successfully but WSL
 still occupies tens of gigabytes of space on your C drive. Is there a
@@ -2169,14 +2039,14 @@ Powershell first. Then
 \texttt{wsl\ -\/-export\ Fedora-44\ D:\textbackslash{}Fedora-44.tar}.
 That export your WSL as a \texttt{.tar}\ file to D drive.
 
-\begin{mdquote}
+\begin{note}
 The name is up to your WSL name. You can input \texttt{wsl\ -l\ -v}\ to
 check it.
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.4 No, the C drive is almost full!/2.png}
 \end{figure}
-\end{mdquote}
+\end{note}
 
 Then \texttt{wsl\ -\/-unregister\ Fedora-44}\ and import the
 transferred one.
@@ -2188,21 +2058,20 @@ If you find your user config is missing and only root exists, run
 \texttt{fedora.exe\ config\ -\/-default-user\ \textless{}yourusername\textgreater{}}\
 to solve this problem.
 
-\newpage
-\subsection{\textbf{The way to pretend B}}
+\section{\textbf{The way to pretend B}}
 
-\begin{mdquote}
+\begin{note}
 Sorry for my Chinglish but it's really funny.
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{fastfetch}}
+\subsection{\textbf{fastfetch}}
 
-\subsubsection*{\textbf{Why fastfetch rather than neofetch}}
+\subsection*{\textbf{Why fastfetch rather than neofetch}}
 
 If I say \texttt{neofetch}, most of you must know it's a
 tool which fetches system information and prints it prettily.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/1.png}
 \end{figure}
@@ -2213,7 +2082,7 @@ won't make many mistakes in at least 10 years but there
 are still reasons to choose \texttt{fastfetch}\ instead. Here I quote the
 statement in its README.
 
-\begin{mdquote}
+\begin{note}
 Q: Neofetch is good enough. Why do I need fastfetch?
 
 \begin{enumerate}
@@ -2241,20 +2110,20 @@ Q: Neofetch is good enough. Why do I need fastfetch?
   example, \href{https://github.com/dylanaraps/neofetch/pull/2395}{\textit{neofetch
   never actually supports the Wayland protocol}}.
 \end{enumerate}
-\end{mdquote}
+\end{note}
 
-\subsubsection*{\textbf{Installation}}
+\subsection*{\textbf{Installation}}
 
 As the same as \texttt{pay-respects}, just download
 \texttt{fastfetch-linux-amd64.rpm}\ from GitHub releases page and put
 into your Fedora by MobaXterm. Then run
 \texttt{sudo\ dnf\ install\ fastfetch-linux-amd64.rpm}\ and all done.
 
-\subsubsection*{\textbf{Usage}}
+\subsection*{\textbf{Usage}}
 
 Input \texttt{fastfetch}\ and you will obtain all you want.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/2.png}
 \end{figure}
@@ -2267,12 +2136,12 @@ nothing to do with user privacy. If you insist on it, then you have to
 \texttt{\textasciitilde{}/.config/fastfetch/config.jsonc}. You can also
 see this part in GitHub README.
 
-\subsubsection{\textbf{btop}}
+\subsection{\textbf{btop}}
 
 I think \texttt{btop}\ is the coolest \texttt{top}\ to monitor OS
 resource. It's in \texttt{dnf}\ repository.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/3.png}
 \end{figure}
@@ -2281,18 +2150,18 @@ There is only 1 more thing you need to know that if you experience
 screen flickering during \texttt{ssh}\ connection, press \texttt{o}\ and
 turn \texttt{Truecolor}\ to false.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/4.png}
 \end{figure}
 
-\subsubsection{\textbf{fzf}}
+\subsection{\textbf{fzf}}
 
 \texttt{fzf}\ is Fuzzy Fliter, an extraordinary tool to replace
 \texttt{find}. And it's already in the \texttt{dnf}\
 repository.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/5.png}
 \end{figure}
@@ -2302,7 +2171,7 @@ Inputting something like
 \texttt{fzf\ -\/-preview='{}cat\ \{\}'{}}\
 must amaze you.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/6.png}
 \end{figure}
@@ -2314,14 +2183,13 @@ completely wrong. Remember what's the meaning of
 select a file and press \texttt{Enter}, don't forget to
 take a picture of your surprised big mouth.
 
-\newpage
-\subsection{\textbf{Ubuntu was supposed to die}}
+\section{\textbf{Ubuntu was supposed to die}}
 
-\begin{mdquote}
+\begin{note}
 This chapter was written after Introduction to Linux v0.9 (This is
 equivalent to content before Section 2.5), some of my view had changed a
 lot during this period.
-\end{mdquote}
+\end{note}
 
 You will never know how long I take to determine my mind to change my
 Ubuntu to other distros.
@@ -2338,7 +2206,7 @@ something, you will get a \texttt{snap}\ package. Yes, Canonical CAN
 cheat user, deny open source spirit, I don't know what
 CAN'T Canonical do?
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.6 Ubuntu was supposed to die/1.jpeg}
 \end{figure}
@@ -2360,26 +2228,25 @@ lost oneself and suffered the consequences. I have to say,
 Moreover, see what Richard Stallman said 11 years ago:
 \url{https://www.youtube.com/watch?v=CP8CNp-vksc}.
 
-\newpage
-\subsection{\textbf{Having heard Dao in the morning}}
+\section{\textbf{Having heard Dao in the morning}}
 
-\begin{mdquote}
+\begin{note}
 Check this video for more information: \href{https://www.bilibili.com/video/BV1s4421A7he/}{\textit{Video link}}.
-\end{mdquote}
+\end{note}
 
-\subsubsection{\textbf{Before the beginning}}
+\subsection{\textbf{Before the beginning}}
 
 We have introduced \texttt{Vim}\ in \textbf{1.3 How to edit files on Linux}.
 However, it's not enough to just know how to press \texttt{i}\ to enter
 insert mode. In this chapter I will introduce more key bindings and  
 something about \texttt{Vim}\ configuration.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.7 Having heard Dao in the morning/1.png}
 \end{figure}
 
-\subsubsection{\textbf{Modes in Vim}}
+\subsection{\textbf{Modes in Vim}}
 
 \texttt{Vim}\ has 4 modes:
 
@@ -2390,9 +2257,9 @@ something about \texttt{Vim}\ configuration.
 \item Command-line mode (\texttt{:}): The mode you can input commands.
 \end{itemize}
 
-\subsubsection{\textbf{Key bindings}}
+\subsection{\textbf{Key bindings}}
 
-\subsubsection*{\textbf{Movement}}
+\subsection*{\textbf{Movement}}
 \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
 \item \texttt{h/j/k/l}: Move left/down/up/right. (You can also use arrow keys, but `h/j/k/l` is recommended by \texttt{Vim}.) 
 \item \texttt{w/b}: Move to the beginning of the next/previous word.
@@ -2402,7 +2269,7 @@ something about \texttt{Vim}\ configuration.
 \item \texttt{Ctrl+d/u}: Half page down/up.
 \end{itemize}
 
-\subsection*{\textbf{Action}}
+\section*{\textbf{Action}}
 
 \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
 \item \texttt{d}: Delete.
@@ -2413,7 +2280,7 @@ something about \texttt{Vim}\ configuration.
 \item \texttt{Ctrl+r}: Redo.
 \end{itemize}
 
-\subsubsection*{\textbf{Jump and search}}
+\subsection*{\textbf{Jump and search}}
 
 \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
 \item \texttt{/(?)<string>}: Search backwards (forward) 'string'.
@@ -2423,7 +2290,7 @@ something about \texttt{Vim}\ configuration.
 \item \texttt{``}: Jump back to the last position.
 \end{itemize}
 
-\subsubsection{\textbf{Note}}
+\subsection{\textbf{Note}}
 
 \begin{itemize}[itemsep=0pt, parsep=0pt, topsep=0pt, partopsep=0pt]
 \item \textbf{Almost every action can be combined with movement}. For example,
@@ -2440,7 +2307,7 @@ normal mode.
 It indents the code to the right/left (Press twice).
 \end{itemize}
 
-\subsubsection{\textbf{Configuration}}
+\subsection{\textbf{Configuration}}
 
 You can find plenty of tutorials on the Internet about \texttt{Vim}
 configuration. However I think less is more. Here I'll introduce some
@@ -2448,17 +2315,13 @@ basic configurations without plugins.
 
 Add these to your \texttt{/etc/vim/vimrc}:
 
-\fontsize{10}{12}
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash, basicstyle=\ttfamily\small]
 set nu " Show line number
 syntax on " Syntax highlighting
 set mouse=a " Enable mouse
 set showmatch " Highlight matching brackets
 set ignorecase " Ignore case when searching
-\end{verbatim}
-\end{adjustwidth}
-\fontsize{12}{14}
+\end{lstlisting}
 
 Moreover, you can add a \texttt{Vim} extension in \texttt{VSCode} to
 experience the same key bindings in \texttt{Vim}. Actually, I'm using
@@ -2469,19 +2332,12 @@ this extension to write this tutorial.
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.7 Having heard Dao in the morning/2.png}
 \end{figure}
 
-\newpage
-\thispagestyle{empty}
-\begin{center}
-    \vspace*{96pt}
-    \fontsize{60}{60}\customfont{3}\par
-    \fontsize{26}{31.2}\section{\textbf{Dual OS}}\par
-    \vspace{25pt}
-    \fontsize{18}{21.6}\customfont{\textit{I'd argue that everybody wants to do something that matters. --- Linus Torvalds}}\par
-    \vfill
-\end{center}
+\chapter{Dual OS}
 
-\newpage
-\subsection{\textbf{Shorin ArchLinux Guide}}
+\begin{flushright}
+\textit{I'd argue that everybody wants to do something that matters. --- Linus Torvalds}
+\end{flushright}
+\section{\textbf{Shorin ArchLinux Guide}}
 
 If Virtual Machine or WSL is not enough for you, you can try to install dual
 OS on your computer. Now I am using Fedora 44 and Windows 11 on my laptop.
@@ -2497,7 +2353,7 @@ and forums. AI helps a lot. You can even ask it to write a short tutorial for yo
 But I still recommend you to read the Shorin ArchLinux Guide first to have a
 general idea.
 
-\subsection{\textbf{How to play games on Linux}}
+\section{\textbf{How to play games on Linux}}
 
 There are lots of videos about this topic. Many content creator shows you the fps
 and the performance of games on Linux. In this tutorial, I want to talk about
@@ -2507,7 +2363,7 @@ I am a game lover, and I have played hundreds of games. And I have to say,
 most of the times Linux lost to Windows in terms of performance. But it's catching
 up. I think quite acceptable for now.
 
-\subsubsection{\textbf{Proton}}
+\subsection{\textbf{Proton}}
 
 Linux cannot run Windows executables directly. It uses a compatibility layer
 called \texttt{Wine}. Wine is a free and open-source compatibility layer that
@@ -2528,7 +2384,7 @@ I prefer to use Proton-CachyOS. To install community Proton versions, you can
 use the \texttt{ProtonUp-Qt}\ tool. However, DW-Proton is not available on
 ProtonUp-Qt, so you need to download it from its GitHub releases page.
 
-\subsubsection{\textbf{Anti-Cheat, the last boss}}
+\subsection{\textbf{Anti-Cheat, the last boss}}
 
 You must have heard that Linux can't play some online games.
 True. The culprit is kernel-level anti-cheat.
@@ -2550,22 +2406,21 @@ But there IS a silver lining. Some devs bothered to tick the checkbox,
 so \textbf{Apex Legends}, \textbf{War Thunder}
 and \textbf{Dead by Daylight} run fine.
 
-\begin{mdquote}
+\begin{note}
 Check \url{https://www.protondb.com/} before buying. Platinum/Gold usually means
 good for Linux.
-\end{mdquote}
+\end{note}
 
 If the game you MUST play every day is on that failure list... well,
 keep your Windows or learn to use VM on Linux.
 
-\subsection{\textbf{Nvidia Driver on Fedora}}
+\section{\textbf{Nvidia Driver on Fedora}}
 
-\subsubsection{\textbf{RPMFusion}}
+\subsection{\textbf{RPMFusion}}
 
 Forget downloading \texttt{.run}\ files from Nvidia. The correct way is:
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo dnf install \
   https://mirrors.rpmfusion.org/free/fedora/\
   rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
@@ -2573,14 +2428,13 @@ sudo dnf install \
   https://mirrors.rpmfusion.org/nonfree/fedora/\
   rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install akmod-nvidia
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
 After reboot, open terminal and type \texttt{nvidia-smi}.
 If you see a table with GPU info, congratulations.
 But there is still a probability that you will see a black screen. If so, read on.
 
-\subsubsection{\textbf{Secure Boot}}
+\subsection{\textbf{Secure Boot}}
 
 Fedora keeps Secure Boot on. That's good for security, bad for Nvidia.
 The module needs a signature, or the kernel says no.
@@ -2592,31 +2446,29 @@ You have 2 choices:
 \item \textbf{Proper way:} Sign the module yourself.
 \end{itemize}
 
-\begin{adjustwidth}{2em}{0pt}
-\begin{verbatim}
+\begin{lstlisting}[language=bash]
 sudo kmodgenca -a
 sudo mokutil --import /etc/pki/akmods/certs/public_key.der
 # reboot -> MOK manager pops up -> enroll the key
-\end{verbatim}
-\end{adjustwidth}
+\end{lstlisting}
 
-\begin{mdquote}
+\begin{warning*}
 Don't use the \texttt{nvidia}\ package from Fedora's own repo!
 Use \texttt{akmod-nvidia}\ from RPMFusion. When kernel updates,
 \texttt{akmod}\ rebuilds automatically. The other one will leave you
 staring at a black screen after every \texttt{dnf\ upgrade}.
-\end{mdquote}
+\end{warning*}
 
-\subsection{\textbf{Softwares I am Using}}
+\section{\textbf{Softwares I am Using}}
 
-\subsubsection{\textbf{QQ \& WeChat}}
+\subsection{\textbf{QQ \& WeChat}}
 
 Good news is that both have official Linux versions now. Just go to their
 websites, grab the \texttt{.rpm}. WeChat's mini-program
 support is still broken, but chatting works fine. QQ is almost
 on par with Windows.
 
-\subsubsection{\textbf{Clash Verge Rev}}
+\subsection{\textbf{Clash Verge Rev}}
 
 You know what this is for. The original Clash is dead for years, this is the
 revival.
@@ -2624,13 +2476,13 @@ revival.
 After install, paste your subscription, then turn it on. The gate of the world
 finally opens for you.
 
-\subsubsection{\textbf{Piliplus}}
+\subsection{\textbf{Piliplus}}
 
 This is a native Bilibili client, which is much smoother than the web version,
 and no browser RAM waste. However, if you want to live stream or uploading
 videos it seems that the fastest way is still using the web version.
 
-\subsubsection{\textbf{SPlayer}}
+\subsection{\textbf{SPlayer}}
 
 Netease Cloud Music team gives up on Linux, the latest version is years old.
 And you can't even find it in a proper way. SPlayer is a good alternative,
@@ -2639,13 +2491,11 @@ it is still alive, contrary to \texttt{YesPlayMusic}. Also, it supports
 \texttt{lyrica}\ or other desktop lyrics software, which is a must-have for me.
 
 
-\newpage
-\titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{}
-\section*{\textbf{Afterwards: More than an OS}}
-\phantomsection
-\addcontentsline{toc}{section}{Afterwards: More than an OS}
+\chapter*{Afterwards: More than an OS}
+\addcontentsline{toc}{chapter}{Afterwards: More than an OS}
+\chaptermark{Afterwards: More than an OS}
 
-\subsection*{\textbf{All good must come to an end}}
+\section*{\textbf{All good must come to an end}}
 
 At this point, this tutorial is over. If you can persist in seeing this,
 it's very difficult. Linux is like a delicate handicraft, not a massive object
@@ -2655,7 +2505,7 @@ programming, not for showing off and putting it aside. I hope that by
 studying this tutorial, you can adjust your mindset, not only Linux, but
 also any problems encountered in learning.
 
-\subsubsection*{\textbf{Combining practice with theory}}
+\subsection*{\textbf{Combining practice with theory}}
 
 It's not important to understand the tutorial, but to learn how to solve problems.
 
@@ -2673,7 +2523,7 @@ people who just watch videos or tutorials, and pass by without
 remembering or trying out the effects themselves. Let me put it in
 another way, do you know why the tutorial is in English?
 
-\subsubsection*{\textbf{How to solve problems}}
+\subsection*{\textbf{How to solve problems}}
 
 I must point out what the 'problems' I said is. They are various unforeseen
 issues that arise during the process of following the tutorial (for me, they
@@ -2695,7 +2545,7 @@ Remember we are learners, not saints. It is normal to encounter
 setbacks in the study process. Learning to think is usually more
 effective than directly seeking help from others.
 
-\subsubsection*{\textbf{Study is one's own business}}
+\subsection*{\textbf{Study is one's own business}}
 
 Although saying this can easily undermine confidence, the fact is that
 study is on your own, instead of someone else's carrer. I guess you probably
@@ -2711,7 +2561,7 @@ Have you worked hard for them? I think these questions are worth your
 careful consideration. Please don't say 'it's too early to think about these
 things now', planning your studies and life is never too early.
 
-\subsection*{\textbf{We finally arrive at the final destination}}
+\section*{\textbf{We finally arrive at the final destination}}
 
 Actually, writing this tutorial is largely due to Teacher
 Chen's request. I happen to be bored during the holidays, so I write a bit

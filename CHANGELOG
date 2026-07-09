@@ -1,13 +1,25 @@
-3.0 on Jul 8th, 2026
-- Migrated the tutorial from Debian 12 to Fedora 44: replaced `apt` with `dnf`, `.deb` with `.rpm`, updated all distro references across Chapter 1 and Chapter 2.
+3.1 on Jul 9th, 2026
+- Migrated from `ctexart` to `elegantbook` document class. Removed 10+ redundant packages. Section levels shifted: `section`→`chapter`, `subsection`→`section`, `subsubsection`→`subsection`. Replaced custom title page with `\maketitle`.
+- Removed page border, `tikz`, and `everypage` package.
+- Replaced hand-rolled `mdquote` with ElegantBook's native `note`; added `warning`,
+  `important`, `tip` via `\elegantnewtheorem`.
+- Converted all `verbatim` + `adjustwidth` blocks to `\lstlisting[language=bash]`
+  with GitHub-style rendering (rounded frame, light gray background, refined colors).
+- All inline `\texttt` now have a light gray background.
+- Changed `figure[H]` / `table[H]` to `[htbp]` for better float placement.
+- Fixed Preface and Afterwards chapter headers (missing `\chaptermark`).
+- Cleaned up duplicate font preamble.
+
+3.0 on Jul 9th, 2026
+- Migrated the tutorial from Debian 12 to Fedora 44: replaced `apt` with `dnf`, `.deb` with `.rpm`, updated all distro references.
+- Rewrote Part 2 (Advanced Usage) and Part 3 (Dual OS), including new sections on anti-cheat, Nvidia drivers, and software recommendations.
 - Fixed TOC hyperlink for Preface and Afterwards (missing `\phantomsection`).
-- Restructured Part 3: replaced the old dual-boot walkthrough with a reference to Shorin ArchLinux Guide and new gaming/software sections.
 
 2.1 on Mar 1st, 2025
 - Added a new section `File Descriptor and Redirection Operators` in `Some trivial contents on Linux`.
 - Added a new section `VSCode LaTeX Environment` in `Decorate your own garden`.
 - Changed `rm` to a safer action in `Linux file commands`.
-- Added a new chapter `Having heard Dao in the morning` in `Advanced Usage`. 
+- Added a new chapter `Having heard Dao in the morning` in `Advanced Usage`.
 
 2.0 on Feb 26th, 2025
 - The first formal release of the project on GitHub.
