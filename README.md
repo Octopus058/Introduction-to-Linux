@@ -20,9 +20,6 @@ The examples use **Fedora 44** as the reference distribution. Other distros appe
 they differ, since the author runs an Ubuntu VM alongside it, but Fedora is the one the
 text is written against.
 
-The whole text is in English on purpose. The preface notes that it will also help your
-CET6.
-
 ## Who this is for
 
 You do not need any prior Linux experience. The tutorial begins by explaining what Linux
