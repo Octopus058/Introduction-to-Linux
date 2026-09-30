@@ -1,3 +1,14 @@
+3.2 on Sept 30th, 2026
+- Bundled `elegantbook.cls` in the repository. It was missing, so a fresh clone could not build at all.
+- Removed the unused `lastpage` package. It conflicted with `elegantbook` 4.7 (which disables
+  hyperref's `pageanchor`) and produced a compile error.
+- Fixed a typo in the source filename: `Introdution` → `Introduction`.
+- Stopped tracking build artifacts (`*.bbl`, `*.synctex.gz`) and added `.gitignore`.
+- Added `.latexmkrc`, so a bare `latexmk` builds with XeLaTeX and runs as many passes as needed.
+- Rewrote the README.
+- Minor grammar fixes: `a advanced` → `an advanced`, `a eye` → `an eye`,
+  `2 ways` → `two ways`, `3 parts` → `three parts`.
+
 3.1 on Jul 9th, 2026
 - Migrated from `ctexart` to `elegantbook` document class. Removed 10+ redundant packages. Section levels shifted: `section`→`chapter`, `subsection`→`section`, `subsubsection`→`subsection`. Replaced custom title page with `\maketitle`.
 - Removed page border, `tikz`, and `everypage` package.
