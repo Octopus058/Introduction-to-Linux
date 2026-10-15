@@ -11,6 +11,9 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{booktabs}
+% ---- 交叉引用 ----
+% elegantbook 已在类文件中定义 \figref / \tabref（en 分支：\textbf{Figure}~\ref{#1}），
+% 图表引用统一使用它们，不再重复引入 cleveref。
 % 设置产考文献不输出默认名
 \usepackage{etoolbox}
 \patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
@@ -67,12 +70,10 @@
 }
 
 % 设置自定义字体
-\newfontfamily\customfont{Freestyle Script}
-\newfontfamily\haettenfont{Haettenschweiler}
 \setCJKmainfont{Microsoft YaHei}
 \setmainfont{TeX Gyre Termes}
 
-                                 \renewcommand{\contentsname}{Contents}
+\renewcommand{\contentsname}{Contents}
 
 % 所有行内代码加浅灰底色（GitHub 风格）
 \let\oldtexttt\texttt
@@ -93,10 +94,10 @@
 
 % ---- Metadata ----
 \title{Introduction to Linux}
-\version{3.2}
+\version{3.3}
 \author{Oct0pu5}
-\date{Sept 30, 2026}
-\extrainfo{Value your freedom or you will lose it, teaches history. --- RMS}
+\date{Oct 15th, 2026}
+\extrainfo{Value your freedom or you will lose it, teaches history. --- Richard Matthew Stallman}
 
 \cover{assets/cover.png}
 
@@ -139,17 +140,16 @@ you find them.
 -> Abandon Windows inertia thinking. Don't be afraid of
 terminal, GUI is not a must.
 
-
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.6\textwidth,keepaspectratio]{assets/Hello Linux!/1.png}
 \end{figure}
 
 \section*{What is Linux}
-
-Quoted from \url{https://www.linux.org/threads/what-is-linux.4106/}
-
 \begin{note}
+Quoted from \url{https://www.linux.org/threads/what-is-linux.4106/}
+\end{note}
+
 Linux is an operating system that evolved from a kernel created by
 \emph{Linus Torvalds} when he was a student at the University of
 Helsinki. It is an operating system means that it's
@@ -166,7 +166,6 @@ sold it more than anything else. Linux can be installed on a home PC as
 well as a network server for a fraction of the cost of other
 companies' software packages. More reliability and less
 cost --- it's ideal.
-\end{note}
 
 \begin{figure}[htbp]
     \centering
@@ -181,11 +180,6 @@ important is that it is free.
 
 \section*{Which Linux}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Hello Linux!/3.png}
-\end{figure}
-
 There are always people debating which Linux distro is better. Most of the
 times, Mint is the best choice for new users, Redhat for servers,
 and Archlinux for geeks. I don't want to say which is better, but I will
@@ -199,6 +193,11 @@ on Linux.
 Of course, I won't recommend you any distro, you can choose whatever
 you want. But this tutorial is based on Fedora, so if you want to follow me,
 let's try Fedora 44!
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/Hello Linux!/3.png}
+\end{figure}
 
 \textbf{P.S.} This tutorial is mainly based on Fedora 44, but there are
 also some examples of other distros mixed in.
@@ -218,10 +217,6 @@ Last edited on: Jul 8th, 2026
 \end{flushright}
 
 \chapter{Basic Commands}
-
-\begin{flushright}
-\textit{Value your freedom or you will lose it, teaches history. --- RMS}
-\end{flushright}
 \section{C++ \& Python Environment Configuration on Linux}
 
 \subsection{C++}
@@ -276,14 +271,17 @@ have a \texttt{notepad} anyway. At our current level, I advise you only
 
 \begin{note}
 As for my personal experience, \texttt{Vim}\ is the best editor on Linux.
-And you can see more skills about \texttt{Vim}\ in 
-\textbf{2.9 Having heard Dao in the morning}.
-Why I don't mention \texttt{Emacs} in this tutorial? Because I never use it xD
+And you can see more skills about \texttt{Vim}\ in
+\textbf{2.7 Having heard Dao in the morning}.
+Why I don't mention \texttt{Emacs} in this tutorial? Because I never use it xD.
+\figref{fig:vim} shows the logo of \texttt{Vim}.
 \end{note}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/1.png}
+    \caption{Vim}
+    \label{fig:vim}
 \end{figure}
 
 \subsection{Vim}
@@ -296,11 +294,13 @@ sudo dnf install vim
 
 When editing files, just input \texttt{vim\ yourfilename}. If
 doesn't exist, \texttt{Vim}\ will open a new file for
-you. Here is the interface.
+you. Here is the interface, shown in \figref{fig:edit-vim-interface}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/2.png}
+    \caption{The Vim interface}
+    \label{fig:edit-vim-interface}
 \end{figure}
 
 \texttt{Vim}\ has 2 input modes and many different methods. Here, we only
@@ -309,14 +309,18 @@ you should see \texttt{-\/-INSERT-\/-}\ in the bottom left corner. After
 this, input and delete whatever you want!
 
 When you think all is done, press \texttt{esc}\ to quit insertion mode,
-then input \texttt{:wq}\ to save and quit \texttt{Vim}.
+then input \texttt{:wq}\ to save and quit \texttt{Vim}, as in
+\figref{fig:edit-vim-savequit}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/3.png}
+    \caption{Saving and quitting Vim}
+    \label{fig:edit-vim-savequit}
 \end{figure}
 
-This is a table that lists various inputs and their functions.
+This is a table that lists various inputs and their functions, see
+\tabref{tab:edit-vim-commands}.
 
 \begin{table}[htbp]
     \centering
@@ -330,15 +334,20 @@ This is a table that lists various inputs and their functions.
     :e! & cancel and open the original file \\
     \bottomrule
     \end{tabular}
+    \caption{Vim commands for saving and quitting}
+    \label{tab:edit-vim-commands}
 \end{table}
 
 Sometimes you need to find a function or variable in massive codes. On
 Windows \texttt{Ctrl+F}\ helps you. Also, \texttt{Vim}\ has this ability.
-Just input \texttt{/whatyousearch}. Take a look at this example below:
+Just input \texttt{/whatyousearch}, as in
+\figref{fig:edit-vim-search}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/4.png}
+    \caption{Searching in Vim}
+    \label{fig:edit-vim-search}
 \end{figure}
 
 \subsection{Other Tools}
@@ -348,11 +357,13 @@ Just input \texttt{/whatyousearch}. Take a look at this example below:
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/5.png}
+    \caption{The nano editor}
+    \label{fig:edit-nano}
 \end{figure}
 
 \texttt{nano} is another editor besides \texttt{Vim}, I
 don't like it because \texttt{Vim}\ is more powerful than
-it nearly in all aspects. If you want to learn \texttt{nano}, check this
+it nearly in all aspects. Its interface is in \figref{fig:edit-nano}. If you want to learn \texttt{nano}, check this
 tutorial:
 \url{https://blog.csdn.net/f272935657/article/details/141575478}.
 
@@ -364,11 +375,14 @@ user-friendly for \texttt{Windows} users.
 
 However, \texttt{Gedit}\ has bugs for Linux without GUI, these warnings
 often make users puzzled (although it IS simple and will cause no
-mistake). So I won't use it anyway.
+mistake). So I won't use it anyway. The warnings are in
+\figref{fig:edit-gedit-warnings}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/6.png}
+    \caption{Gedit warnings on a Linux system without GUI}
+    \label{fig:edit-gedit-warnings}
 \end{figure}
 
 If you want to install \texttt{Gedit}, follow the commands below:
@@ -379,11 +393,13 @@ sudo dnf install gedit
 gedit yourfilename
 \end{lstlisting}
 
-It should be like this:
+It should be like \figref{fig:edit-gedit-running}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.2 How to edit files on Linux/7.png}
+    \caption{Gedit running}
+    \label{fig:edit-gedit-running}
 \end{figure}
 
 \section{Directory structure}
@@ -393,7 +409,7 @@ It should be like this:
 As we all know, There are some drives on Windows, we call them
 \texttt{top\ level\ directory}, such as \texttt{C:\textbackslash{}},
 \texttt{D:\textbackslash{}}, etc. However, Things are quite different on
-Linux. There is only 1 \texttt{top\ level\ directory}\ named \texttt{/}.
+Linux. There is only one\\ \texttt{top\ level\ directory}\ named \texttt{/}.
 And we often call this directory structure \texttt{tree}.
 
 You must notice that the symbols representing hierarchical relationships
@@ -432,7 +448,7 @@ it's easy to make mistakes. Make sure to memorize it.
 \subsection{Special path symbols}
 
 Linux provides 3 \texttt{Special\ path\ symbols} for users to write file
-path easier. I list them in a form.
+path easier. I list them in \tabref{tab:path-symbols}.
 
 \begin{table}[htbp]
     \centering
@@ -445,6 +461,8 @@ path easier. I list them in a form.
     \texttt{\textasciitilde{}} & \texttt{/home} \\
     \bottomrule
     \end{tabular}
+    \caption{Special path symbols}
+    \label{tab:path-symbols}
 \end{table}
 I will explain them in more detail in the following text.
 
@@ -456,20 +474,25 @@ I will explain them in more detail in the following text.
 grammar: \texttt{ls\ {[}-a\ -h\ -l{]}\ {[}path{]}}.
 
 If you choose no parameter, \texttt{ls}\ represents displaying files in a
-flat layout.
+flat layout, as in \figref{fig:dir-ls}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/1.png}
+    \caption{Listing files with \texttt{ls}}
+    \label{fig:dir-ls}
 \end{figure}
 
 \texttt{-a} means show all files include those are hidden.
 It's easy to hide files on Linux, just add a \texttt{.}\
-before its name such as \texttt{.bashrc}.
+before its name such as \texttt{.bashrc}. Compare
+\figref{fig:dir-ls-a} with \figref{fig:dir-ls}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/2.png}
+    \caption{Listing all files with \texttt{ls\ -a}}
+    \label{fig:dir-ls-a}
 \end{figure}
 
 \begin{note}
@@ -482,11 +505,13 @@ are folders.
 
 \texttt{-h}\ changes \texttt{file\ size}\ in \texttt{-l}\ to clearer style
 (represent by \texttt{k},\ \texttt{m},\ \texttt{g}) and \textbf{must use
-with -l}
+with -l}, see \figref{fig:dir-ls-lh}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/3.png}
+    \caption{Detailed listing with \texttt{ls\ -lh}}
+    \label{fig:dir-ls-lh}
 \end{figure}
 
 \begin{note}
@@ -512,8 +537,8 @@ equals \texttt{cd\ \textasciitilde{}} and if there's a
 Now we finished \texttt{cd}, it's time to talk about
 details that weren't clear in the previous text.
 
-As for me, \texttt{..}\ is often used in \texttt{cd}. See the figure
-below, \texttt{cd}\ default path is \texttt{/home/oct0pu5}. I input
+As for me, \texttt{..}\ is often used in \texttt{cd}. See
+\figref{fig:dir-cd-dotdot}, \texttt{cd}\ default path is \texttt{/home/oct0pu5}. I input
 \texttt{cd\ ..}\ twice and return \texttt{/}, then \texttt{cd\ etc}\ and
 \texttt{ls}, it shows all file in \texttt{/etc}. The above is the
 classic directory operation.
@@ -521,17 +546,21 @@ classic directory operation.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/4.png}
+    \caption{Moving up the tree with \texttt{cd\ ..}}
+    \label{fig:dir-cd-dotdot}
 \end{figure}
 
 \subsection*{pwd}
 
 \textbf{P}rint current \textbf{w}ork \textbf{d}irectory. Often used to
 check whether you are in right directory, or copy the directory for any
-purpose.
+purpose, see \figref{fig:dir-pwd}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/5.png}
+    \caption{Printing the current directory with \texttt{pwd}}
+    \label{fig:dir-pwd}
 \end{figure}
 
 \subsection*{mkdir}
@@ -541,11 +570,14 @@ purpose.
 
 If you just want to create one level folder, ignore \texttt{-p}. If more
 than one level is needed, \texttt{mkdir}\ must attach \texttt{-p},
-otherwise it will throw error.
+otherwise it will throw error. Both cases are in
+\figref{fig:dir-mkdir} and \figref{fig:dir-mkdir-p}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/6.png}
+    \caption{Creating a directory with \texttt{mkdir}}
+    \label{fig:dir-mkdir}
 \end{figure}
 
 \begin{note}
@@ -556,31 +588,40 @@ solve this problem in \textbf{1.6 Linux user and permission commands}.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.3 Directory structure/7.png}
+    \caption{Creating nested directories with \texttt{mkdir\ -p}}
+    \label{fig:dir-mkdir-p}
 \end{figure}
 
 \section{Linux file commands}
 \subsection{touch cat more}
 
-\texttt{touch} creates new file.
+\texttt{touch} creates new file, see \figref{fig:file-touch}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/1.png}
+    \caption{Creating a file with \texttt{touch}}
+    \label{fig:file-touch}
 \end{figure}
 
-\texttt{cat} views file content.
+\texttt{cat} views file content, see \figref{fig:file-cat}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/2.png}
+    \caption{Viewing a file with \texttt{cat}}
+    \label{fig:file-cat}
 \end{figure}
 
 \texttt{more} suits for files with a lot of content, which can be viewed
-page by page instead of displaying everything like \texttt{cat}.
+page by page instead of displaying everything like \texttt{cat}, see
+\figref{fig:file-more}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/3.png}
+    \caption{Viewing a file page by page with \texttt{more}}
+    \label{fig:file-more}
 \end{figure}
 
 \begin{note}
@@ -591,22 +632,30 @@ Press \texttt{space} to turn the page, press \texttt{q} to quit.
 
 \texttt{cp} copies files and folders from one path and pastes to another
 path. Grammar here:
+
 \texttt{cp\ {[}-r{]}\ \textless{}path1\textgreater{}\ \textless{}path2\textgreater{}}.
 
-When \texttt{cp} a folder, \texttt{-r} is a must.
+When copying a folder, \texttt{-r} is a must. Both cases are in
+\figref{fig:file-cp}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.75\textwidth,keepaspectratio]{assets/1.4 Linux file commands/4.png}
+    \caption{Copying a file and a folder with \texttt{cp}}
+    \label{fig:file-cp}
 \end{figure}
 
-\texttt{mv} moves files and folders from one path to another. Grammar
+\texttt{mv} moves files and folders from one path to another, see
+\figref{fig:file-mv}. Grammar
 here:
+
 \texttt{mv\ \textless{}path1\textgreater{}\ \textless{}path2\textgreater{}}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/5.png}
+    \caption{Moving a file with \texttt{mv}}
+    \label{fig:file-mv}
 \end{figure}
 
 \subsection{rm}
@@ -644,10 +693,13 @@ listen to me my friends, \textbf{DON'T TRY THIS COMMAND
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/1.4 Linux file commands/6.png}
+    \caption{The consequence of \texttt{rm\ -rf\ /}}
+    \label{fig:file-rm-disaster}
 \end{figure}
 
 This story tells us when you must use \texttt{rm}, be careful, think
-twice and don't regret. And ask yourself a question, how
+twice and don't regret, as \figref{fig:file-rm-disaster} warns. And ask
+yourself a question, how
 to delete this file properly?
 
 \subsection{which}
@@ -658,12 +710,14 @@ to delete this file properly?
 \emph{P.S. \texttt{-a} is the most frequently used parameter, and I
 ignored others.}
 
-See the example below, It means \texttt{python3}\ and \texttt{g++}\ call
-those 2 files.
+See the example in \figref{fig:file-which}, It means \texttt{python3}\ and
+\texttt{g++}\ call those 2 files.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/7.png}
+    \caption{Locating the files behind commands with \texttt{which}}
+    \label{fig:file-which}
 \end{figure}
 
 \texttt{-a}\ is used to show all possible files. If you install Python
@@ -679,16 +733,21 @@ those 2 files.
 \begin{note}
 You should notice that \texttt{+}\ means \texttt{\textgreater{}}\ and
 \texttt{-}\ means \texttt{\textless{}}\ when based on size. Also
-\texttt{k}\ is a lowercase!*
+\texttt{k}\ is a lowercase! \figref{fig:file-find-size} and
+\figref{fig:file-find-size-m} give the two directions.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/8.png}
+    \caption{Finding files}
+    \label{fig:file-find-size}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/9.png}
+    \caption{Finding files larger than a given size}
+    \label{fig:file-find-size-m}
 \end{figure}
 \end{note}
 
@@ -696,7 +755,8 @@ You should notice that \texttt{+}\ means \texttt{\textgreater{}}\ and
 
 \texttt{grep}\ is the same as \texttt{findstr}\ in Windows CMD. It can
 filter string out. Grammar here:
-\texttt{grep\ {[}-n{]}\ 'string'\ \textless{}path\textgreater{}}.
+\texttt{grep\ {[}-n{]}\ 'string'\ \textless{}path\textgreater{}}. See
+\figref{fig:file-grep} for a demonstration.
 
 \begin{note}
 I suggest you always write \texttt{-n}\ because it shows which row it is.
@@ -705,6 +765,8 @@ I suggest you always write \texttt{-n}\ because it shows which row it is.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/10.png}
+    \caption{Filtering lines with \texttt{grep\ -n}}
+    \label{fig:file-grep}
 \end{figure}
 
 Amazing, \texttt{grep}\ even give 'hello' a red color to emphasize.
@@ -713,16 +775,20 @@ After we learn \texttt{grep}, It is necessary to talk about a useful
 symbol \texttt{\textbar{}}. We have known \texttt{\textbar{}\textbar{}}\
 is \texttt{or}\ in C++. But this time we call \texttt{\textbar{}}\ pipe
 symbol. It can connect 2 commands, and make the result of left command
-be the input of right side. Here's an example:
+be the input of right side. Here's an example, see \figref{fig:file-pipe}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/11.png}
+    \caption{Connecting two commands with the pipe symbol}
+    \label{fig:file-pipe}
 \end{figure}
+
 \subsection{wc}
 
 \texttt{wc}\ counts the rows, words, bytes, characters of a file. Grammar
-here:\texttt{wc\ {[}-c\ -m\ -l\ -w{]}\ path}.
+here:\texttt{wc\ {[}-c\ -m\ -l\ -w{]}\ path}. \tabref{tab:wc-params}
+lists the parameters.
 
 \begin{table}[htbp]
     \centering
@@ -736,31 +802,38 @@ here:\texttt{wc\ {[}-c\ -m\ -l\ -w{]}\ path}.
     \texttt{-w} & count words \\
     \bottomrule
     \end{tabular}
+    \caption{Parameters of \texttt{wc}}
+    \label{tab:wc-params}
 \end{table}
 
 If there isn't any parameter, \texttt{wc}\ will count
-rows, words and bytes by default.
+rows, words and bytes by default, as shown in \figref{fig:file-wc}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/12.png}
+    \caption{Counting rows, words and bytes with \texttt{wc}}
+    \label{fig:file-wc}
 \end{figure}
 
 \subsection{echo}
 
-\texttt{echo}\ = \texttt{cout}, input \texttt{echo\ 'sth'}\ then terminal
-returns sth.
+\texttt{echo}\ is similar to \texttt{cout}, input \texttt{echo\ 'sth'}\ then terminal
+returns something.
 
 If you think this section is over, it's completely
 wrong. There are still some important symbols.
 
 Have you met following experience, want to define a variable and
 discover that it is a reserved word? What if I have to do like this? So
-I introduce `` to encircle the reserved words. Example here:
+I introduce ` to encircle the reserved words. Example in
+\figref{fig:file-echo-backquote}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/13.png}
+    \caption{Enclosing a reserved word with backquotes}
+    \label{fig:file-echo-backquote}
 \end{figure}
 
 Besides, if you have learnt Python data analysis, then you must know
@@ -774,11 +847,13 @@ connect a command and a file.
 on the right side.
 
 \texttt{\textgreater{}\textgreater{}}\ do the similar thing but actually
-an append operation.
+an append operation, both shown in \figref{fig:file-echo-redirect}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/14.png}
+    \caption{Writing command output to a file with \texttt{\textgreater{}} and \texttt{\textgreater{}\textgreater{}}}
+    \label{fig:file-echo-redirect}
 \end{figure}
 
 \subsection{tail}
@@ -792,11 +867,13 @@ changes to the file. Grammar here:
 
 \texttt{-f}\ indicates the activation of monitoring. \texttt{tail}\ will
 keep running, when the tracked file changes \texttt{tail}\ output the
-changed content.
+changed content, as \figref{fig:file-tail-f} shows.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/15.png}
+    \caption{Following a file with \texttt{tail\ -f}}
+    \label{fig:file-tail-f}
 \end{figure}
 
 When I input
@@ -805,22 +882,26 @@ terminal output \texttt{hello\ \textbackslash{}n\ world}. When I input
 \texttt{\textgreater{}}\ which means overwrite, \texttt{tail}\ throw an
 error. It told me \texttt{test.txt}\ is truncated. It tells us never
 overwrite file or \texttt{tail}\ will be disabled. Moreover, there is
-something troublesome below.
+something troublesome in \figref{fig:file-tail-deleted}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/16.png}
+    \caption{Recreating the tracked file leaves \texttt{tail\ -f} silent}
+    \label{fig:file-tail-deleted}
 \end{figure}
 
 I delete \texttt{test.txt}, and create a new one with a word 'new', but
 \texttt{tail}\ have no output. How come?
 
 Don't be worry, we have a solution: change \texttt{-f}\
-to \texttt{-F}. Let's see what will happen.
+to \texttt{-F}. Let's see what will happen in \figref{fig:file-tail-F}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.4 Linux file commands/17.png}
+    \caption{Following a recreated file with \texttt{tail\ -F}}
+    \label{fig:file-tail-F}
 \end{figure}
 
 Cool.\ \texttt{-F}\ will show hints when tracked file is deleted or
@@ -858,7 +939,8 @@ Windows. And ordinary users can only control \texttt{/home}\ and
 \textbf{S}witch \textbf{u}ser. Grammar here:
 \texttt{su\ -\ {[}username{]}}. \texttt{-}\ is optional in fact, but I
 recommend you to write it. If no \texttt{username}, \texttt{su\ -}\
-switches to \texttt{root}\ by default.
+switches to \texttt{root}\ by default, which is the point of
+\figref{fig:pwd-terminal}.
 
 Switching to \texttt{root}\ user needs password. It is entered by the
 user themselves when creating the system, so please
@@ -883,16 +965,19 @@ requires password for the first time.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.5 Linux user and permission commands/1.png}
+    \caption{Running a command with \texttt{sudo}}
+    \label{fig:user-sudo}
 \end{figure}
 
 Linux is interesting. It won't display when typing
-password. So recite your password, type it and press \texttt{Enter}.
+password, as \figref{fig:user-sudo} shows. So recite your password, type
+it and press \texttt{Enter}.
 
 \subsection{user and user group}
 
 \subsection*{user group}
 
-user must be in a user group. Try 2 commands below:
+user must be in a user group. Try two commands below:\\
 \texttt{groupadd\ \textless{}groupname\textgreater{}},
 \texttt{groupdel\ \textless{}groupname\textgreater{}}.
 
@@ -923,11 +1008,13 @@ command.
 adds the user to the user group.
 
 \texttt{getent\ passwd}\ views what the current users are. You can see me
-in the end of the output.
+in the end of the output, shown in \figref{fig:user-getent-passwd}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.5 Linux user and permission commands/2.png}
+    \caption{Listing the users with \texttt{getent\ passwd}}
+    \label{fig:user-getent-passwd}
 \end{figure}
 
 \texttt{getent\ group}\ views what the current groups are.
@@ -935,7 +1022,7 @@ in the end of the output.
 \subsection{chmod}
 
 \texttt{chmod}\ changes files and folders permission. Grammar here:
-`chmod {[}-R{]}.
+\texttt{chmod {[}-R{]}}.
 
 \texttt{-R} refers to operating all files in the folder.
 
@@ -953,7 +1040,7 @@ folder.
 \subsection{chown}
 
 \texttt{chown} changes user and user group to which file and folder
-belong. Grammar here:
+belong. Grammar here:\\
 \texttt{chown\ {[}-R{]}\ {[}username{]}\ {[}:{]}\ {[}groupname{]}\ \textless{}path\textgreater{}}.
 
 \texttt{-R}\ is the same as \texttt{chmod}. \texttt{{[}:{]}}\ split user
@@ -963,30 +1050,36 @@ Not very useful in my opinion :/
 
 \section{Tricks for a real Linuxer}
 
-\subsubsection{clear}
+\subsection{clear}
 
 Sometimes the terminal looks really messy and you cannot find the
 information you need at a glance. Now we have \texttt{clear}\ to bring a
-clean screen back. It proves effective every time!
+clean screen back. It proves effective every time, as in
+\figref{fig:trick-clear}!
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/1.png}
+    \caption{Clearing the terminal with \texttt{clear}}
+    \label{fig:trick-clear}
 \end{figure}
 
 \begin{note}
 More than that, \texttt{Ctrl+l}\ is the same as \texttt{clear}.
 \end{note}
 
-\subsubsection{\texttt{tab}}
+\subsection{\texttt{tab}}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/2.png}
+    \caption{Completing a filename with \texttt{tab}}
+    \label{fig:trick-tab}
 \end{figure}
 
 I should input \texttt{test1.cpp}\ normally but if I press \texttt{tab}\
-terminal will help me complete it automatically.\ \texttt{tab}\ do save
+terminal will help me complete it automatically, as in
+\figref{fig:trick-tab}.\ \texttt{tab}\ do save
 plenty of time when you have to input some long commands.
 
 \subsection{Search for commands with \texttt{↑}\ and
@@ -996,24 +1089,29 @@ plenty of time when you have to input some long commands.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/3.png}
+    \caption{Recalling the previous command with the up arrow}
+    \label{fig:trick-arrow-history}
 \end{figure}
 
 I \texttt{vim\ test1.cpp}, what if I find a mistake? I have to type this
 command again, too troublesome. But if I press \texttt{↑}, it will
-appear directly.\ \texttt{↑}\ and \texttt{↓}\ is a quick way to search
+appear directly, as \figref{fig:trick-arrow-history} shows.\ \texttt{↑}\ and \texttt{↓}\ is a quick way to search
 history. I will introduce more in the following section
 \textbf{history}.
 
 \subsection{history}
 
 Want to view previous commands? Feel slow for \texttt{↑}\ and \texttt{↓}?
-\texttt{history}\ is capable of this task. In most situation we only need
+\texttt{history}\ is capable of this task, shown in
+\figref{fig:trick-history}. In most situation we only need
 \texttt{history\ num}\ and \texttt{num}\ is the number of commands you
 want to view.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/4.png}
+    \caption{Viewing previous commands with \texttt{history}}
+    \label{fig:trick-history}
 \end{figure}
 
 \subsection{ll}
@@ -1022,11 +1120,14 @@ Do you feel inconvenient when inputting \texttt{ls\ -l}? Linux gives us
 an upgrade plan \texttt{ll}.\ \texttt{ll}\ equals to \texttt{ls\ -l}\ and
 it's shorter to type.
 
-Also you can try \texttt{ll\ -h}\ which is the same as \texttt{ls\ -lh}.
+Also you can try \texttt{ll\ -h}\ which is the same as
+\texttt{ls\ -lh}, as in \figref{fig:trick-ll}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/5.png}
+    \caption{Listing files with \texttt{ll}}
+    \label{fig:trick-ll}
 \end{figure}
 
 \subsection{\texttt{Ctrl}\ combination
@@ -1046,12 +1147,15 @@ shouldn't be able to save your career.
 \subsection*{\texttt{Ctrl+Z}}
 
 Many confuse \texttt{Ctrl+Z}\ and \texttt{Ctrl+C}, regard them as the
-same but actually not.\ \texttt{Ctrl+Z}\ freezes, or suspends the process.
+same but actually not.\ \texttt{Ctrl+Z}\ freezes, or suspends the process,
+as \figref{fig:trick-ctrl-z} demonstrates.
 That is to say you can restore this process, using \texttt{fg}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/6.png}
+    \caption{Suspending a process with \texttt{Ctrl+Z} and resuming it with \texttt{fg}}
+    \label{fig:trick-ctrl-z}
 \end{figure}
 
 In the figure above, we suspend \texttt{python3}\ with \texttt{Ctrl+Z}\
@@ -1066,10 +1170,12 @@ user or compilers.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.6 Tricks for a real Linuxer/7.png}
+    \caption{Exiting a shell with \texttt{Ctrl+D}}
+    \label{fig:trick-ctrl-d}
 \end{figure}
 
-I input \texttt{Ctrl+D}\ after \texttt{su\ -}\ and \texttt{python3}. Quite
-convenient.
+I input \texttt{Ctrl+D}\ after \texttt{su\ -}\ and \texttt{python3}, as in
+\figref{fig:trick-ctrl-d}. Quite convenient.
 
 \subsection*{\texttt{Ctrl+A / Ctrl+E}}
 
@@ -1123,11 +1229,13 @@ explanation in \textbf{1.9 Network commands on Linux}.
 \subsection{Soft link}
 
 A soft link on Linux is like a shortcut on Windows. Grammar here:
-\texttt{ln\ -s\ src\ dest}.
+\texttt{ln\ -s\ src\ dest}, see \figref{fig:trivial-softlink}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/1.png}
+    \caption{Creating a soft link with \texttt{ln\ -s}}
+    \label{fig:trivial-softlink}
 \end{figure}
 
 \subsection{date}
@@ -1135,10 +1243,11 @@ A soft link on Linux is like a shortcut on Windows. Grammar here:
 \texttt{date} views system time. Grammar here:
 \texttt{date\ {[}-d{]}\ \ {[}+format{]}}.
 
-\texttt{-d}\ is used to calculate time, not very useful in my opinion.
+\texttt{-d}\ is used to calculate time, not very useful in my opinion. For
+an example, see \figref{fig:trivial-date}.
 
 Remember \texttt{+format}\ needs quotation marks when there is a space.
-Here's a form including all time formats:
+Here's a form including all time formats, see \tabref{tab:date-formats}:
 
 \begin{table}[htbp]
     \centering
@@ -1155,11 +1264,15 @@ Here's a form including all time formats:
     \%S & second \\
     \bottomrule
     \end{tabular}
+    \caption{Format specifiers of \texttt{date}}
+    \label{tab:date-formats}
 \end{table}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/2.png}
+    \caption{Viewing the system time with \texttt{date}}
+    \label{fig:trivial-date}
 \end{figure}
 
 \subsection{File Descriptor and Redirection Operators}
@@ -1205,6 +1318,8 @@ make the output more clear. Here's an example:
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.7 Some trivial contents on Linux/3.png}
+    \caption{Discarding output with \texttt{/dev/null}}
+    \label{fig:trivial-devnull}
 \end{figure}
 
 \texttt{cat /dev/null > test.cpp}\ is just the same as \texttt{echo "" > test.cpp}.
@@ -1214,6 +1329,7 @@ It cleans the file but doesn't delete it.
 \texttt{bash} will popup an error when you want to \texttt{>}\ an existing file by default.
 You can input \texttt{set\ +o\ noclobber}\ to disable this function. But \textbf{remember to enable
 it by \texttt{set\ -o\ noclobber}\ after testing!}
+The effect is in \figref{fig:trivial-devnull}.
 \end{note}
 
 \section{Network commands on Linux}
@@ -1227,11 +1343,13 @@ the internet find you by your IP and hostname.
 
 Input \texttt{ifconfig}\ and the terminal shows lots of information. Pay
 attention to \texttt{eth0}, you will find \texttt{inet}, the following
-is IP.
+is IP. See \figref{fig:net-ifconfig} for the output.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/1.png}
+    \caption{Inspecting the network interfaces with \texttt{ifconfig}}
+    \label{fig:net-ifconfig}
 \end{figure}
 
 Input \texttt{hostname}\ to check your hostname. Or
@@ -1242,11 +1360,13 @@ If you aren't satisfied with this name.\emph{When did I
 come up with such a reckless name!}\ Don't worry, you can
 certainly change it.
 \texttt{hostnamectl\ set-hostname\ \textless{}name\textgreater{}}\ saves
-your young soul. Like this:
+your young soul. Like \figref{fig:net-hostnamectl}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/2.png}
+    \caption{Changing the hostname with \texttt{hostnamectl}}
+    \label{fig:net-hostnamectl}
 \end{figure}
 
 \subsection{ping}
@@ -1254,12 +1374,14 @@ your young soul. Like this:
 \texttt{ping} checks whether the server is connectable. Grammar here:
 \texttt{ping\ {[}-c\ num{]}\ \textless{}ip/hostname\textgreater{}}.
 
-\texttt{-c\ num} decides how many times you \texttt{ping}. If no then
+\texttt{-c\ num} decides how many times you \texttt{ping}, as in \figref{fig:net-ping}. If no then
 infinite.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/3.png}
+    \caption{Testing connectivity with \texttt{ping}}
+    \label{fig:net-ping}
 \end{figure}
 
 \texttt{ping}\ can not only determine if the server is functioning
@@ -1288,11 +1410,13 @@ will explain both separately.
 \texttt{wget\ -b\ url}\ are used together with \texttt{tail\ -F}\
 generally.\ \texttt{wget-log}\ shows the progress. In this example
 \texttt{index.html}\ is downloaded in the blink of an eye so
-\texttt{wget-log}\ is empty.
+\texttt{wget-log}\ is empty. This is \figref{fig:net-wget-b}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/4.png}
+    \caption{Downloading in the background with \texttt{wget\ -b}}
+    \label{fig:net-wget-b}
 \end{figure}
 
 \texttt{wget\ -c\ {[}-t\ num{]}\ {[}-T\ num{]}\ url}\ avoids the issue of
@@ -1321,7 +1445,8 @@ web requests, downloading files is just a part. So I suggest you to use
 
 Port is the interface for computer interaction. Our familiar USB, VGA
 are all physical ports. And we also have virtual ports in computer OS.
-Linux has 65536 ports. They are 0 to 65535 and divided into three parts.
+Linux has 65536 ports. They are 0 to 65535 and divided into three parts,
+listed in \tabref{tab:port-ranges}.
 
 \begin{table}[htbp]
     \centering
@@ -1334,17 +1459,22 @@ Linux has 65536 ports. They are 0 to 65535 and divided into three parts.
     49152--65535 & Used for temporary network connection calls \\
     \bottomrule
     \end{tabular}
+    \caption{The three port ranges}
+    \label{tab:port-ranges}
 \end{table}
 
 \subsection*{netstat}
 
 \texttt{netstat}\ can check the port occupancy status. Use
 \texttt{netstat\ -tunpl}\ to show all information you need. Prototype,
-local address, ports, states and PID, everything is in sight.
+local address, ports, states and PID, everything is in sight, as in
+\figref{fig:net-netstat}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.8 Network commands on Linux/5.png}
+    \caption{Checking port occupancy with \texttt{netstat\ -tunpl}}
+    \label{fig:net-netstat}
 \end{figure}
 
 \section{Linux process commands}
@@ -1356,11 +1486,14 @@ application and a unique PID for every process.
 
 \subsection{ps}
 
-\texttt{ps\ -ef}\ shows all information of all process.
+\texttt{ps\ -ef}\ shows all information of all process, as in
+\figref{fig:proc-ps}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/1.png}
+    \caption{Listing every process with \texttt{ps\ -ef}}
+    \label{fig:proc-ps}
 \end{figure}
 
 \texttt{UID}\ is the user to which the process belongs.\ \texttt{PPD}\ is
@@ -1372,11 +1505,13 @@ that process occupies CPU.\ \texttt{CMD}\ is the path or commands.
 \subsection{pstree}
 
 \texttt{pstree}\ is more like an upgraded version of \texttt{ps}. It
-shows process in a tree structure.
+shows process in a tree structure, see \figref{fig:proc-pstree}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/2.png}
+    \caption{Showing the process tree with \texttt{pstree}}
+    \label{fig:proc-pstree}
 \end{figure}
 
 You can see the \texttt{pstree}\ is controlled by \texttt{bash}.
@@ -1388,12 +1523,14 @@ You can see the \texttt{pstree}\ is controlled by \texttt{bash}.
 
 \texttt{-9}\ means close forcefully (or kill).
 
-\texttt{kill}\ is usually used together with \texttt{ps}. See this
-example:
+\texttt{kill}\ is usually used together with \texttt{ps}. See the
+example in \figref{fig:proc-kill}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/3.png}
+    \caption{Terminating a process with \texttt{kill}}
+    \label{fig:proc-kill}
 \end{figure}
 
 I \texttt{tail\ -F}\ a file and \texttt{kill}\ it. It shows 'Terminated'
@@ -1403,12 +1540,14 @@ OS closes it forcefully.
 \subsection{top}
 
 \texttt{top}\ monitors process information in real-time. \texttt{top}\
-refreshes every 3 seconds by default. We usually use \texttt{top\ -i}\ to
+refreshes every 3 seconds by default, shown in \figref{fig:proc-top}. We usually use \texttt{top\ -i}\ to
 ignore those inactive process.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.9 Linux process commands/4.png}
+    \caption{Monitoring processes in real time with \texttt{top}}
+    \label{fig:proc-top}
 \end{figure}
 
 Look, I am \texttt{vim}-ing a file. And there're more
@@ -1453,11 +1592,14 @@ could it work!
 
 \subsection{env}
 
-\texttt{env} views all environment variables on Linux.
+\texttt{env} views all environment variables on Linux, as in
+\figref{fig:env-list}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/1.png}
+    \caption{Viewing environment variables with \texttt{env}}
+    \label{fig:env-list}
 \end{figure}
 
 I only showed a part of it. There are some points we should understand.
@@ -1469,11 +1611,14 @@ I only showed a part of it. There are some points we should understand.
 \subsection{\$}
 
 \texttt{\$}\ represents taking variable values. When characters are
-connected together, \texttt{\{\}}\ needs to be added. Like this:
+connected together, \texttt{\{\}}\ needs to be added. Like
+\figref{fig:env-dollar}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/2.png}
+    \caption{Taking variable values with \texttt{\$} and \texttt{\{\}}}
+    \label{fig:env-dollar}
 \end{figure}
 
 \subsection{Add environment variables}
@@ -1482,32 +1627,43 @@ There are many ways to add environment variables, including temporary
 and permanent ones.
 
 \texttt{export\ var=\textless{}value\textgreater{}}\ temporarily adds a
-environment variable. It is only valid in the current terminal.
+environment variable. It is only valid in the current terminal, as in
+\figref{fig:env-export}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/3.png}
+    \caption{Adding a temporary variable with \texttt{export}}
+    \label{fig:env-export}
 \end{figure}
 
 And two ways to add permanently. Write \texttt{\textasciitilde{}/.bashrc}\
 for current user or \texttt{/etc/profile}\ for all users. Then run
-\texttt{source\ thatfile} to make it effective.
+\texttt{source\ thatfile} to make it effective, shown in
+\figref{fig:env-bashrc} and \figref{fig:env-profile}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/4.png}
+    \caption{Adding a permanent variable to \texttt{\textasciitilde{}/.bashrc}}
+    \label{fig:env-bashrc}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/5.png}
+    \caption{Adding a permanent variable to \texttt{/etc/profile}}
+    \label{fig:env-profile}
 \end{figure}
 
-By the way, you can see codes below in \texttt{.bashrc}:
+By the way, you can see codes in \figref{fig:env-alias} in
+\texttt{.bashrc}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.10 Linux environment variables/6.png}
+    \caption{An alias defined in \texttt{.bashrc}}
+    \label{fig:env-alias}
 \end{figure}
 
 You can input \texttt{ls\ -\/-help}\ for more information about
@@ -1528,7 +1684,7 @@ learning road :D). I know you must be tired but cheer up!
 \subsection{tar}
 
 Before the commands, let's understand the types of
-compressed files on Linux first.\ \texttt{.zip}\ is the same as Windows,
+compressed files on Linux first, as \figref{fig:tar-formats} compares.\ \texttt{.zip}\ is the same as Windows,
 but not the most common.\ \texttt{.tar}\ and \texttt{.tar.gz}\ are created
 by \texttt{tar}\ and \texttt{gzip}.\ \textbf{They are the most commonly
 used form.}
@@ -1583,9 +1739,11 @@ to \texttt{mkdir}\ or it will throw error!
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.11 Linux compression commands/1.png}
+    \caption{Compressing and decompressing with \texttt{tar}}
+    \label{fig:tar-basic}
 \end{figure}
 
-There is a tip in the figure above.\ \texttt{-zcvf}\ can be decompressed
+There is a tip in \figref{fig:tar-basic}.\ \texttt{-zcvf}\ can be decompressed
 by \texttt{-xvf}\ and \texttt{-zxvf}, but \texttt{-cvf}\ can be only
 decompressed by \texttt{-xvf}. It's easy to make
 mistakes here. My suggestion is to compress everything in \texttt{gzip}\
@@ -1607,13 +1765,11 @@ Don't ask similar silly questions again.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/1.11 Linux compression commands/2.png}
+    \caption{The compression formats used on Linux}
+    \label{fig:tar-formats}
 \end{figure}
 
 \chapter{Advanced Usage}
-
-\begin{flushright}
-\textit{Without absolute certainty, what do we do? We do the best we can. --- RMS}
-\end{flushright}
 \section{SHIT, I forgot my password again!}
 
 \subsection{WSL}
@@ -1621,12 +1777,14 @@ Don't ask similar silly questions again.
 This is one reason why I recommend WSL. Open \texttt{Powershell}\ or
 \texttt{Windows\ Terminal}, input \texttt{wsl\ -u\ -root}. Ignore the
 warnings (If there are) then WSL becomes active and you are the root
-user. And \texttt{passwd\ \textless{}username\textgreater{}}\ helps a
+user, which is what \figref{fig:pwd-wsl} shows. And \texttt{passwd\ \textless{}username\textgreater{}}\ helps a
 lot.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/1.png}
+    \caption{Resetting a password from WSL}
+    \label{fig:pwd-wsl}
 \end{figure}
 
 \subsection{Not WSL?}
@@ -1640,12 +1798,15 @@ ask password of the current user.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/2.png}
+    \caption{Resetting the root password with \texttt{sudo\ passwd\ root}}
+    \label{fig:pwd-terminal}
 \end{figure}
 
 But what if you even forget your own password? You want to
 \texttt{su\ -}\ to reset your password and need your password to reset
 root user password. This is trapped in a \texttt{while(1)}\ endless loop.
-So we can only take out our last resort.
+So we can only take out our last resort. The GRUB steps are in
+\figref{fig:pwd-grub-advanced}.
 
 \subsection*{GRUB}
 
@@ -1656,28 +1817,38 @@ Take Ubuntu as an example. Boot Ubuntu and hold \texttt{shift}\ to enter
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/3.png}
+    \caption{Advanced options for Ubuntu in the GRUB menu}
+    \label{fig:pwd-grub-advanced}
 \end{figure}
 
-Select \textbf{recovery mode}.
+Select \textbf{recovery mode}, as in \figref{fig:pwd-grub-recovery}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/4.png}
+    \caption{Selecting recovery mode}
+    \label{fig:pwd-grub-recovery}
 \end{figure}
 
-Wait a second and select \textbf{Drop to root shell prompt}.
+Wait a second and select \textbf{Drop to root shell prompt}, as in
+\figref{fig:pwd-grub-shell}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/5.png}
+    \caption{Dropping to a root shell prompt}
+    \label{fig:pwd-grub-shell}
 \end{figure}
 
-Then \texttt{passwd}\ and input your new password. Ignore the error that
+Then \texttt{passwd}\ and input your new password, as in
+\figref{fig:pwd-set-new}. Ignore the error that
 I accidentally pressed a \texttt{space}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.1 SHIT, I forgot my password again!/6.png}
+    \caption{Setting a new password}
+    \label{fig:pwd-set-new}
 \end{figure}
 
 After that, select \textbf{Resume normal boot}. You can use it normally
@@ -1713,7 +1884,7 @@ autoMemoryReclaim=gradual
 \end{lstlisting}
 
 Also, Open the Powershell and try these 2 commands below. One of them is
-effective.
+effective, as \figref{fig:cdrive-wsl-list} illustrates.
 
 \begin{lstlisting}[language=bash]
     Set-NetFirewallHyperVVMSetting -Name 
@@ -1739,15 +1910,19 @@ For more information, check this blog:
 
 This is the official website: \href{https://mobaxterm.mobatek.net/}{https://mobaxterm.mobatek.net/} and
 the Chinese version:
-\url{https://github.com/RipplePiam/MobaXterm-Chinese-Simplified}. I take
+\url{https://github.com/RipplePiam/MobaXterm-Chinese-Simplified}, whose
+download page is in \figref{fig:moba-download}. I take
 the original version as an example.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/1.png}
+    \caption{Downloading MobaXterm from the official website}
+    \label{fig:moba-download}
 \end{figure}
 
-Next, we will start to generate a key to crack it. Check this
+Next, we will start to generate a key to crack it, shown in
+\figref{fig:moba-keygen}. Check this
 repository: \url{https://github.com/flygon2018/MobaXterm-keygen}.
 
 Open it with your VSCode (If you don't have VSCode,
@@ -1762,24 +1937,31 @@ your MobaXterm version.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/2.png}
+    \caption{Generating a licence key with \texttt{MobaXterm-Keygen.py}}
+    \label{fig:moba-keygen}
 \end{figure}
 
-And you can open MobaXterm and click \texttt{About}\ to check it.
+And you can open MobaXterm and click \texttt{About}\ to check it, as in
+\figref{fig:moba-about}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/3.png}
+    \caption{The licence shown in the About dialog}
+    \label{fig:moba-about}
 \end{figure}
 
 \subsection{Usage}
 
 Open \texttt{Session}\ and choose \texttt{WSL}. Change
 \texttt{Distribution}\ to \texttt{Fedora}. Then you can connect to WSL by
-MobaXterm.
+MobaXterm, as shown in \figref{fig:moba-session}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/4.png}
+    \caption{Opening a WSL session in MobaXterm}
+    \label{fig:moba-session}
 \end{figure}
 
 Left side is a \texttt{SFTP}\ window and right side is the terminal. Now
@@ -1788,13 +1970,16 @@ to WSL. If you have used WinSCP or Filezilla, this feeling is very
 familiar.
 
 Next, you can adjust the settings freely. I highly recommend you to
-enable 'Paste using right-click'.
+enable 'Paste using right-click', which is the option in
+\figref{fig:moba-paste}.
 MobaXterm does not enable this option by default, which makes copying
 terminal information more inconvenient.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.2 MobaXterm, go ssh it!/5.png}
+    \caption{Enabling paste with the right mouse button}
+    \label{fig:moba-paste}
 \end{figure}
 
 More than that, you can also press 'Remote
@@ -1863,30 +2048,36 @@ Just \texttt{sudo\ reboot}\ and type \texttt{sudo\ do-release-upgrade}\
 again.
 
 \begin{note}
-Some WSLs will show messages below:
+Some WSLs will show the messages in \figref{fig:upgrade-wsl-message}:
 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/1.png}
+    \caption{A pending upgrade message from WSL}
+    \label{fig:upgrade-wsl-message}
 \end{figure}
 
 You need to change \texttt{Prompt=never}\ to \texttt{Prompt=lts}\\
 in \texttt{/etc/update-manager/release-upgrades}. Here's
-the meaning of \texttt{lts}:
+the meaning of \texttt{lts}, given in \figref{fig:upgrade-prompt}:
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/2.png}
+    \caption{The \texttt{Prompt} setting in \texttt{release-upgrades}}
+    \label{fig:upgrade-prompt}
 \end{figure}
 
 \end{note}
 
-How long will it take!
+How long will it take, as \figref{fig:upgrade-progress} shows!
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/3.png}
+    \caption{\texttt{do-release-upgrade} fetching the new packages}
+    \label{fig:upgrade-progress}
 \end{figure}
 
 
@@ -1897,10 +2088,12 @@ this:
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/4.png}
+    \caption{Confirming the new release with \texttt{cat\ /etc/os-release}}
+    \label{fig:upgrade-os-release}
 \end{figure}
 
 
-If you see errors below, input \texttt{sudo\ vim\ /etc/wsl.conf}\ and
+If you see the errors in \figref{fig:upgrade-wsl-conf}, input \texttt{sudo\ vim\ /etc/wsl.conf}\ and
 paste these codes:
 
 \begin{lstlisting}[language=bash]
@@ -1911,6 +2104,8 @@ appendWindowsPath=false
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/5.png}
+    \caption{Warnings caused by \texttt{appendWindowsPath}}
+    \label{fig:upgrade-wsl-conf}
 \end{figure}
 
 
@@ -1943,7 +2138,8 @@ Then run \texttt{sudo\ apt\ update}.
 
 Do as the same as before, upgrade Ubuntu to 22.04 LTS. I only spent
 about 20 minutes. Rebooting is required but you actually
-don't need to do it. Input \texttt{y}\ and WSL will
+don't need to do it, and \figref{fig:upgrade-os-release} is what you
+should see afterwards. Input \texttt{y}\ and WSL will
 reboot in background for 5 seconds then you can use the terminal as
 usual.
 
@@ -1970,6 +2166,7 @@ terminal jumping line by line that is difficult to Windows GUI.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.3 I upgraded alone/6.png}
+    \caption{Linux is sexy}
 \end{figure}
 
 \section{No, the C drive is almost full!}
@@ -1995,10 +2192,12 @@ clear them to free up disk space.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.4 No, the C drive is almost full!/1.png}
+    \caption{Log directories that grow on a WSL install}
+    \label{fig:cdrive-logs}
 \end{figure}
 
-You should clean \texttt{syslog}\ and \texttt{journal/}\ in the picture
-above.
+You should clean \texttt{syslog}\ and \texttt{journal/}\ in
+\figref{fig:cdrive-logs}.
 
 \begin{note}
 If you are worried about \texttt{rm}, \texttt{mv}\ logs to a new folder
@@ -2035,7 +2234,7 @@ permanent ultimate solution? The answer is YES! You can transfer your
 WSL out of C drive.
 
 Take Fedora 44 as an example. Run \texttt{wsl\ -\/-shutdown}\ in
-Powershell first. Then
+Powershell first. Then\\
 \texttt{wsl\ -\/-export\ Fedora-44\ D:\textbackslash{}Fedora-44.tar}.
 That export your WSL as a \texttt{.tar}\ file to D drive.
 
@@ -2045,16 +2244,18 @@ check it.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.4 No, the C drive is almost full!/2.png}
+    \caption{Listing the installed distributions with \texttt{wsl\ -l\ -v}}
+    \label{fig:cdrive-wsl-list}
 \end{figure}
 \end{note}
 
 Then \texttt{wsl\ -\/-unregister\ Fedora-44}\ and import the
-transferred one.
+transferred one.\\
 \texttt{wsl\ -\/-import\ Fedora-44\ D:\textbackslash{}WSL\ D:\textbackslash{}Fedora-44.tar}.
 The \texttt{.tar}\ file can be a backup for your WSL or you can also
 delete it.
 
-If you find your user config is missing and only root exists, run
+If you find your user config is missing and only root exists, run\\
 \texttt{fedora.exe\ config\ -\/-default-user\ \textless{}yourusername\textgreater{}}\
 to solve this problem.
 
@@ -2069,11 +2270,14 @@ Sorry for my Chinglish but it's really funny.
 \subsection*{Why fastfetch rather than neofetch}
 
 If I say \texttt{neofetch}, most of you must know it's a
-tool which fetches system information and prints it prettily.
+tool which fetches system information and prints it prettily, as in
+\figref{fig:pretendB-neofetch}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/1.png}
+    \caption{System information printed by \texttt{neofetch}}
+    \label{fig:pretendB-neofetch}
 \end{figure}
 
 However, the last release of \texttt{neofetch}\ is in 2020, and its
@@ -2116,16 +2320,18 @@ Q: Neofetch is good enough. Why do I need fastfetch?
 
 As the same as \texttt{pay-respects}, just download
 \texttt{fastfetch-linux-amd64.rpm}\ from GitHub releases page and put
-into your Fedora by MobaXterm. Then run
+into your Fedora by MobaXterm. Then run \\
 \texttt{sudo\ dnf\ install\ fastfetch-linux-amd64.rpm}\ and all done.
 
 \subsection*{Usage}
 
-Input \texttt{fastfetch}\ and you will obtain all you want.
+Input \texttt{fastfetch}\ and you will obtain all you want, see \figref{fig:pretendB-fastfetch}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/2.png}
+    \caption{System information printed by \texttt{fastfetch}}
+    \label{fig:pretendB-fastfetch}
 \end{figure}
 
 Someone careful may ask, Does \texttt{fastfetch}\ safe because it seems
@@ -2139,34 +2345,43 @@ see this part in GitHub README.
 \subsection{btop}
 
 I think \texttt{btop}\ is the coolest \texttt{top}\ to monitor OS
-resource. It's in \texttt{dnf}\ repository.
+resource, and \figref{fig:pretendB-btop} is what it looks like. It's in
+\texttt{dnf}\ repository.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/3.png}
+    \caption{Monitoring resources with \texttt{btop}}
+    \label{fig:pretendB-btop}
 \end{figure}
 
 There is only 1 more thing you need to know that if you experience
 screen flickering during \texttt{ssh}\ connection, press \texttt{o}\ and
-turn \texttt{Truecolor}\ to false.
+turn \texttt{Truecolor}\ to false, the option in
+\figref{fig:pretendB-btop-truecolor}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/4.png}
+    \caption{Turning off Truecolor in the \texttt{btop} options}
+    \label{fig:pretendB-btop-truecolor}
 \end{figure}
 
 \subsection{fzf}
 
 \texttt{fzf}\ is Fuzzy Fliter, an extraordinary tool to replace
 \texttt{find}. And it's already in the \texttt{dnf}\
-repository.
+repository, shown in \figref{fig:pretendB-fzf}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/5.png}
+    \caption{Finding files interactively with \texttt{fzf}}
+    \label{fig:pretendB-fzf}
 \end{figure}
 
-What's more, it supports previewing file contents.
+What's more, it supports previewing file contents, see
+\figref{fig:pretendB-fzf-preview}.
 Inputting something like
 \texttt{fzf\ -\/-preview='{}cat\ \{\}'{}}\
 must amaze you.
@@ -2174,6 +2389,8 @@ must amaze you.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.5 The way to pretend B/6.png}
+    \caption{Previewing file contents with \texttt{fzf\ -{}-preview}}
+    \label{fig:pretendB-fzf-preview}
 \end{figure}
 
 If you think it's over, you're
@@ -2208,7 +2425,9 @@ CAN'T Canonical do?
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.6 Ubuntu was supposed to die/1.jpeg}
+    \includegraphics[width=0.6\textwidth,keepaspectratio]{assets/2.6 Ubuntu was supposed to die/1.jpeg}
+    \caption{I don't mean Ubuntu}
+    \label{fig:ubuntu-snap}
 \end{figure}
 
 This all happens on Ubuntu 24.04, but if i choose 22.04 LTS? Well,
@@ -2236,14 +2455,17 @@ Check this video for more information: \href{https://www.bilibili.com/video/BV1s
 
 \subsection{Before the beginning}
 
-We have introduced \texttt{Vim}\ in \textbf{1.3 How to edit files on Linux}.
+We have introduced \texttt{Vim}\ in \textbf{1.3 How to edit files on Linux},
+and \figref{fig:vim-emacs-meme} is the editor itself.
 However, it's not enough to just know how to press \texttt{i}\ to enter
-insert mode. In this chapter I will introduce more key bindings and  
+insert mode. In this chapter I will introduce more key bindings and
 something about \texttt{Vim}\ configuration.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth,keepaspectratio]{assets/2.7 Having heard Dao in the morning/1.png}
+    \includegraphics[width=0.7\textwidth,keepaspectratio]{assets/2.7 Having heard Dao in the morning/1.png}
+    \caption{Vim between Emacs meme}
+    \label{fig:vim-emacs-meme}
 \end{figure}
 
 \subsection{Modes in Vim}
@@ -2324,19 +2546,18 @@ set ignorecase " Ignore case when searching
 \end{lstlisting}
 
 Moreover, you can add a \texttt{Vim} extension in \texttt{VSCode} to
-experience the same key bindings in \texttt{Vim}. Actually, I'm using
+experience the same key bindings in \texttt{Vim}, shown in
+\figref{fig:vim-vscode-extension}. Actually, I'm using
 this extension to write this tutorial.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth,keepaspectratio]{assets/2.7 Having heard Dao in the morning/2.png}
+    \caption{The Vim extension in VSCode}
+    \label{fig:vim-vscode-extension}
 \end{figure}
 
 \chapter{Dual OS}
-
-\begin{flushright}
-\textit{I'd argue that everybody wants to do something that matters. --- Linus Torvalds}
-\end{flushright}
 \section{Shorin ArchLinux Guide}
 
 If Virtual Machine or WSL is not enough for you, you can try to install dual
@@ -2387,7 +2608,8 @@ ProtonUp-Qt, so you need to download it from its GitHub releases page.
 \subsection{Anti-Cheat, the last boss}
 
 You must have heard that Linux can't play some online games.
-True. The culprit is kernel-level anti-cheat.
+True. The culprit is kernel-level anti-cheat, and \figref{fig:ubuntu-snap}
+is not the only place where a vendor decides for you.
 
 Briefly speaking, something like \texttt{EAC}\ or \texttt{BattlEye}. They
 dig into Windows kernel so deep that Proton can't translate.
@@ -2583,4 +2805,4 @@ Oct0pu5\\
 Last edited on: Jul 8th, 2026
 \end{flushright}
 
-\end{document}
+\end{document}
